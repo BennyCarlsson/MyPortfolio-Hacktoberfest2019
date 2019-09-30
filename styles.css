@@ -1,3 +1,20 @@
 h1 {
   font-size: 3em;
 }
+
+section.header {
+  background-color: #fafafe;
+}
+
+section.me,
+section.contact {
+  background-color: whitesmoke;
+}
+
+section.projects {
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #b5b5b5;
+}
