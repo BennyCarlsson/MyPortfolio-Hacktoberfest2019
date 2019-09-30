@@ -70,3 +70,7 @@ _Disclaimer! This is a project for fun! I do not expect a profesional or high st
   - For the open source community engagement.
 
 ### _I will do my best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible ❤️_
+
+
+
+### _Don't break my💔 by not giving a⭐️!!_
