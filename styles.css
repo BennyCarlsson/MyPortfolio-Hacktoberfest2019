@@ -5,3 +5,20 @@ body{
   font-family: 'Roboto', sans-serif;
 
 }
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #00FFFF;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+h1.no-spacer, h3 {
+ color: #FF69B4;
+}
