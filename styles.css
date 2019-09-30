@@ -1,7 +1,44 @@
 h1 {
-  font-size: 3em;
+    font-size: 3em;
 }
-body{
-  font-family: 'Roboto', sans-serif;
 
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebf0ff4a;
+}
+
+header {
+    margin-top: 64px;
+}
+
+.profile-pic {
+    width: 300px;
+    height: auto;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-and-title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: white;
+    padding: 32px;
+    border: 1px solid #7d4cdb0d;
+    border-radius: 8px;
 }
