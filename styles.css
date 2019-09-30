@@ -1,7 +1,35 @@
-h1 {
-  font-size: 3em;
-}
-body{
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  background: #ddd;
+  padding-bottom: 2rem;
+}
 
+.profile-area {
+  background: #ce86ef;
+  padding: 2rem 0;
+}
+
+.profile-area header {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1100;
+}
+
+.content-wrapper {
+  background: inherit;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1rem;
+  text-align: center;
 }
