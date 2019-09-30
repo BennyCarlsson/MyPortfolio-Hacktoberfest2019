@@ -22,6 +22,12 @@ html {
 .content-wrapper {
   background: inherit;
   padding: 50px;
+  margin: auto;
+}
+
+.content-wrapper {
+  width: 60%;
+  margin: auto;
 }
 
 h1 {
