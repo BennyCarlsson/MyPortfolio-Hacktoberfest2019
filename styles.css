@@ -561,3 +561,16 @@ ul li::before {
 h1.no-spacer, h3 {
   color: #FF69B4;
 }
+
+@keyframes SpinAnim {
+	0% {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner {
+	animation: SpinAnim 1 1s ease-out;
+}
