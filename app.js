@@ -10,6 +10,7 @@ function imgClicked(){
 	if(imgClicked.count===10){
 		var v = document.getElementById("profile_image");
 		v.className += "spinner";
+		imgClicked.count = 0;
 	}
 }
 
