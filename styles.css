@@ -382,8 +382,9 @@ header h2 {
 }
 
 .social-icons a:hover, .social-icons a:focus, .social-icons a:active {
-  color: #FFF;
+  color: #ffffff;
 }
+
 
 .left .social-icons a {
   margin-left: 0;
@@ -586,4 +587,39 @@ ul li::before {
 
 h1.no-spacer, h3 {
   color: #FF69B4;
+}
+
+.contact-btns {
+  margin-top: .5rem;
+}
+
+.cv-btn,
+.hire-btn {
+  font-size: 18px;
+  padding: .3rem 1rem;
+  display: inline-block;
+  border: 1px solid #673AB7;
+  border-radius: 10px;
+}
+
+
+.cv-btn {
+  color: #673AB7;
+}
+
+.hire-btn {
+  color: #fff;
+  background: #673AB7;
+}
+.cv-btn:hover,
+.hire-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.hire-btn:hover {
+  color: #fff;
+}
+.cv-btn:hover {
+  color: #673AB7;
 }
