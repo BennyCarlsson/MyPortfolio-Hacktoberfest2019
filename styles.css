@@ -343,14 +343,14 @@ header h2 {
 
 .social-icons a {
   margin-left: 20px;
-  color: #cccccc;
+  color: #673AB7;
   font-weight: normal;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .social-icons a:hover, .social-icons a:focus, .social-icons a:active {
-  color: #673AB7;
+  color: #FFF;
 }
 
 .left .social-icons a {
@@ -506,7 +506,7 @@ a, a:hover {
   color: #673AB7;
   text-align: center;
   font-size: 18px;
-  background-color: #FFF;
+  background-color: rgb(255, 255, 255);
   border: 1px solid #673AB7;
   padding: 10px;
   border-radius: 50%;
@@ -538,7 +538,7 @@ ul {
 
 ul li::before {
   content: "\2022";
-  color: #00FFFF;
+  color: rgb(53, 53, 53);
   font-weight: bold;
   display: inline-block;
   width: 1em;
