@@ -1,11 +1,17 @@
-<!DOCTYPE html>
 
-<head>
+<!DOCTYPE html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Hacktoberfest2019 - Portfolio</title>
@@ -13,69 +19,122 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
-</head>
-
-<body>
+  </head>
+  <body>
+    <nav class="navi_bar">
+      <img src="#" alt="logo" />
+      <ul id="navbar">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#basic">About Me</a>
+        </li>
+        <li>
+          <a href="#con_details">Contact Me</a>
+        </li>
+      </ul>
+    </nav>
     <div class="wrapper">
+      <div class="profile-area">
+        <header id="home">
+          <img src="profilepic.png" alt="Profile image" />
+          <h1 class="no-spacer">Benny Carlsson</h1>
+          <h2 class="no-spacer">Software Developer</h2>
+          <div class="social-icons">
+            <a href="#"><i class="fa fa-github-square fa-3x"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
+            <a href="#"><i class="fa fa-youtube-square fa-3x"></i></a>
+          </div>
+        </header>
+      </div>
 
+      <div class="content-wrapper">
+        <main>
+          <article>
+            <h2 class="article-title"><b>ABOUT MYSELF</b></h2>
 
-        <div class="profile-area">
+            <h3>Bio:</h3>
+            <ul>
+              <li>
+                I'm an unemployed Software Developer soon starting to look for
+                jobs in Gothenburg Sweden.
+              </li>
+              <li>
+                I love programming and everything that has to do with
+                technology, the internet and writing code.
+              </li>
+            </ul>
+            <h3>Work Experience:</h3>
+            <ul>
+              <li>
+                Worked as a professional software developer for almost 3 years.
+              </li>
+            </ul>
+                
 
+                <header>
+                    <img id="profile_image" src="profilepic.jpg" alt="Profile image" onclick="imgClicked()"/>
+                    <h1 class="no-spacer">Benny Carlsson</h1>
+                    <h2 class="no-spacer">Software Developer</h2>
+                    <div class="social-icons">
+                       
+						<a href="https://github.com/BennyCarlsson" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+						<a href="https://www.linkedin.com/in/benny-carlsson-620226ba" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+                        <a href="https://twitter.com/Benny_Carlsson" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
+                        <a href="https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg" target="_blank"><i class="fa fa-youtube-square fa-3x"></i></a>
+						 
+                    </div>
 
+            <h3>Education:</h3>
+            <ul>
+              <li>
+                Studied Computer Science at Linnaeus University Kalmar, Sweden.
+              </li>
+            </ul>
+                </header>
+            </div>
 
-            <header>
-                <img src="profilepic.jpg" alt="Profile image" />
-                <h1 class="no-spacer">Benny Carlsson</h1>
-                <h2 class="no-spacer">Software Developer</h2>
-                <div class="social-icons">
+            <div class="content-wrapper">
+                
+                <main>
+                    <article>
+                        <h2 class="article-title"><b>ABOUT MYSELF</b></h2>
+						
+						<h3>Bio:</h3>
+						<ul>
+							<li>I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.</li>
+							<li>I love programming and everything that has to do with technology, the internet and writing code.</li>
+                        </ul>
+						
+						<h3>Work Experience:</h3>
+						<ul>
+							<li>Worked as a professional software developer for almost 3 years.</li>
+                        </ul>
+							
+						<h3>Education:</h3>
+						<ul>
+							<li>Studied Computer Science at Linnaeus University Kalmar, Sweden.</li>
+                        </ul>
+						
+						<h3>Basic Info</h3>
+						<ul>
+							<li>HOMETOWN: N&auml;ssj&ouml;, Sweden</li>
+							<li>AGE: 26 years old</li>
+							<li>E-MAIL:Carlsson.Benny93@gmail.com</li>
+                        </ul>
+            <div id="basic">
+              <h3>Basic Info</h3>
+              <ul>
+                <li>HOMETOWN:Nässjö, Sweden</li>
+                <li>AGE: 26 years old</li>
+                <li>E-MAIL:Carlsson.Benny93@gmail.com</li>
+              </ul>
+            </div>
 
-                    <a href="https://github.com/BennyCarlsson" target="_blank"><i
-                            class="fa fa-github-square fa-3x"></i></a>
-                    <a href="https://www.linkedin.com/in/benny-carlsson-620226ba" target="_blank"><i
-                            class="fa fa-linkedin-square fa-3x"></i></a>
-                    <a href="https://twitter.com/Benny_Carlsson" target="_blank"><i
-                            class="fa fa-twitter-square fa-3x"></i></a>
-                    <a href="https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg" target="_blank"><i
-                            class="fa fa-youtube-square fa-3x"></i></a>
-
-                </div>
-
-            </header>
-        </div>
-
-        <div class="content-wrapper">
-
-            <main>
-                <article>
-                    <h2 class="article-title"><b>ABOUT MYSELF</b></h2>
-
-                    <h3>Bio:</h3>
-                    <ul>
-                        <li>I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.
-                        </li>
-                        <li>I love programming and everything that has to do with technology, the internet and writing
-                            code.</li>
-                    </ul>
-
-                    <h3>Work Experience:</h3>
-                    <ul>
-                        <li>Worked as a professional software developer for almost 3 years.</li>
-                    </ul>
-
-                    <h3>Education:</h3>
-                    <ul>
-                        <li>Studied Computer Science at Linnaeus University Kalmar, Sweden.</li>
-                    </ul>
-
-                    <h3>Basic Info</h3>
-                    <ul>
-                        <li>HOMETOWN: N&auml;ssj&ouml;, Sweden</li>
-                        <li>AGE: 26 years old</li>
-                        <li>E-MAIL:Carlsson.Benny93@gmail.com</li>
-                    </ul>
-
-                    <h3>Skills:</h3>
-                    <ul>
+            <h3>Skills:</h3>
+           <ul>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100"
                                 aria-valuemin="0" aria-valuemax="100" style="width:100%">
@@ -146,50 +205,56 @@
                                 </div>
                         </div>
                     </ul>
+						
+						 <h3>Areas of Interest:</h3>
+						<ul>
+                            <li>Front-End Development</li>
+                            <li>Mentoring</li>
+							
+                        </ul>
+						
+						
+						
+                       
+                    </article>
 
-                    <h3>Areas of Interest:</h3>
-                    <ul>
-                        <li>Front-End Development</li>
-                        <li>Mentoring</li>
+                        
 
-                    </ul>
+            <h3>Areas of Interest:</h3>
+            <ul>
+              <li>Front-end</li>
+              <li>Mentoring</li>
+            </ul>
+          </article>
+        </main>
 
-
-
-
-                </article>
-
-
-
-            </main>
-
-            <h3>Social Media:</h3>
-            <div class="socialbtns">
-                <ul>
-                    <li><a target="_blank" href="https://twitter.com/Benny_Carlsson" class="fa fa-xs fa-twitter"></a>
-                    </li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/benny-carlsson-620226ba/"
-                            class="fa fa-xs fa-linkedin"></a></li>
-                    <li><a target="_blank" href="https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg"
-                            class="fa xs-lg fa-youtube"></a></li>
-                </ul>
-            </div>
-
-
-            <footer>
-
-                <p>Contact no: &#9742; 12345 | &#9993; Carlsson.Benny93@gmail.com </p>
-            </footer>
-        </div>
+        <footer id="con_details">
+          <p>Contact no: 12345 | Address</p>
+        </footer>
+      </div>
     </div>
+  </body>
+                <h3>Social Media:</h3>
+                <div class="socialbtns">
+                    <ul>
+                      <li><a target="_blank" href="https://twitter.com/Benny_Carlsson" class="fa fa-xs fa-twitter"></a></li>
+                      <li><a target="_blank" href="https://www.linkedin.com/in/benny-carlsson-620226ba/" class="fa fa-xs fa-linkedin"></a></li>
+                      <li><a target="_blank" href="https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg" class="fa xs-lg fa-youtube"></a></li>
+                    </ul>
+                  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-</body>
+                
+                <footer>
+					   
+                        <p>Contact no: &#9742; 12345 | &#9993; Carlsson.Benny93@gmail.com </p>
+                </footer>
+            </div>
+        </div>
 
-
-
+        <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+	  
+	  
+	  
 </html>
