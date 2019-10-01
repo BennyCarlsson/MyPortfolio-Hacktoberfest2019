@@ -1,3 +1,6 @@
+body {
+  background-color: #ffe6cc;
+}
 h1 {
   font-size: 3em;
 }
@@ -37,4 +40,21 @@ a, a:hover {
 	color: #ffffff;
 	background-color: #000;
 	border: 1px solid #000;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #00FFFF;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+h1.no-spacer, h3 {
+ color: #FF69B4;
 }
