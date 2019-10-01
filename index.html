@@ -20,17 +20,42 @@
     <link rel="manifest" href="./site.webmanifest">
   </head>
   <body>
+	 
+<!--
+                 -___________-
+                (/     _     \)
+                /_____(O)_____\
+                // / / | \ \ \\
+               =================
+               // / | | | | \ \\      "EXTERMINATE! EXTERMINATE!"
+              ===================    /
+             //// || || || || \\\\
+             |||| || || || || ||||
+            /---___-----------,---\
+            |  /   \         -o-  |
+            /  \___/          '   \
+            +---------------------+
+           /_   __    ___    __   _\
+          (__) (__)  (___)  (__) (__)
+          |_    __    ___    __    _|                   
+         (__)  (__)  (___)  (__)  (__)               
+         /_    ___    ___    ___    _\               
+        (__)  (___)  (___)  (___)  (__)              
+        |_     ___    ___    ___     _|             
+       (__)   (___)  (___)  (___)   (__)             
+       /_______________________________\             
+-->
     <nav class="navi_bar">
-      <img src="#" alt="logo" />
+      <img src="apple-touch-icon.png" alt="logo" />
       <ul id="navbar">
         <li>
-          <a href="#home">Home</a>
+          <a href="#home">🏠 Home</a>
         </li>
         <li>
-          <a href="#basic">About Me</a>
+          <a href="#basic">👦About Me</a>
         </li>
         <li>
-          <a href="#con_details">Contact Me</a>
+          <a href="#con_details">📝Contact Me</a>
         </li>
       </ul>
     </nav>
@@ -38,13 +63,13 @@
       <div class="profile-area">
         <header id="home">
           <img src="profilepic.jpg" alt="Profile image" />
-          <h1 class="no-spacer">Benny Carlsson</h1>
-          <h2 class="no-spacer">Software Developer</h2>
+          <h1 class="no-spacer hover-zoom">Benny Carlsson</h1>
+          <h2 class="no-spacer hover-zoom">Software Developer</h2>
           <div class="social-icons">
-            <a href="#"><i class="fa fa-github-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-linkedin-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-twitter-square fa-3x"></i></a>
-            <a href="#"><i class="fa fa-youtube-square fa-3x"></i></a>
+            <a href="#"><i class="fa fa-github-square fa-3x hover-zoom"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square fa-3x hover-zoom"></i></a>
+            <a href="#"><i class="fa fa-twitter-square fa-3x hover-zoom"></i></a>
+            <a href="#"><i class="fa fa-youtube-square fa-3x hover-zoom"></i></a>
           </div>
         </header>
       </div>
@@ -193,15 +218,32 @@
                       <li><a target="_blank" href="https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg" class="fa xs-lg fa-youtube"></a></li>
                     </ul>
                   </div>
-
-                
+                  
                 <footer>
-					   
+                    <div style="position:relative; 
+                    font-size:60px; 
+                    width:300px; 
+                    height:60px; 
+                    overflow:hidden; 
+                    margin:0 auto 0 auto; 
+                    border:none">
+                    <div style="float:left;">1</div>
+                    <div style="float:right;">3</div>
+                    <div style="text-align:center;">2</div>
+                    <div style="clear:both;"></div>
+                    <div style="position:absolute; 
+                    top:0px; 
+                    right:0px; 
+                    z-index:99; 
+                    background-color:transparent; 
+                    width:40px; 
+                    height:60px;" 
+                    onmouseover="MouseoverMessageInAlertBox()"></div>
+                    </div>
                         <p>Contact no: &#9742; 12345 | &#9993; Carlsson.Benny93@gmail.com </p>
                 </footer>
             </div>
         </div>
-
         <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
         <script src="app.js"></script>
     </body>
