@@ -16,8 +16,10 @@ header h1 {
   animation: bounced 1s ease;
 }
 
+
 /* navigation bar */
 .navi_bar {
+  z-index: 1;
   margin: 0;
   display: flex;
   position: sticky;
@@ -36,6 +38,11 @@ header h1 {
   top: auto;
   left: 30px;
 }
+/*Brand icon was broken*/
+#icon-image {
+  width: 4%;
+}
+
 li {
   list-style: none;
 }
@@ -64,7 +71,6 @@ ul#navbar li > a {
   text-decoration: none;
   transition: all 0.7s linear;
   position: relative;
-  top: 7px;
 }
 
 ul#navbar li:hover {
@@ -581,6 +587,7 @@ section.projects {
 a, a:hover {
   text-decoration: none;
 }
+
 
 .socialbtns, .socialbtns ul, .socialbtns li {
   margin: 0;
