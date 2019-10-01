@@ -213,6 +213,12 @@ template {
   display: none;
 }
 
+.mx-auto {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   background-color: #fdfdfd;
   font-family: "Courier New", Courier, monospace;
@@ -310,6 +316,23 @@ h3 {
   float: left;
   text-align: right;
 }
+
+.profile-area .dev_name {
+  color: #FF69B4;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: -20px;
+}
+.profile-area .dev_last_name {
+  color: #FF69B4;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-area .dev_title {
+  text-align: center;
+}
+
 
 .left .profile-area {
   text-align: left;
@@ -435,6 +458,9 @@ article p.article-meta {
 }
 
 @media screen and (max-width: 1000px) {
+  .profile-area .dev_name {
+    margin-bottom: 10px;
+  }
   .wrapper {
     margin-top: 10px;
   }
