@@ -10,7 +10,11 @@ function imgClicked(){
 	if(imgClicked.count===10){
 		var v = document.getElementById("profile_image");
 		v.className += "spinner";
-		imgClicked.count = 0;
+	}
+	if(imgClicked.count===11){
+		var v = document.getElementById("profile_image");
+		v.classList.remove("spinner");
+		imgClicked.count=1;
 	}
 }
 
