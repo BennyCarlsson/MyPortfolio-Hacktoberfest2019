@@ -29,8 +29,10 @@ nav,
 section {
   display: block; }
 
-
-
+article ul {
+  transform: translateY(72px);
+  opacity: 0;
+}
 
 
 figcaption,
