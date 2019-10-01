@@ -529,6 +529,8 @@ a, a:hover {
 }
 
 .socialbtns .fa {
+  width: 26px;
+  height: 26px;
   color: #000;
   text-align: center;
   font-size: 18px;
@@ -539,6 +541,15 @@ a, a:hover {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   -o-border-radius: 50%;
+  padding: 12px;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -o-border-radius: 100%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socialbtns .fa:hover {
@@ -558,6 +569,10 @@ ul li::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+.socialbtns li:before {
+  display: none;
 }
 
 h1.no-spacer, h3 {
