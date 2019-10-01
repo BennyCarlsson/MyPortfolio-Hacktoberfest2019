@@ -658,3 +658,13 @@ h1.no-spacer, h3 {
 .spinner {
 	animation: SpinAnim 1 1s ease-out;
 }
+
+.hover-zoom:hover{
+  transition: .5s;
+  transform: scale(1.3);
+}
+
+.hover-zoom{
+  transition: .5s;
+  transform: scale(1);
+}
