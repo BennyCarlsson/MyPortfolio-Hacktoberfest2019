@@ -404,6 +404,10 @@ h3 {
   height: auto;
   border-radius: 100px;
 }
+.profile-area img:hover {
+  transform: rotate(360deg);
+  transition: 1s;
+}
 
 header {
   padding: 0.8333333333% 0;
