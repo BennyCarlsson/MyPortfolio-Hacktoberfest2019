@@ -278,7 +278,7 @@ body {
   color: #673AB7;
   font-size: 2rem;
   line-height: 1.2em;
-  background-image: url("background.jpg");
+  /* background-image: url("background.jpg"); */
   background-repeat: repeat-x;
   background-position: bottom left;
   background-attachment: fixed; }
@@ -514,8 +514,6 @@ section.projects {
   background-color: #ffffff;
 }
 
-}
-
 a, a:hover {
 	text-decoration: none;
 }
@@ -531,16 +529,16 @@ a, a:hover {
 }
 
 .socialbtns .fa {
-  width: 20px;
-  height: 28px;
   color: #000;
+  text-align: center;
+  font-size: 18px;
   background-color: #FFF;
   border: 1px solid #000;
-  padding: 9px 8px 0px 8px;
-  border-radius: 22px;
-  -moz-border-radius: 22px;
-  -webkit-border-radius: 22px;
-  -o-border-radius: 22px;
+  padding: 10px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .socialbtns .fa:hover {
