@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 
 body {
+  background-color: #ffe6cc;
+  font-family: "Roboto", sans-serif;
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
 }
 
@@ -9,6 +11,83 @@ h1 {
   text-align: center;
   font-size: 3em;
   margin: 0.67em 0;
+}
+header h1 {
+  animation: bounced 1s ease;
+}
+
+/* navigation bar */
+.navi_bar {
+  margin: 0;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgb(150, 200, 254);
+  justify-content: space-between;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.navi_bar img {
+  width: 25px;
+  z-index: 1;
+  position: relative;
+  top: auto;
+  left: 30px;
+}
+li {
+  list-style: none;
+}
+ul#navbar {
+  margin: auto;
+  margin-right: 40px;
+  background-color: transparent;
+  font-size: 0.95rem;
+  display: flex;
+}
+
+ul#navbar li {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 2px;
+  width: 100px;
+  height: 40px;
+  border: 2px solid transparent;
+  text-align: center;
+  transition: all 0.7s linear;
+}
+
+ul#navbar li > a {
+  margin-right: 0;
+  color: rgb(0, 0, 110);
+  text-decoration: none;
+  transition: all 0.7s linear;
+  position: relative;
+  top: 7px;
+}
+
+ul#navbar li:hover {
+  background-color: rgb(76, 76, 243);
+}
+ul#navbar li:hover > a {
+  color: white;
+}
+
+@keyframes bounced {
+  0% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 html {
