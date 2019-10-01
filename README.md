@@ -69,4 +69,5 @@ _Disclaimer! This is a project for fun! I do not expect a profesional or high st
 - What is the event for?
   - For the open source community engagement.
 
+### Don't forget to Star! :star:
 ### _I will do my best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible ❤️_
