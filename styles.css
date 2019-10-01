@@ -3,6 +3,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 h1 {
+  color:navy;
+  text-align:center;	
   font-size: 3em;
   margin: 0.67em 0;
 }
