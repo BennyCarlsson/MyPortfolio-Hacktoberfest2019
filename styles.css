@@ -52,8 +52,8 @@ ul#navbar li {
   display: inline-block;
   box-sizing: border-box;
   padding: 2px;
-  width: 100px;
-  height: 40px;
+  padding-bottom: 1rem;
+  width: 135px;
   border: 2px solid transparent;
   text-align: center;
   transition: all 0.7s linear;
@@ -637,7 +637,9 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
-
+#navbar li::before {
+  content: "";
+}
 .socialbtns li:before {
   display: none;
 }
