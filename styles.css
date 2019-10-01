@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
 body {
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
 }
@@ -309,6 +311,7 @@ h3 {
   width: 25%;
   float: left;
   text-align: right;
+  position: fixed;
 }
 
 .left .profile-area {
@@ -444,6 +447,7 @@ article p.article-meta {
     border: none !important;
   }
   .profile-area {
+    position: initial;
     float: none !important;
     width: auto !important;
   }
@@ -560,4 +564,5 @@ ul li::before {
 
 h1.no-spacer, h3 {
   color: #FF69B4;
+  font-family: 'Courgette', cursive;
 }
