@@ -514,8 +514,6 @@ section.projects {
   background-color: #ffffff;
 }
 
-}
-
 a, a:hover {
 	text-decoration: none;
 }
@@ -531,16 +529,20 @@ a, a:hover {
 }
 
 .socialbtns .fa {
-  width: 20px;
-  height: 28px;
+  width: 26px;
+  height: 26px;
   color: #000;
   background-color: #FFF;
   border: 1px solid #000;
-  padding: 9px 8px 0px 8px;
-  border-radius: 22px;
-  -moz-border-radius: 22px;
-  -webkit-border-radius: 22px;
-  -o-border-radius: 22px;
+  padding: 12px;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -o-border-radius: 100%;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .socialbtns .fa:hover {
@@ -560,6 +562,10 @@ ul li::before {
   display: inline-block;
   width: 1em;
   margin-left: -1em;
+}
+
+.socialbtns li:before {
+  display: none;
 }
 
 h1.no-spacer, h3 {
