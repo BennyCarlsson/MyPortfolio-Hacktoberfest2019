@@ -27,6 +27,7 @@ header h1 {
   justify-content: space-between;
   height: 50px;
   margin-bottom: 20px;
+  z-index: 1;
 }
 
 .navi_bar img {
@@ -51,8 +52,8 @@ ul#navbar li {
   display: inline-block;
   box-sizing: border-box;
   padding: 2px;
-  width: 100px;
-  height: 40px;
+  padding-bottom: 1rem;
+  width: 135px;
   border: 2px solid transparent;
   text-align: center;
   transition: all 0.7s linear;
@@ -663,7 +664,9 @@ ul li::before {
   width: 1em;
   margin-left: -1em;
 }
-
+#navbar li::before {
+  content: "";
+}
 .socialbtns li:before {
   display: none;
 }
@@ -719,4 +722,14 @@ h1.no-spacer, h3 {
 
 .spinner {
 	animation: SpinAnim 1 1s ease-out;
+}
+
+.hover-zoom:hover{
+  transition: .5s;
+  transform: scale(1.3);
+}
+
+.hover-zoom{
+  transition: .5s;
+  transform: scale(1);
 }
