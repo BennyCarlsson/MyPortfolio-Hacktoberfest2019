@@ -1,3 +1,6 @@
+body {
+  background-color: #ffe6cc;
+}
 h1 {
   font-size: 3em;
   margin: 0.67em 0;
@@ -491,3 +494,59 @@ article p.article-meta {
 
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px; } }
+
+body{
+  font-family: 'Roboto', sans-serif;
+
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+  margin: 0;
+  padding-left: 0px;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+  width: 20px;
+  height: 28px;
+  color: #000;
+  background-color: #FFF;
+  border: 1px solid #000;
+  padding: 9px 8px 0px 8px;
+  border-radius: 22px;
+  -moz-border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -o-border-radius: 22px;
+}
+
+.socialbtns .fa:hover {
+	color: #ffffff;
+	background-color: #000;
+	border: 1px solid #000;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #00FFFF;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+h1.no-spacer, h3 {
+ color: #FF69B4;
+}
+

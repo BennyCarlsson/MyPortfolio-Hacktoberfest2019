@@ -57,7 +57,7 @@ _Disclaimer! This is a project for fun! I do not expect a profesional or high st
 - Who are you and why are you doing this?
   - I'm an unemployed software developer from Sweden [My Github](https://github.com/BennyCarlsson). Hacktoberfest is like Christmas for me. This year I thought it would be fun to crowdsource a portfolio.
 - Did you not do someting like this last year?
-  - [Yes I did](https://github.com/lingonsaft/hacktoberfest) but it got to big and to time consuming this year I'm going smaller :)
+  - [Yes I did](https://github.com/lingonsaft/hacktoberfest) but it got too big and too time consuming this year I'm going smaller :)
 - Are you not the one of the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - Yes...
 - How many pull request (PR) must be made, if I can get an awesome shirt from Hacktoberfest 2019?
@@ -69,4 +69,9 @@ _Disclaimer! This is a project for fun! I do not expect a profesional or high st
 - What is the event for?
   - For the open source community engagement.
 
+### Don't forget to Star! :star:
 ### _I will do my best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible ❤️_
+
+
+
+### _Don't break my💔 by not giving a⭐️!!_
