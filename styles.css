@@ -499,6 +499,20 @@ article p.article-meta {
 
 body{
   font-family: 'Roboto', sans-serif;
+}
+
+section.header {
+  background-color: #fafafe;
+}
+
+section.me,
+section.contact {
+  background-color: whitesmoke;
+}
+
+section.projects {
+  background-color: #ffffff;
+}
 
 }
 
