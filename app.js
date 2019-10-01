@@ -13,4 +13,11 @@ function MouseoverMessageInAlertBox()
    else { alert(later); }
    firstTime = false;
 }
-
+function imgClicked(){
+	imgClicked.count += 1;
+	if(imgClicked.count===10){
+		var v = document.getElementById("profile_image");
+		v.className += "spinner";
+	}
+}
+imgClicked.count = 0;
