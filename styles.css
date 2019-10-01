@@ -23,6 +23,15 @@ article, aside, footer, header, nav, section {
   display: block;
 }
 
+article ul {
+  transform: translateY(72px);
+  opacity: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
 figcaption, figure, main {
   display: block;
 }
