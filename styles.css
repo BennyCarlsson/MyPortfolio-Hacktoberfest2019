@@ -393,7 +393,9 @@ header h2 {
 .social-icons a {
   margin-left: 20px;
   color: #cccccc;
-  font-weight: normal; }
+  font-weight: normal; 
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .social-icons a:hover, .social-icons a:focus, .social-icons a:active {
     color: #673AB7; }
 
@@ -531,11 +533,11 @@ a, a:hover {
 .socialbtns .fa {
   width: 26px;
   height: 26px;
-  color: #000;
+  color: #673AB7;
   text-align: center;
   font-size: 18px;
   background-color: #FFF;
-  border: 1px solid #000;
+  border: 1px solid #673AB7;
   padding: 10px;
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -550,12 +552,14 @@ a, a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .socialbtns .fa:hover {
 	color: #ffffff;
-	background-color: #000;
-	border: 1px solid #000;
+	background-color: #673AB7;
+	border: 1px solid #673AB7;
 }
 
 ul {
