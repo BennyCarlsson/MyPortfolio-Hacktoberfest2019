@@ -28,7 +28,7 @@ header {
   width: 40%;
 }
 
-header h1 {
+header h2 {
   color: rgb(0,0,0);
   font-family: "Raleway", Arial, "sans-serif";
   font-size: 3rem;
@@ -38,7 +38,7 @@ header h1 {
 
 }
 
-header h2 {
+header h3 {
   color: #FF5722;
   font-size: 1.5rem;
   font-weight: 300;
