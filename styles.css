@@ -779,7 +779,8 @@ ul.skills > li::before {
 }
 
 ul.skills > li {
-  background: white;
+  background: #FF69B4;
+  color: white;
   padding: 2px 10px;
   margin: 5px 0;
   display: inline-block;
