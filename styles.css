@@ -476,6 +476,7 @@ h3 {
   transition: 1s;
 }
 
+
 .social-icons {
   text-align: center;
   font-size: 1rem;
@@ -777,6 +778,17 @@ h1.no-spacer, h3 {
   transform: scale(1);
 }
 
+#str {
+  width: 800px;
+  padding: 20px;
+  height: auto;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin: 200px auto;
+  color: #fff;
+  font-weight: bold;
+  background: #000
+}
 #typed {
   color: #FF5722;
   font-size: 3rem;
