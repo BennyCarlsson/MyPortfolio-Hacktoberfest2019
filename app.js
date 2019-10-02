@@ -28,10 +28,22 @@ function imgClicked(){
 imgClicked.count = 0;
 
 
-var string = "I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.";
-var str = string.split("");
-var phraseElement = document.querySelector('.phrase');
+
+
+let string = "I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.";
+let str = string.split("");
+let phraseElement = document.querySelector('.phrase');
 (function animate() {
 str.length > 0 ? phraseElement.innerHTML += str.shift() : clearTimeout(running); 
-var running = setTimeout(animate, 90);
+let running = setTimeout(animate, 90);
 })();
+
+var options = {
+	strings: ['I\'m glad you visited...' , 'Welcome to my shitt', 'Welcome to my creepy', 'Welcome to my wonderful portfolio.'],
+	typeSpeed: 40,
+	backSpeed: 20,
+	smartBackspace: true,
+	backDelay: 300,
+};
+
+var typed = new Typed('#typed', options);
