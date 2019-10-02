@@ -202,6 +202,12 @@ svg:not(:root) {
   overflow: hidden;
 }
 
+#profile_image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 button, input, optgroup, select, textarea {
   font-family: sans-serif;
   font-size: 100%;
