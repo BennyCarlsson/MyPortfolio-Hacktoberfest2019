@@ -466,7 +466,7 @@ h3 {
   float: right;
 }
 
-.profile-area img {
+#circle-profile-img {
   max-width: 200px;
   height: auto;
   border-radius: 100px;
@@ -610,7 +610,7 @@ article p.article-meta {
   .social-icons a {
     margin: 0 5px;
   }
-  .profile-area img {
+  #circle-profile-img {
     max-width: 100px;
   }
   header h1 {

@@ -27,6 +27,17 @@ function imgClicked(){
 }
 imgClicked.count = 0;
 
+function addPx(initial, amount) {
+	return parseInt(initial.substring(0, initial.length - 1)) + amount + "px";
+}
+
+function onClickO(amount) {
+	var img = document.getElementById('circle-profile-img');
+	img.style['height'] = addPx(getComputedStyle(img)['height'], amount);
+	img.style['max-width'] = addPx(getComputedStyle(img)['max-width'], amount);
+	img.style['border-radius'] = addPx(getComputedStyle(img)['border-radius'], amount);	
+}
+
 var options = {
 	strings: ['I\'m glad you visited...' , 'Welcome to my shitt', 'Welcome to my creepy', 'Welcome to my wonderful portfolio.'],
 	typeSpeed: 40,

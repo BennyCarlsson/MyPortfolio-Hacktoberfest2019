@@ -62,7 +62,7 @@
     </nav>
       <div class="profile-area">
         <header id="home">
-          <img src="profilepic.jpg" alt="Profile image" />
+          <img id="circle-profile-img" src="profilepic.jpg" alt="Profile image" />
           <h1 class="no-spacer hover-zoom">Benny Carlsson</h1>
           <h2 class="no-spacer hover-zoom">Software Developer</h2>
           <div class="social-icons">
@@ -80,13 +80,16 @@
       
         <main>
           <article>
+            <h2 class="article-title">
+              <b>AB<span onClick="onClickO(10);">O</span>UT MYSELF</b>
+            </h2>
       
             <span id="typed"></span>
 
             <h3>Bio:</h3>
             <ul>
               <li>
-                I'm an unemployed Software Developer soon starting to look for
+                I'm an unemployed S<span onClick="onClickO(-10);">o</span>ftware Developer soon starting to look for
                 jobs in Gothenburg Sweden.
               </li>
               <li>
