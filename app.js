@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function(){
+
+
 anime({
   targets: "article ul",
   translateY: -20,
@@ -183,3 +186,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 })();
 
+
+
+});
