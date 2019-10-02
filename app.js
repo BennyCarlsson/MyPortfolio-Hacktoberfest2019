@@ -26,3 +26,12 @@ function imgClicked(){
 	}
 }
 imgClicked.count = 0;
+
+
+var string = "I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.";
+var str = string.split("");
+var phraseElement = document.querySelector('.phrase');
+(function animate() {
+str.length > 0 ? phraseElement.innerHTML += str.shift() : clearTimeout(running); 
+var running = setTimeout(animate, 90);
+})();
