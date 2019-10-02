@@ -12,6 +12,9 @@ h1 {
   font-size: 3em;
   margin: 0.67em 0;
 }
+#home{
+	position:relative; top:0px;
+}
 
 header {
   display: inline-block;
