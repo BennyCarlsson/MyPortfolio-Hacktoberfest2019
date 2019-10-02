@@ -26,3 +26,14 @@ function imgClicked(){
 	}
 }
 imgClicked.count = 0;
+
+function addPx(initial, amount) {
+	return parseInt(initial.substring(0, initial.length - 1)) + amount + "px";
+}
+
+function onClickO(amount) {
+	var img = document.getElementById('circle-profile-img');
+	img.style['height'] = addPx(getComputedStyle(img)['height'], amount);
+	img.style['max-width'] = addPx(getComputedStyle(img)['max-width'], amount);
+	img.style['border-radius'] = addPx(getComputedStyle(img)['border-radius'], amount);	
+}
