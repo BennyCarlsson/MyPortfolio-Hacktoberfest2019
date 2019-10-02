@@ -81,11 +81,10 @@
     <div class="content-wrapper">
       <main>
         <article>
-          <h2 class="article-title"><b>AB<span onClick="onClickO(10);">O</span>UT MYSELF</b></h2>
-
+          <div id="basic"><h2 class="article-title"><b>AB<span onClick="onClickO(10);">O</span>UT MYSELF</b></h2></div>
           <h3>Bio:</h3>
           <ul>
-            <li>I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.</li>
+            <li class="phrase">I'm an unemployed S<span onClick="onClickO(-10);">o</span>ftware Developer soon starting to look for jobs in Gothenburg Sweden.</li>
             <li>I love programming and everything that has to do with technology, the internet and writing code.</li>
           </ul>
 
@@ -99,7 +98,7 @@
             <li>Studied Computer Science at Linnaeus University Kalmar, Sweden.</li>
           </ul>
 
-          <h3>Basic Info</h3>
+          <h3><i class="fas fa-address-book"></i>Basic Info</h3>
           <div id="basic">
             <h3>Basic Info</h3>
             <ul>
@@ -146,13 +145,33 @@
 
 
 <footer>
-
+  <div style="position:relative; 	
+  font-size:60px; 	
+  width:300px; 	
+  height:60px; 	
+  overflow:hidden; 	
+  margin:0 auto 0 auto; 	
+  border:none">	
+  <div style="float:left;">1</div>	
+  <div style="float:right;">3</div>	
+  <div style="text-align:center;">2</div>	
+  <div style="clear:both;"></div>	
+  <div style="position:absolute; 	
+  top:0px; 	
+  right:0px; 	
+  z-index:99; 	
+  background-color:transparent; 	
+  width:40px; 	
+  height:60px;" 	
+  onmouseover="MouseoverMessageInAlertBox()"></div>	
+  </div>
   <p>Contact no: &#9742; 12345 | &#9993; Carlsson.Benny93@gmail.com </p>
 </footer>
 </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 <script src="app.js"></script>
 
 </html>
