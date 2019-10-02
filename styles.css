@@ -25,13 +25,13 @@ header h1 {
   background-color: white;
   box-shadow: 1px 1px 4px rgb(150, 200, 254);
   justify-content: space-between;
-  height: 50px;
+  height: 60px;
   margin-bottom: 20px;
   z-index: 1;
 }
 
 .navi_bar img {
-  width: 25px;
+  max-width: 45px;
   z-index: 1;
   position: relative;
   top: auto;
@@ -93,6 +93,7 @@ ul#navbar li:hover > a {
 
 html {
   line-height: 1.15;
+  scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -192,10 +193,6 @@ audio, video {
 audio:not([controls]) {
   display: none;
   height: 0;
-}
-
-img {
-  border-style: none;
 }
 
 svg:not(:root) {
