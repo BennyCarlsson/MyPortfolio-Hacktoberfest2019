@@ -34,5 +34,42 @@ var options = {
 	smartBackspace: true,
 	backDelay: 300,
   };
-  
+
   var typed = new Typed('#typed', options);
+
+//  --------  discount easter egg
+function close_discount_easter_egg() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+
+    let buffer = [];
+    let lastKeyTime = Date.now();
+    let flag = true;
+
+    document.addEventListener('keydown', event => {
+        const charList = 'abcdefghijklmnopqrstuvwxyz ';
+        const key = event.key.toLowerCase();
+
+        // we are only interested in alphanumeric keys
+        if (charList.indexOf(key) === -1) return;
+
+        const currentTime = Date.now();
+
+        if (currentTime - lastKeyTime > 1000) {
+            buffer = [];
+        }
+
+        buffer.push(key);
+        lastKeyTime = currentTime;
+
+        if( buffer.join('') === 'easter egg' && flag) {
+          document.getElementById("overlay").style.display = "block";
+          flag = false;
+        }
+
+    });
+});
+// -------- /. discount easter egg
