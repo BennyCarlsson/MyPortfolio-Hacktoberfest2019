@@ -63,19 +63,16 @@
 -->
 
   <nav class="navi_bar">
-    <img src="apple-touch-icon.png" alt="logo" />
+    <img src="apple-touch-icon.png" alt="logo"/>
     <ul id="navbar">
       <li>
-        <a href="#home">🏠 Home</a>
+        <a href="#home">🏠<span>Home</span></a>
       </li>
       <li>
-        <a href="#basic">👦About Me</a>
+        <a href="#basic">👦<span>About</span></a>
       </li>
       <li>
-        <a href="#con_details">📝Contact Me</a>
-      </li>
-      <li>
-        <a id="leHonk">Honk</a>
+        <a href="#contact">📝<span>Contact</span></a>
       </li>
     </ul>
   </nav>
@@ -150,9 +147,9 @@
           <div id="basic">
             <h3>Basic Info</h3>
             <ul>
-              <li>HOMETOWN:Nässjö, Sweden</li>
+              <li>HOMETOWN: Nässjö, Sweden</li>
               <li>AGE: 26 years old</li>
-              <li>E-MAIL:Carlsson.Benny93@gmail.com</li>
+              <li>E-MAIL: Carlsson.Benny93@gmail.com</li>
             </ul>
           </div>
 
@@ -176,64 +173,17 @@
             <li>Mentoring</li>
           </ul>
         </article>
-      </main>
-    </div>
-    <h3>Social Media:</h3>
-    <div class="socialbtns">
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://twitter.com/Benny_Carlsson"
-            class="fa fa-xs fa-twitter"
-          ></a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/benny-carlsson-620226ba/"
-            class="fa fa-xs fa-linkedin"
-          ></a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg"
-            class="fa xs-lg fa-youtube"
-          ></a>
-        </li>
-      </ul>
     </div>
   </div>
-
   <footer>
-    <div
-      style="position:relative;
-                    font-size:60px;
-                    width:300px;
-                    height:60px;
-                    overflow:hidden;
-                    margin:0 auto 0 auto;
-                    border:none"
-    >
-      <div style="float:left;">1</div>
-      <div style="float:right;">3</div>
-      <div style="text-align:center;">2</div>
-      <div style="clear:both;"></div>
-      <div
-        style="position:absolute;
-                    top:0px;
-                    right:0px;
-                    z-index:99;
-                    background-color:transparent;
-                    width:40px;
-                    height:60px;"
-        onmouseover="MouseoverMessageInAlertBox()"
-      ></div>
+    <div class="numbers">
+      <div>1</div>
+      <div>2</div>
+      <div onmouseover="MouseoverMessageInAlertBox()">3</div>
     </div>
-
     <p>Contact no: &#9742; 12345 | &#9993; <a href="mailto:Carlsson.Benny93@gmail.com">Carlsson.Benny93@gmail.com</a></p>
   </footer>
+
   <!-- easter_egg -->
   <div
     id="overlay"
@@ -255,7 +205,10 @@
     </div>
   </div>
   <!-- /easter_egg -->
+
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
   <script src="app.js"></script>
 </body>
+
+</html>
