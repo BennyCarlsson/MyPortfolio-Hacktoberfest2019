@@ -2,6 +2,10 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link
+        href="https://fonts.googleapis.com/css?family=Livvic&display=swap"
+        rel="stylesheet"
+      />
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" />
@@ -12,19 +16,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
   </head>
-  <body>
-    <div class="wrapper">
+  <body onload="loadit()">
 
+        <div id="loader">
+                <div id="container">
+                  <div class="ball2"></div>
+                  <div class="ball3"></div>
+                </div>
+              </div>
+
+    <div class="wrapper">
+    
             
             <div class="profile-area">
 
                 
 
                 <header>
-                    <img src="profilepic.jpg" alt="Profile image" />
-                    <h1 class="no-spacer">Benny Carlsson</h1>
-                    <h2 class="no-spacer">Software Developer</h2>
-                    <div class="social-icons">
+                    <img src="profilepic.jpg" style="border: 5px solid black; position:relative; right:20%;" alt="Profile image" />
+                    <h1 class="no-spacer" style="animation: benny 3s infinite;">Benny Carlsson</h1>
+                    <h2 class="no-spacer" style=" text-align:center;">Software Developer</h2>
+                    <div class="social-icons" style=" text-align:center; position: relative; right: 10px;">
                        
 						<a href="https://github.com/BennyCarlsson" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
 						<a href="https://www.linkedin.com/in/benny-carlsson-620226ba" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
@@ -41,31 +53,31 @@
                 <main>
                     <article>
                         <h2 class="article-title"><b>ABOUT MYSELF</b></h2>
-						
-						<h3>Bio:</h3>
+				
+						<h3 style="animation: soft 2s infinite;">WHO AM I?</h3>
 						<ul>
 							<li>I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.</li>
 							<li>I love programming and everything that has to do with technology, the internet and writing code.</li>
                         </ul>
 						
-						<h3>Work Experience:</h3>
+						<h3 style="animation: soft 2s infinite;">Work Experience:</h3>
 						<ul>
 							<li>Worked as a professional software developer for almost 3 years.</li>
                         </ul>
 							
-						<h3>Education:</h3>
+						<h3 style="animation: soft 2s infinite;">Education:</h3>
 						<ul>
 							<li>Studied Computer Science at Linnaeus University Kalmar, Sweden.</li>
                         </ul>
 						
-						<h3>Basic Info</h3>
+						<h3 style="animation: soft 2s infinite;">Basic Info</h3>
 						<ul>
 							<li>HOMETOWN: N&auml;ssj&ouml;, Sweden</li>
 							<li>AGE: 26 years old</li>
 							<li>E-MAIL:Carlsson.Benny93@gmail.com</li>
                         </ul>
 
-                        <h3>Skills:</h3>
+                        <h3 style="animation: soft 2s infinite;">Skills:</h3>
 						<ul>
                             <li>HTML</li>
 							<li>CSS</li>
@@ -80,7 +92,7 @@
                             
                         </ul>
 						
-						 <h3>Areas of Interest:</h3>
+						 <h3 style="animation: soft 2s infinite;">Areas of Interest:</h3>
 						<ul>
                             <li>Front-End Development</li>
                             <li>Mentoring</li>
@@ -96,7 +108,7 @@
 
                 </main>
 
-                <h3>Social Media:</h3>
+                <h3 style="animation: soft 2s infinite;">Social Media:</h3>
                 <div class="socialbtns">
                     <ul>
                       <li><a target="_blank" href="https://twitter.com/Benny_Carlsson" class="fa fa-xs fa-twitter"></a></li>
@@ -108,13 +120,29 @@
                 
                 <footer>
 					   
-                        <p>Contact no: &#9742; 12345 | &#9993; Carlsson.Benny93@gmail.com </p>
+                        <p style="color: lightblue;">Contact no: &#9742; 12345 | &#9993; Carlsson.Benny93@gmail.com </p>
                 </footer>
             </div>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
         <script src="app.js"></script>
+        <script type="text/javascript">
+            var preload = document.getElementById("loader");
+            function loadit() {
+              preload.style.display = "none";
+            }
+      
+            function menudown() {
+              let show = document.getElementById("list");
+              if (show.style.display === "none") {
+                show.style.display = "block";
+              } else {
+                show.style.display = "none";
+              }
+            }
+          </script>
+        
     </body>
 	  
 	  
