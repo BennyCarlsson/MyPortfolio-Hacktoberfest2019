@@ -28,7 +28,6 @@ h1 {
 	position:relative; top:0px;
   background-color: rgba(0,0,0,0.3);
 	position:absolute; 
-  left: 45%;
   top:0px;
 }
 #temp1{
@@ -41,7 +40,6 @@ header {
   left: 30px;
   text-align: center;
   margin: 0 auto;
-  width: 40%;
 }
 
 header h2 {
