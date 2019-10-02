@@ -13,7 +13,9 @@ h1 {
   margin: 0.67em 0;
 }
 #home{
-	position:relative; top:0px;
+	position:absolute; 
+  left: 45%;
+  top:0px;
 }
 
 header {
@@ -424,9 +426,10 @@ h3 {
 
 .profile-area {
   width: 25%;
+  position: fixed;
+  left: 0;
   float: left;
   text-align: right;
-  position: fixed;
 }
 
 .profile-area .dev_name {
