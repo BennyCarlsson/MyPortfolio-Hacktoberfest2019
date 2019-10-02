@@ -15,6 +15,11 @@ h1 {
 #home{
 	position:relative; top:0px;
 }
+#temp1{
+  margin-left: -350px;
+
+
+}
 
 header {
   display: inline-block;
