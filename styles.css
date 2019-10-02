@@ -13,7 +13,9 @@ h1 {
   margin: 0.67em 0;
 }
 #home{
-	position:relative; top:0px;
+  position:relative;
+  top:0px;
+  min-width: 300px;
 }
 
 header {
@@ -67,6 +69,11 @@ header img {
   top: auto;
   left: 30px;
 }
+
+.navi_bar img:hover {
+  animation: SpinAnim 1 0.5s ease-out;
+}
+
 li {
   list-style: none;
 }
@@ -132,7 +139,7 @@ body {
   margin: 0;
 }
 
-article, aside, footer, header, nav, section {
+article, aside, header, nav, section {
   display: block;
 }
 
@@ -491,25 +498,32 @@ h3 {
 }
 
 footer {
-  border-top: 1px solid transparent;
-  color: #595959;
-  font-size: 0.9rem;
-  text-align: center;
-  margin-top: 0;
-  padding-top: 1.25%;
-}
-
-footer p {
-  margin-bottom: 0;
-}
-
-footer a {
   color: #4d4d4d;
-  font-weight: normal;
+  margin: auto;
+  max-width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+footer .numbers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
-footer a:hover, footer a:focus, footer a:active {
-  color: #333333;
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer .contact p {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+
 }
 
 a.button {
@@ -567,6 +581,9 @@ article p.article-meta {
   .wrapper {
     padding: 0 3.3333333333%;
   }
+  #home {
+    left: 0;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -598,6 +615,7 @@ article p.article-meta {
   .profile-area img {
     max-width: 100px;
   }
+
   header h1 {
     font-size: 2.5rem;
     letter-spacing: -0.1rem;
@@ -774,3 +792,15 @@ h1.no-spacer, h3 {
   font-weight: 700;
 }
 
+@media screen and (max-width: 600px) {
+  ul#navbar li {
+    /* display: none; */
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    /* font-size: 0.5rem; */
+  }
+  ul#navbar li span {
+    display: none;
+  }
+}
