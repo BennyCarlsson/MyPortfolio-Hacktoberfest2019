@@ -292,6 +292,12 @@ template {
   display: none;
 }
 
+.mx-auto {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   background-color: #fdfdfd;
   font-family: "Courier New", Courier, monospace;
@@ -391,6 +397,23 @@ h3 {
   position: fixed;
 }
 
+.profile-area .dev_name {
+  color: #FF69B4;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: -20px;
+}
+.profile-area .dev_last_name {
+  color: #FF69B4;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-area .dev_title {
+  text-align: center;
+}
+
+
 .left .profile-area {
   text-align: left;
   float: right;
@@ -439,8 +462,9 @@ header h2 {
 }
 
 .social-icons a:hover, .social-icons a:focus, .social-icons a:active {
-  color: #FFF;
+  color: #ffffff;
 }
+
 
 .left .social-icons a {
   margin-left: 0;
@@ -508,6 +532,18 @@ article p.article-meta {
   font-size: 1rem;
 }
 
+.repo-link {
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  background: #FF69B4;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1500px) {
   .wrapper {
     padding: 0 3.3333333333%;
@@ -515,6 +551,9 @@ article p.article-meta {
 }
 
 @media screen and (max-width: 1000px) {
+  .profile-area .dev_name {
+    margin-bottom: 10px;
+  }
   .wrapper {
     margin-top: 10px;
   }
@@ -643,6 +682,41 @@ ul li::before {
 
 h1.no-spacer, h3 {
   color: #FF69B4;
+}
+
+.contact-btns {
+  margin-top: .5rem;
+}
+
+.cv-btn,
+.hire-btn {
+  font-size: 18px;
+  padding: .3rem 1rem;
+  display: inline-block;
+  border: 1px solid #673AB7;
+  border-radius: 10px;
+}
+
+
+.cv-btn {
+  color: #673AB7;
+}
+
+.hire-btn {
+  color: #fff;
+  background: #673AB7;
+}
+.cv-btn:hover,
+.hire-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.hire-btn:hover {
+  color: #fff;
+}
+.cv-btn:hover {
+  color: #673AB7;
   font-family: 'Courgette', cursive;
 }
 
@@ -667,4 +741,16 @@ h1.no-spacer, h3 {
 .hover-zoom{
   transition: .5s;
   transform: scale(1);
+}
+
+#typed {
+  color: #FF5722;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.typed-cursor {
+  color: #FF5722;
+  font-size: 3rem;
+  font-weight: 700;
 }
