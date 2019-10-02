@@ -26,3 +26,14 @@ function imgClicked(){
 	}
 }
 imgClicked.count = 0;
+
+
+
+var pic = document.getElementById("profilePic");
+pic.onmouseout = function() {
+	this.src = 'profilepic.jpg';
+};
+pic.onmouseover = function() {
+	this.src = 'images/benny-carlsson.jpg';
+}
+
