@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 
 body {
-  background-color: #ffe6cc;
+  /*background-color: #ffe6cc;*/
+
   font-family: "Roboto", sans-serif;
   background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
 }
@@ -14,6 +15,7 @@ h1 {
 }
 #home{
 	position:relative; top:0px;
+  background-color: rgba(0,0,0,0.3);
 }
 
 header {
@@ -27,12 +29,13 @@ header {
 }
 
 header h1 {
-  color: #666;
+  color: rgb(0,0,0);
   font-family: "Raleway", Arial, "sans-serif";
   font-size: 3rem;
   letter-spacing: -0.2rem;
   line-height: 4rem;
   animation: bounced 1s ease;
+
 }
 
 header h2 {
@@ -42,7 +45,7 @@ header h2 {
 }
 
 header img {
-  width: 190px;
+  width: 130px;
   border-radius: 50%;
 }
 
@@ -427,6 +430,7 @@ h3 {
   float: left;
   text-align: right;
   position: fixed;
+
 }
 
 .profile-area .dev_name {
@@ -746,6 +750,7 @@ h1.no-spacer, h3 {
 	to {
 		transform: rotate(360deg);
 	}
+
 }
 
 .spinner {
@@ -773,4 +778,5 @@ h1.no-spacer, h3 {
   font-size: 3rem;
   font-weight: 700;
 }
+
 
