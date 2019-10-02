@@ -3,8 +3,19 @@
 body {
   background-color: #ffe6cc;
   font-family: "Roboto", sans-serif;
-  background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+  /* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  */
+  animation: bg-animate 8s linear infinite alternate both;
 }
+ 
+@keyframes bg-animate {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #fdcbf1;
+  }
+}
+
 
 h1 {
   color: navy;
@@ -13,14 +24,20 @@ h1 {
   margin: 0.67em 0;
 }
 #home{
-	position:relative; top:0px;
+	position:absolute; 
+  left: 45%;
+  top:0px;
+}
+#temp1{
+  margin-left: -350px;
+
+
 }
 
 header {
   display: inline-block;
   position: absolute;
-  top: 200px;
-  left: 200px;
+  left: 30px;
   text-align: center;
   margin: 0 auto;
   width: 40%;
@@ -52,7 +69,7 @@ header img {
   display: flex;
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: transparent;
   box-shadow: 1px 1px 4px rgb(150, 200, 254);
   justify-content: space-between;
   height: 60px;
@@ -424,9 +441,10 @@ h3 {
 
 .profile-area {
   width: 25%;
+  position: fixed;
+  left: 0;
   float: left;
   text-align: right;
-  position: fixed;
 }
 
 .profile-area .dev_name {
@@ -451,7 +469,7 @@ h3 {
   float: right;
 }
 
-.profile-area img {
+#circle-profile-img {
   max-width: 200px;
   height: auto;
   border-radius: 100px;
@@ -460,6 +478,7 @@ h3 {
   transform: rotate(360deg);
   transition: 1s;
 }
+
 
 .social-icons {
   text-align: center;
@@ -595,7 +614,7 @@ article p.article-meta {
   .social-icons a {
     margin: 0 5px;
   }
-  .profile-area img {
+  #circle-profile-img {
     max-width: 100px;
   }
   header h1 {
@@ -762,6 +781,17 @@ h1.no-spacer, h3 {
   transform: scale(1);
 }
 
+#str {
+  width: 800px;
+  padding: 20px;
+  height: auto;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin: 200px auto;
+  color: #fff;
+  font-weight: bold;
+  background: #000
+}
 #typed {
   color: #FF5722;
   font-size: 3rem;
@@ -774,3 +804,23 @@ h1.no-spacer, h3 {
   font-weight: 700;
 }
 
+ul.skills > li::before {
+  content: none;
+}
+
+ul.skills > li {
+  background: #FF69B4;
+  color: white;
+  padding: 2px 10px;
+  margin: 5px 0;
+  display: inline-block;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+ul.skills > li:hover {
+  cursor: default;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
