@@ -37,3 +37,12 @@ function onClickO(amount) {
 	img.style['max-width'] = addPx(getComputedStyle(img)['max-width'], amount);
 	img.style['border-radius'] = addPx(getComputedStyle(img)['border-radius'], amount);	
 }
+var options = {
+	strings: ['I\'m glad you visited...' , 'Welcome to my shitt', 'Welcome to my creepy', 'Welcome to my wonderful portfolio.'],
+	typeSpeed: 40,
+	backSpeed: 20,
+	smartBackspace: true,
+	backDelay: 300,
+};
+
+var typed = new Typed('#typed', options);
