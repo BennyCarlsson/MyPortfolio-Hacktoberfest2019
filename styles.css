@@ -745,3 +745,15 @@ h1.no-spacer, h3 {
   transition: .5s;
   transform: scale(1);
 }
+
+#typed {
+  color: #FF5722;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.typed-cursor {
+  color: #FF5722;
+  font-size: 3rem;
+  font-weight: 700;
+}
