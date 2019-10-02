@@ -535,6 +535,18 @@ article p.article-meta {
   font-size: 1rem;
 }
 
+.repo-link {
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  background: #FF69B4;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1500px) {
   .wrapper {
     padding: 0 3.3333333333%;
