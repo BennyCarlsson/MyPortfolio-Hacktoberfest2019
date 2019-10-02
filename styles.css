@@ -52,13 +52,13 @@ header img {
   background-color: white;
   box-shadow: 1px 1px 4px rgb(150, 200, 254);
   justify-content: space-between;
-  height: 50px;
+  height: 60px;
   margin-bottom: 20px;
   z-index: 1;
 }
 
 .navi_bar img {
-  width: 25px;
+  max-width: 45px;
   z-index: 1;
   position: relative;
   top: auto;
@@ -120,6 +120,7 @@ ul#navbar li:hover > a {
 
 html {
   line-height: 1.15;
+  scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -217,10 +218,6 @@ audio:not([controls]) {
   height: 0;
 }
 
-img {
-  border-style: none;
-}
-
 svg:not(:root) {
   overflow: hidden;
 }
@@ -316,6 +313,12 @@ template {
 
 [hidden] {
   display: none;
+}
+
+.mx-auto {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -417,6 +420,23 @@ h3 {
   position: fixed;
 }
 
+.profile-area .dev_name {
+  color: #FF69B4;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: -20px;
+}
+.profile-area .dev_last_name {
+  color: #FF69B4;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-area .dev_title {
+  text-align: center;
+}
+
+
 .left .profile-area {
   text-align: left;
   float: right;
@@ -426,6 +446,10 @@ h3 {
   max-width: 200px;
   height: auto;
   border-radius: 100px;
+}
+.profile-area img:hover {
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 .social-icons {
@@ -448,8 +472,9 @@ h3 {
 }
 
 .social-icons a:hover, .social-icons a:focus, .social-icons a:active {
-  color: #FFF;
+  color: #ffffff;
 }
+
 
 .left .social-icons a {
   margin-left: 0;
@@ -517,6 +542,18 @@ article p.article-meta {
   font-size: 1rem;
 }
 
+.repo-link {
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  background: #FF69B4;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1500px) {
   .wrapper {
     padding: 0 3.3333333333%;
@@ -524,6 +561,9 @@ article p.article-meta {
 }
 
 @media screen and (max-width: 1000px) {
+  .profile-area .dev_name {
+    margin-bottom: 10px;
+  }
   .wrapper {
     margin-top: 10px;
   }
@@ -652,6 +692,41 @@ ul li::before {
 
 h1.no-spacer, h3 {
   color: #FF69B4;
+}
+
+.contact-btns {
+  margin-top: .5rem;
+}
+
+.cv-btn,
+.hire-btn {
+  font-size: 18px;
+  padding: .3rem 1rem;
+  display: inline-block;
+  border: 1px solid #673AB7;
+  border-radius: 10px;
+}
+
+
+.cv-btn {
+  color: #673AB7;
+}
+
+.hire-btn {
+  color: #fff;
+  background: #673AB7;
+}
+.cv-btn:hover,
+.hire-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.hire-btn:hover {
+  color: #fff;
+}
+.cv-btn:hover {
+  color: #673AB7;
   font-family: 'Courgette', cursive;
 }
 
@@ -676,4 +751,16 @@ h1.no-spacer, h3 {
 .hover-zoom{
   transition: .5s;
   transform: scale(1);
+}
+
+#typed {
+  color: #FF5722;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.typed-cursor {
+  color: #FF5722;
+  font-size: 3rem;
+  font-weight: 700;
 }
