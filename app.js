@@ -64,6 +64,19 @@ function imgClicked() {
 }
 imgClicked.count = 0;
 
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '20') { //onCapslock
+	
+		alert('Well! well!! well!!! look who we have here')
+    }
+
+}
 let string =
   "I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.";
 let str = string.split("");
@@ -218,3 +231,4 @@ document.addEventListener('DOMContentLoaded', () => {
 })();
 
 });
+
