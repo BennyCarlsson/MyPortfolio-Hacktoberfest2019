@@ -1,3 +1,21 @@
+document.addEventListener("DOMContentLoaded", function(){
+
+/* Console Easter Egg message*/ 
+
+const style1 = [
+'color: powderBlue',
+'text-shadow: 2px 2px purple', 
+'background: plum', 
+'font-size: 3em',
+'border: 1px solid purple',
+'padding: 20px',
+'font-family: fantasy'
+].join(';');
+
+console.log('%cHacktoberfest 2019! Hire Benny Carlsson Now!', style1);
+
+/* End Console Easter Egg message*/ 
+
 anime({
   targets: "article ul",
   translateY: -20,
@@ -183,3 +201,4 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 })();
 
+});
