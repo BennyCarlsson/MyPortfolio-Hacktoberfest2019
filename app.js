@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-/* Console Easter Egg message*/
+/* Console Easter Egg message*/ 
+/* Credit derived from: https://thenewstack.io/tutorial-getting-creative-with-console-statements/ */
 
 const style1 = [
 'color: powderBlue',
