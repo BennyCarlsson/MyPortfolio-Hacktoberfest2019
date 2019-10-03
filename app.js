@@ -31,7 +31,27 @@ function logKeyPress(e){
     keysPressed = [];
   }
 }
+document.removeEventListener('keyup', logKeyPress);
 /* End Konami Code Easter Egg */
+
+
+/* The Hitchhikers Guide To The Galaxy easter egg */
+
+let image = document.getElementById("dont-panic");
+let keys = [];
+document.addEventListener('keyup', (e) => {
+	keys.length >= 2 ? keys = [] : keys.push(e.key);
+	console.log(keys);
+	if (keys.join("") === '42') {
+		document.getElementsByClassName("overlay")[0].style.animationPlayState = "running";
+		image.style.display = "block";
+		image.style.visibility = "visible"
+		keys = [];
+	}
+});
+
+/* end easter egg */
+
 
 anime({
   targets: "article ul",
@@ -213,6 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 // -------- /. discount easter egg
+
+
 
   const toggleBtn = document.querySelector("#leHonk");
 

@@ -878,6 +878,31 @@ float: left;
   float: left;
   margin-top: 5%;
   padding: 10px;
+}
+
+#dont-panic {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  height: 50vh;
+  z-index: 2;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  animation: fade-in 4s;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  20%, 80% { opacity: 1;}  
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
 
 ul.skills > li::before {
   content: none;
