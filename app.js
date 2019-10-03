@@ -1,3 +1,54 @@
+document.addEventListener("DOMContentLoaded", function(){
+
+/* Console Easter Egg message*/ 
+/* Credit derived from: https://thenewstack.io/tutorial-getting-creative-with-console-statements/ */
+
+const style1 = [
+'color: powderBlue',
+'text-shadow: 2px 2px purple',
+'background: plum',
+'font-size: 3em',
+'border: 1px solid purple',
+'padding: 20px',
+'font-family: fantasy'
+].join(';');
+
+console.log('%cHacktoberfest 2019! Hire Benny Carlsson Now!', style1);
+
+/* End Console Easter Egg message*/
+
+/*
+  (┛ಠ_ಠ)┛彡┻━┻
+  Merge hitchhikers guide and konami code easter eggs so they both work together.
+*/
+let keysPressed = [];
+let degrees = 0;
+let konamiCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "KeyB", "KeyA"];
+document.addEventListener('keyup',logKeyPress);
+function logKeyPress(e){
+  (keysPressed.length >= 50) ? keysPressed = []: keysPressed.push(e.code);
+  if(keysPressed.join(",").indexOf("Digit4,Digit2") > -1 || keysPressed.join(",").indexOf("Numpad4,Numpad2") > -1){
+    hitchHikers();
+  }
+  if(keysPressed.join(",").indexOf(konamiCode.join(",")) > -1){
+    flippingThing();
+  }
+}
+function flippingThing(){
+  degrees += 180;
+  document.querySelector('body').style.transform = `rotate(${degrees}deg)`;
+  keysPressed = [];
+}
+function hitchHikers(){
+  let image = document.getElementById("dont-panic");
+  document.getElementsByClassName("overlay")[0].style.animationPlayState = "running";
+  image.style.display = "block";
+  image.style.visibility = "visible";
+  keysPressed = [];
+}
+/* end easter egg merge */
+
+
 anime({
   targets: "article ul",
   translateY: -20,
@@ -30,6 +81,19 @@ function imgClicked() {
 }
 imgClicked.count = 0;
 
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '20') { //onCapslock
+	
+		alert('Well! well!! well!!! look who we have here')
+    }
+
+}
 let string =
   "I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.";
 let str = string.split("");
@@ -166,6 +230,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // -------- /. discount easter egg
 
+
+
   const toggleBtn = document.querySelector("#leHonk");
 
   let func = false;
@@ -183,6 +249,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 })();
 
+// raining easter egg
 function rainStart(x) {
   anime({
     targets: '#raining',
@@ -201,3 +268,4 @@ function rainStop(x) {
   // x.style.fontSize = "30px";
   document.getElementById('raining').style.display = "none";
 }
+});

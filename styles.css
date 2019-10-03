@@ -19,19 +19,16 @@ body {
 
 
 h1 {
-  color: navy;
+  /* color: navy; */
   text-align: center;
   font-size: 3em;
-  margin: 0.67em 0;
+  line-height: 5rem;
 }
 #home{
 	position:relative; top:0px;
   background-color: rgba(0,0,0,0.3);
 	position:absolute;
   top:0px;
-}
-#temp1{
-  margin-left: -350px;
 }
 
 header {
@@ -49,7 +46,6 @@ header h2 {
   letter-spacing: -0.2rem;
   line-height: 4rem;
   animation: bounced 1s ease;
-
 }
 
 header h3 {
@@ -59,7 +55,7 @@ header h3 {
 }
 
 header img {
-  width: 130px;
+  width: 120px;
   border-radius: 50%;
 }
 
@@ -84,6 +80,11 @@ header img {
   top: auto;
   left: 30px;
 }
+
+.navi_bar img:hover {
+  animation: SpinAnim 1 0.5s ease-out;
+}
+
 li {
   list-style: none;
 }
@@ -149,7 +150,7 @@ body {
   margin: 0;
 }
 
-article, aside, footer, header, nav, section {
+article, aside, header, nav, section {
   display: block;
 }
 
@@ -439,6 +440,12 @@ h3 {
   font-family: "Raleway", Arial, "sans-serif";
 }
 
+h4 {
+  color: #973434;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
 .text-center {
   text-align: center;
 }
@@ -519,25 +526,32 @@ h3 {
 }
 
 footer {
-  border-top: 1px solid transparent;
-  color: #595959;
-  font-size: 0.9rem;
-  text-align: center;
-  margin-top: 0;
-  padding-top: 1.25%;
-}
-
-footer p {
-  margin-bottom: 0;
-}
-
-footer a {
   color: #4d4d4d;
-  font-weight: normal;
+  margin: auto;
+  max-width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+footer .numbers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
-footer a:hover, footer a:focus, footer a:active {
-  color: #333333;
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer .contact p {
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+
 }
 
 a.button {
@@ -595,6 +609,16 @@ article p.article-meta {
   .wrapper {
     padding: 0 3.3333333333%;
   }
+  #home {
+    left: 0;
+  }
+  header h1 {
+    font-size: 4rem
+  }
+  header h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.8px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -618,14 +642,12 @@ article p.article-meta {
     text-align: center;
   }
   .social-icons {
-    font-size: 0.5rem;
-  }
-  .social-icons a {
-    margin: 0 5px;
+    font-size: 1rem;
   }
   #circle-profile-img {
     max-width: 100px;
   }
+
   header h1 {
     font-size: 2.5rem;
     letter-spacing: -0.1rem;
@@ -633,6 +655,7 @@ article p.article-meta {
   }
   header h2 {
     font-size: 1.1rem;
+    letter-spacing: 0.5px;
   }
   article {
     font-size: 1.1rem;
@@ -818,6 +841,18 @@ h1.no-spacer, h3 {
   font-weight: 700;
 }
 
+@media screen and (max-width: 600px) {
+  ul#navbar li {
+    /* display: none; */
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    /* font-size: 0.5rem; */
+  }
+  ul#navbar li span {
+    display: none;
+  }
+}
 .easter-pop-up__overlay {
   position: fixed;
   top:0;
@@ -856,6 +891,31 @@ float: left;
   float: left;
   margin-top: 5%;
   padding: 10px;
+}
+
+#dont-panic {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  height: 50vh;
+  z-index: 2;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  animation: fade-in 4s;
+}
+
+@keyframes fade-in {
+  0% {opacity: 0;}
+  20%, 80% { opacity: 1;}  
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
 
 ul.skills > li::before {
   content: none;
@@ -878,3 +938,210 @@ ul.skills > li:hover {
   -webkit-transform: scale(1.1);
 
 }
+
+/* Name animation */
+.title-name-animation {
+  width: 100%;
+  margin: 1em auto;
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  animation-name:colorfade;
+}
+
+.title-name-animation span {
+  display: inline-block;
+  color: transparent;
+  vertical-align:middle;
+  line-height: 68pt;
+  border-bottom:solid, 2px, black;
+}
+
+.caps {
+  font-size: 68pt !important;
+}
+
+.year {
+  width: 10%;
+  font-size: 20pt;
+  color: #808080;
+}
+
+.line {
+  width: 12%;
+  border-top: 2px solid rgb(0,0,0);
+  vertical-align: middle;
+}
+
+.title-name-animation span:nth-child(1n) {
+  font-size: 16pt;
+}
+
+.title-name-animation span:nth-child(1) {
+  font-size: 16pt;
+  animation-name: slideCaps;
+  animation-duration: 5s;
+  animation-delay: 0;
+  animation-fill-mode:forwards;
+  width: 45px;
+}
+
+.title-name-animation span:nth-child(2) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.9s;
+  animation-delay: 3.1s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(3) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.8s;
+  animation-delay: 3.2s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(4) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.7s;
+  animation-delay: 3.3s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(5) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.6s;
+  animation-delay: 3.4s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(6) {
+  font-size: 16pt;
+  width: 10px;
+}
+
+.title-name-animation span:nth-child(7) {
+  font-size: 16pt;
+  animation-name: slideCaps;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  width: 40px;
+}
+
+.title-name-animation span:nth-child(8) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(9) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.4s;
+  animation-delay: 3.6s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(10) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.3s;
+  animation-delay: 3.7s;
+  animation-fill-mode: forwards;
+  width: 1px;
+}
+
+.title-name-animation span:nth-child(11) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.2s;
+  animation-delay: 3.8s;
+  animation-fill-mode: forwards;
+  width: 3px;
+}
+
+.title-name-animation span:nth-child(12) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.1s;
+  animation-delay: 3.9s;
+  animation-fill-mode: forwards;
+  width: 3px;
+}
+
+.title-name-animation span:nth-child(13) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(14) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 0.9s;
+  animation-delay: 4.1s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+@keyframes slidein {
+  from {
+      opacity:0;
+      color:transparent;
+  }
+
+  25%{
+      opacity:0.25;
+  }
+
+  50% {
+      opacity: 1;
+      color: #673ab7;
+  }
+
+
+  to {
+      opacity: 1;
+      color: #673ab7;
+  }
+}
+
+
+@keyframes slideCaps {
+  from {
+      opacity: 0;
+      color: transparent;
+  }
+
+  25% {
+      opacity: 0.25;
+  }
+
+  50% {
+      opacity: 0.5;
+  }
+
+  75% {
+      opacity: 0.75;
+  }
+
+  to {
+      opacity: 1;
+      color: #673ab7;
+  }
+}
+
