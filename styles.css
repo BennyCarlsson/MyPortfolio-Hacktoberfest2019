@@ -80,6 +80,12 @@ header img {
   left: 30px;
 }
 
+.navi_bar #title {
+  position: relative;
+  left: 60px;
+  top: 10px;;
+}
+
 .navi_bar img:hover {
   animation: SpinAnim 1 0.5s ease-out;
 }
@@ -121,6 +127,8 @@ ul#navbar li:hover {
 ul#navbar li:hover > a {
   color: white;
 }
+
+
 
 @keyframes bounced {
   0% {
@@ -1131,4 +1139,32 @@ ul.skills > li:hover {
       color: #673ab7;
   }
 }
+footer {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
 
+  width: 100%;
+}
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+
+  margin: 0;
+  bottom: 0;
+  width: 98.5vw;
+
+  font-size: 18pt;
+}
+#footer .column {
+  padding: 8px;
+  text-align: center;
+}
+.contact-list {
+  list-style: none;
+}
+
+.contact-list * {
+  list-style-type: none;
+}
