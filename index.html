@@ -114,6 +114,12 @@
     <canvas id="canvas"></canvas>
 
     <div class="content-wrapper">
+      <div id="raining" style="display: none; position: absolute; top:0;">
+        <img id="circle-profile-img" src="images/profilepic.jpg" alt="Profile image" />
+        <img id="circle-profile-img" src="images/profilepic.jpg" alt="Profile image" />
+        <img id="circle-profile-img" src="images/profilepic.jpg" alt="Profile image" />
+        <h1 class="no-spacer" style="text-align:center;">HERE I COME</h1>
+      </div>
       <main>
         <article>
           <div id="basic">
@@ -147,12 +153,12 @@
             </li>
           </ul>
 
-          <div id="basic">
+          <div id="con_details" onmouseover="rainStart(this)" onmouseout="rainStop(this)">
             <h3>Basic Info</h3>
             <ul>
               <li>HOMETOWN:Nässjö, Sweden</li>
               <li>AGE: 26 years old</li>
-              <li>E-MAIL:Carlsson.Benny93@gmail.com</li>
+              <li><a href="mailto:Carlsson.Benny93@gmail.com" class="email">Email: Carlsson.Benny93@gmail.com</a></li>
             </ul>
           </div>
 

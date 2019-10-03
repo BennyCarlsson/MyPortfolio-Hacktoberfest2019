@@ -7,7 +7,7 @@ body {
   /* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  */
   animation: bg-animate 8s linear infinite alternate both;
 }
- 
+
 @keyframes bg-animate {
   0% {
     background: #19dcea;
@@ -27,7 +27,7 @@ h1 {
 #home{
 	position:relative; top:0px;
   background-color: rgba(0,0,0,0.3);
-	position:absolute; 
+	position:absolute;
   top:0px;
 }
 #temp1{
@@ -69,7 +69,7 @@ header img {
   display: flex;
   position: sticky;
   top: 0;
-  background-color: transparent;
+  background-color: white;
   box-shadow: 1px 1px 4px rgb(150, 200, 254);
   justify-content: space-between;
   height: 60px;
@@ -377,6 +377,14 @@ body {
   margin-right: 30%;
   padding-right: 5%;
   border-right: 1px solid #ebebeb;
+}
+
+a {
+  cursor: pointer;
+}
+
+a.email {
+  color: #673AB7;
 }
 
 a, .page-link {
@@ -798,6 +806,10 @@ h1.no-spacer, h3 {
   color: #FF5722;
   font-size: 3rem;
   font-weight: 700;
+}
+
+#counter {
+  font-size: 48px;
 }
 
 .typed-cursor {
