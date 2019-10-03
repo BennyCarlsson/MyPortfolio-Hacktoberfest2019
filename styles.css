@@ -431,6 +431,12 @@ h3 {
   font-family: "Raleway", Arial, "sans-serif";
 }
 
+h4 {
+  color: #973434;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
 .text-center {
   text-align: center;
 }
@@ -894,3 +900,4 @@ ul.skills > li:hover {
   -webkit-transform: scale(1.1);
 
 }
+

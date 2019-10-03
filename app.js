@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 const style1 = [
 'color: powderBlue',
-'text-shadow: 2px 2px purple', 
-'background: plum', 
+'text-shadow: 2px 2px purple',
+'background: plum',
 'font-size: 3em',
 'border: 1px solid purple',
 'padding: 20px',
@@ -15,7 +15,23 @@ const style1 = [
 
 console.log('%cHacktoberfest 2019! Hire Benny Carlsson Now!', style1);
 
-/* End Console Easter Egg message*/ 
+/* End Console Easter Egg message*/
+
+
+/* Konami Code Easter Egg */
+let keysPressed = [];
+let degrees = 0;
+let konamiCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "KeyB", "KeyA"];
+document.addEventListener('keyup',logKeyPress);
+function logKeyPress(e){
+  (keysPressed.length >= 50) ? keysPressed = []: keysPressed.push(e.code);
+  if(keysPressed.join(",").indexOf(konamiCode.join(",")) > -1){
+    degrees += 180;
+    document.querySelector('body').style.transform = `rotate(${degrees}deg)`;
+    keysPressed = [];
+  }
+}
+/* End Konami Code Easter Egg */
 
 anime({
   targets: "article ul",
@@ -49,6 +65,19 @@ function imgClicked() {
 }
 imgClicked.count = 0;
 
+
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '20') { //onCapslock
+	
+		alert('Well! well!! well!!! look who we have here')
+    }
+
+}
 let string =
   "I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.";
 let str = string.split("");
@@ -203,3 +232,4 @@ document.addEventListener('DOMContentLoaded', () => {
 })();
 
 });
+
