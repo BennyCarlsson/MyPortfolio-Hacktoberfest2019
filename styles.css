@@ -896,7 +896,7 @@ float: left;
 
 @keyframes fade-in {
   0% {opacity: 0;}
-  20%, 80% { opacity: 1;}  
+  20%, 80% { opacity: 1;}
   100% {
     opacity: 0;
     visibility: hidden;
@@ -1132,3 +1132,22 @@ ul.skills > li:hover {
   }
 }
 
+
+@keyframes slidin {
+  from {
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 4%;
+  }
+}
+
+#rc {
+  animation-name: slidin;
+  animation-duration: 3s;
+  width: 42px;
+  height: auto;
+}
