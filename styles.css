@@ -98,10 +98,11 @@ ul#navbar {
 ul#navbar li {
   display: inline-block;
   box-sizing: border-box;
-  padding: 2px;
-  padding-bottom: 1rem;
+  /*padding: 2px;
+  padding-bottom: 1rem;*/
   width: 135px;
-  border: 2px solid transparent;
+  height: 60px;
+  /*border: 2px solid transparent;*/
   text-align: center;
   transition: all 0.7s linear;
 }
@@ -111,8 +112,11 @@ ul#navbar li > a {
   color: rgb(0, 0, 110);
   text-decoration: none;
   transition: all 0.7s linear;
-  position: relative;
-  top: 7px;
+  /*position: relative;
+  top: 7px;*/
+  display: block;
+  height: 60px;
+  line-height: 60px;
 }
 
 ul#navbar li:hover {
@@ -735,7 +739,7 @@ ul li::before {
   margin-left: -1em;
 }
 #navbar li::before {
-  content: "";
+  content: none;
 }
 .socialbtns li:before {
   display: none;
