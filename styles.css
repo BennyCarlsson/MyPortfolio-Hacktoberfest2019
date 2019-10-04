@@ -501,6 +501,34 @@ h4 {
   font-size: 1rem;
   margin-top: 10px;
   margin-left: -25px;
+  position: relative;
+  animation-name: jump;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1);
+}
+
+
+@keyframes jump {
+  0%, 100% {
+    top: 10px;
+  }
+
+  15% {
+    top: 0px;
+  }
+
+  30% {
+    top: 10px;
+  }
+
+  45% {
+    top: 0px;
+  }
+
+  60% {
+    top: 10px;
+  }
 }
 
 .left .social-icons {
@@ -909,7 +937,7 @@ float: left;
 
 @keyframes fade-in {
   0% {opacity: 0;}
-  20%, 80% { opacity: 1;}  
+  20%, 80% { opacity: 1;}
   100% {
     opacity: 0;
     visibility: hidden;
@@ -1144,4 +1172,3 @@ ul.skills > li:hover {
       color: #673ab7;
   }
 }
-
