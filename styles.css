@@ -41,9 +41,9 @@ header {
 
 header h2 {
   color: rgb(0,0,0);
-  font-family: "Raleway", Arial, "sans-serif";
+  font-family: 'Turret Road', cursive;
   font-size: 3rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: 0rem;
   line-height: 4rem;
   animation: bounced 1s ease;
 }
