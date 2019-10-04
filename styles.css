@@ -25,9 +25,10 @@ h1 {
   line-height: 5rem;
 }
 #home{
-  position:relative;
+	position:relative; top:0px;
+  background-color: rgba(0,0,0,0.3);
+	position:absolute;
   top:0px;
-  min-width: 300px;
 }
 
 header {
@@ -98,10 +99,11 @@ ul#navbar {
 ul#navbar li {
   display: inline-block;
   box-sizing: border-box;
-  padding: 2px;
-  padding-bottom: 1rem;
+  /*padding: 2px;
+  padding-bottom: 1rem;*/
   width: 135px;
-  border: 2px solid transparent;
+  height: 60px;
+  /*border: 2px solid transparent;*/
   text-align: center;
   transition: all 0.7s linear;
 }
@@ -111,8 +113,11 @@ ul#navbar li > a {
   color: rgb(0, 0, 110);
   text-decoration: none;
   transition: all 0.7s linear;
-  position: relative;
-  top: 7px;
+  /*position: relative;
+  top: 7px;*/
+  display: block;
+  height: 60px;
+  line-height: 60px;
 }
 
 ul#navbar li:hover {
@@ -379,6 +384,14 @@ body {
   border-right: 1px solid #ebebeb;
 }
 
+a {
+  cursor: pointer;
+}
+
+a.email {
+  color: #673AB7;
+}
+
 a, .page-link {
   color: #999;
   font-weight: bold;
@@ -492,6 +505,34 @@ h4 {
   font-size: 1rem;
   margin-top: 10px;
   margin-left: -25px;
+  position: relative;
+  animation-name: jump;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1);
+}
+
+
+@keyframes jump {
+  0%, 100% {
+    top: 10px;
+  }
+
+  15% {
+    top: 0px;
+  }
+
+  30% {
+    top: 10px;
+  }
+
+  45% {
+    top: 0px;
+  }
+
+  60% {
+    top: 10px;
+  }
 }
 
 .left .social-icons {
@@ -735,7 +776,7 @@ ul li::before {
   margin-left: -1em;
 }
 #navbar li::before {
-  content: "";
+  content: none;
 }
 .socialbtns li:before {
   display: none;
@@ -822,6 +863,10 @@ h1.no-spacer, h3 {
   font-weight: 700;
 }
 
+#counter {
+  font-size: 48px;
+}
+
 .typed-cursor {
   color: #FF5722;
   font-size: 3rem;
@@ -896,7 +941,7 @@ float: left;
 
 @keyframes fade-in {
   0% {opacity: 0;}
-  20%, 80% { opacity: 1;}  
+  20%, 80% { opacity: 1;}
   100% {
     opacity: 0;
     visibility: hidden;
@@ -926,3 +971,212 @@ ul.skills > li:hover {
 
 }
 
+/* Name animation */
+.title-name-animation {
+  width: 100%;
+  margin: 1em auto;
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  animation-name:colorfade;
+}
+
+.title-name-animation span {
+  display: inline-block;
+  color: transparent;
+  vertical-align:middle;
+  line-height: 68pt;
+  border-bottom:solid, 2px, black;
+}
+
+.caps {
+  font-size: 68pt !important;
+}
+
+.year {
+  width: 10%;
+  font-size: 20pt;
+  color: #808080;
+}
+
+.line {
+  width: 12%;
+  border-top: 2px solid rgb(0,0,0);
+  vertical-align: middle;
+}
+
+.title-name-animation span:nth-child(1n) {
+  font-size: 16pt;
+}
+
+.title-name-animation span:nth-child(1) {
+  font-size: 16pt;
+  animation-name: slideCaps;
+  animation-duration: 5s;
+  animation-delay: 0;
+  animation-fill-mode:forwards;
+  width: 45px;
+}
+
+.title-name-animation span:nth-child(2) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.9s;
+  animation-delay: 3.1s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(3) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.8s;
+  animation-delay: 3.2s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(4) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.7s;
+  animation-delay: 3.3s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(5) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.6s;
+  animation-delay: 3.4s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(6) {
+  font-size: 16pt;
+  width: 10px;
+}
+
+.title-name-animation span:nth-child(7) {
+  font-size: 16pt;
+  animation-name: slideCaps;
+  animation-duration: 5s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  width: 40px;
+}
+
+.title-name-animation span:nth-child(8) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(9) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.4s;
+  animation-delay: 3.6s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(10) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.3s;
+  animation-delay: 3.7s;
+  animation-fill-mode: forwards;
+  width: 1px;
+}
+
+.title-name-animation span:nth-child(11) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.2s;
+  animation-delay: 3.8s;
+  animation-fill-mode: forwards;
+  width: 3px;
+}
+
+.title-name-animation span:nth-child(12) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1.1s;
+  animation-delay: 3.9s;
+  animation-fill-mode: forwards;
+  width: 3px;
+}
+
+.title-name-animation span:nth-child(13) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+.title-name-animation span:nth-child(14) {
+  font-size: 16pt;
+  animation-name: slidein;
+  animation-duration: 0.9s;
+  animation-delay: 4.1s;
+  animation-fill-mode: forwards;
+  width: 5px;
+}
+
+@keyframes slidein {
+  from {
+      opacity:0;
+      color:transparent;
+  }
+
+  25%{
+      opacity:0.25;
+  }
+
+  50% {
+      opacity: 1;
+      color: #673ab7;
+  }
+
+
+  to {
+      opacity: 1;
+      color: #673ab7;
+  }
+}
+
+
+@keyframes slideCaps {
+  from {
+      opacity: 0;
+      color: transparent;
+  }
+
+  25% {
+      opacity: 0.25;
+  }
+
+  50% {
+      opacity: 0.5;
+  }
+
+  75% {
+      opacity: 0.75;
+  }
+
+  to {
+      opacity: 1;
+      color: #673ab7;
+  }
+}
+
+.underline-txt:hover {
+  text-decoration: underline;
+}

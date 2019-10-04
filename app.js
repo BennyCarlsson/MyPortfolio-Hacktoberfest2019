@@ -17,40 +17,36 @@ console.log('%cHacktoberfest 2019! Hire Benny Carlsson Now!', style1);
 
 /* End Console Easter Egg message*/
 
-
-/* Konami Code Easter Egg */
+/*
+  (┛ಠ_ಠ)┛彡┻━┻
+  Merge hitchhikers guide and konami code easter eggs so they both work together.
+*/
 let keysPressed = [];
 let degrees = 0;
 let konamiCode = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "KeyB", "KeyA"];
 document.addEventListener('keyup',logKeyPress);
 function logKeyPress(e){
   (keysPressed.length >= 50) ? keysPressed = []: keysPressed.push(e.code);
+  if(keysPressed.join(",").indexOf("Digit4,Digit2") > -1 || keysPressed.join(",").indexOf("Numpad4,Numpad2") > -1){
+    hitchHikers();
+  }
   if(keysPressed.join(",").indexOf(konamiCode.join(",")) > -1){
-    degrees += 180;
-    document.querySelector('body').style.transform = `rotate(${degrees}deg)`;
-    keysPressed = [];
+    flippingThing();
   }
 }
-document.removeEventListener('keyup', logKeyPress);
-/* End Konami Code Easter Egg */
-
-
-/* The Hitchhikers Guide To The Galaxy easter egg */
-
-let image = document.getElementById("dont-panic");
-let keys = [];
-document.addEventListener('keyup', (e) => {
-	keys.length >= 2 ? keys = [] : keys.push(e.key);
-	console.log(keys);
-	if (keys.join("") === '42') {
-		document.getElementsByClassName("overlay")[0].style.animationPlayState = "running";
-		image.style.display = "block";
-		image.style.visibility = "visible"
-		keys = [];
-	}
-});
-
-/* end easter egg */
+function flippingThing(){
+  degrees += 180;
+  document.querySelector('body').style.transform = `rotate(${degrees}deg)`;
+  keysPressed = [];
+}
+function hitchHikers(){
+  let image = document.getElementById("dont-panic");
+  document.getElementsByClassName("overlay")[0].style.animationPlayState = "running";
+  image.style.display = "block";
+  image.style.visibility = "visible";
+  keysPressed = [];
+}
+/* end easter egg merge */
 
 
 anime({
@@ -96,6 +92,10 @@ function checkKey(e) {
 	
 		alert('Well! well!! well!!! look who we have here')
     }
+    if (e.keyCode == '70') { //F pressed
+      alert('Respect paid');
+      console.log('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF');
+      }
 
 }
 let string =
@@ -253,5 +253,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 })();
 
-});
+// raining easter egg
+function rainStart(x) {
+  anime({
+    targets: '#raining',
+    translateY: [0, 800],
+    delay: 400,
+    direction: 'alternate',
+    loop: true,
+  });
 
+  // x.style.fontSize = "64px";
+  document.getElementById('raining').style.display = "block";
+  document.getElementById('raining').style.zIndex = "9";
+}
+
+function rainStop(x) {
+  // x.style.fontSize = "30px";
+  document.getElementById('raining').style.display = "none";
+}
+});
