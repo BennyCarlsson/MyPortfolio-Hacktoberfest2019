@@ -92,6 +92,10 @@ function checkKey(e) {
 	
 		alert('Well! well!! well!!! look who we have here')
     }
+    if (e.keyCode == '70') { //F pressed
+      alert('Respect paid');
+      console.log('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF');
+      }
 
 }
 let string =
@@ -249,5 +253,23 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 })();
 
-});
+// raining easter egg
+function rainStart(x) {
+  anime({
+    targets: '#raining',
+    translateY: [0, 800],
+    delay: 400,
+    direction: 'alternate',
+    loop: true,
+  });
 
+  // x.style.fontSize = "64px";
+  document.getElementById('raining').style.display = "block";
+  document.getElementById('raining').style.zIndex = "9";
+}
+
+function rainStop(x) {
+  // x.style.fontSize = "30px";
+  document.getElementById('raining').style.display = "none";
+}
+});
