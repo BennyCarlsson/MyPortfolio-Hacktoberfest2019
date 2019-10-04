@@ -92,6 +92,10 @@ function checkKey(e) {
 	
 		alert('Well! well!! well!!! look who we have here')
     }
+    if (e.keyCode == '70') { //F pressed
+      alert('Respect paid');
+      console.log('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF');
+      }
 
 }
 let string =
