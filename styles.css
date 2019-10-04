@@ -1176,3 +1176,7 @@ ul.skills > li:hover {
       color: #673ab7;
   }
 }
+
+.underline-txt:hover {
+  text-decoration: underline;
+}
