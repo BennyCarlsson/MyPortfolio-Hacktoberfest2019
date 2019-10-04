@@ -655,15 +655,23 @@ article p.article-meta {
 
 @media screen and (max-width: 1000px) {
   .profile-area .dev_name {
+		margin: auto;
     margin-bottom: 10px;
+		
   }
+	header{
+		width: 100%;
+		height: 80%;
+		margin-top: 61px;
+	}
   .wrapper {
     margin-top: 10px;
   }
   .content-wrapper {
-    margin: 0 !important;
+		margin: 0 !important;
+		margin-top: 24rem!important ;
     padding: 0 !important;
-    border: none !important;
+    border: none;
   }
   .profile-area {
     position: initial;
@@ -700,6 +708,7 @@ article p.article-meta {
     margin-bottom: 15px;
   }
 }
+
 
 body {
   font-family: 'Roboto', sans-serif;
