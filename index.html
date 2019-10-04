@@ -29,6 +29,7 @@
     crossorigin="anonymous"
   />
   <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <title>Hacktoberfest2019 - Portfolio</title>
@@ -72,7 +73,7 @@
     <img src="apple-touch-icon.png" alt="logo"/>
     <ul id="navbar">
       <li>
-        <a href="#home">🏠<span>Home</span></a>
+        <a href="#">🏠<span>Home</span></a>
       </li>
       <li>
         <a href="#basic">👦<span>About</span></a>
@@ -135,40 +136,72 @@
     <canvas id="canvas"></canvas>
 
     <div class="content-wrapper">
+      <div id="raining" style="display: none; position: absolute; top:0;">
+        <img id="circle-profile-img" src="images/profilepic.jpg" alt="Profile image" />
+        <img id="circle-profile-img" src="images/profilepic.jpg" alt="Profile image" />
+        <img id="circle-profile-img" src="images/profilepic.jpg" alt="Profile image" />
+        <h1 class="no-spacer" style="text-align:center;">HERE I COME</h1>
+      </div>
       <main>
         <article>
           <div id="basic">
-            <h2 class="article-title">
+            <h2 class="article-title underline-txt">
               <b>AB<span onClick="onClickO(10);">O</span>UT MYSELF</b>
             </h2>
             <marquee>
               <img src="./images/BennyCarlssonGIF.gif" alt="Benny Carlsson" />
             </marquee>
           </div>
-          <h3>Bio:</h3>
+          <h3 class="underline-txt">My story:</h3>
           <ul>
-            <li class="phrase">
-            </li>
-            <li>
-              I love programming and everything that has to do with technology,
-              the internet and writing code.
-            </li>
-          </ul>
 
-          <h3>Work Experience:</h3>
-          <ul>
-            <li>
-              Worked as a professional software developer for almost 3 years.
-            </li>
-          </ul>
+
+              <p>
+                I am a specialist with extensive experience in the software industry, I am interested to find opening jobs in Gothenburg Sweden.</p>
+
+                <p>I offer my studies of Computer Science at Linnaeus University Kalmar in Sweden and my three years of experience as a professional software developer.</p>
+
+               <p>I manage:<br>
+              <ul>
+                <li>Object Oriented Skills with JAVA and C#.</li>
+              </ul>
+                
+
+                I am considered a Web Guru in topics like<br><br>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>ReactJS</li>
+                  <li>React Native</li>
+                  <li>PHP</li>
+                  <li>ASP.NET</li>
+                </ul>
+
+                Very fluent in technologies for project control: <br><br>
+
+                <ul>
+                  <li>Git</li>
+                  <li>Scrum</li>
+                  <li>SQL</li>
+                  <li>Hacktoberfest Repos</li>
+                </ul>
+
+
+
+                </p>
+
+
+               <p>I am confident that my ongoing studies combined with successful experience in the field will enable me to aggressively pursue cost-reduction opportunities and improve return on investment (ROI) for your project. I am insterest in Front-End Development, Mentoring, Hacktoberfest and Making Sweet Training Videos on YouTube.</p>
+
+              <p>If you agree that my skills and experience would benefit you, please contact me at <a href="mailto:Carlsson.Benny93@gmail.com" class="email">Carlsson.Benny93@gmail.com</a> to arrange a meeting.</p>
 
           <h3>Education:</h3>
           <ul>
             <li>
-              Studied Computer Science at Linnaeus University Kalmar, Sweden.
+                Studied Computer Science at <a style="color:#673AB7;font-weight:normal"; href="https://lnu.se/en/" target="_blank">Linnaeus University Kalmar, Sweden.</a>
             </li>
           </ul>
-
           <div id="basic">
             <h3>Basic Info</h3>
             <ul>
@@ -202,14 +235,6 @@
             <li>Scrum</li>
             <li>SQL</li>
             <li>Hacktoberfest Repos</li>
-          </ul>
-
-          <h3>Areas of Interest:</h3>
-          <ul>
-            <li>Front-End Development</li>
-            <li>Mentoring</li>
-            <li>Hacktoberfest</li>
-            <li>Making Sweet Training Videos on YouTube (Check it out)</li>
           </ul>
         </article>
     </div>

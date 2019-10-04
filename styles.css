@@ -25,9 +25,10 @@ h1 {
   line-height: 5rem;
 }
 #home{
-  position:relative;
+	position:relative; top:0px;
+  background-color: rgba(0,0,0,0.3);
+	position:absolute;
   top:0px;
-  min-width: 300px;
 }
 
 header {
@@ -40,9 +41,9 @@ header {
 
 header h2 {
   color: rgb(0,0,0);
-  font-family: "Raleway", Arial, "sans-serif";
+  font-family: 'Turret Road', cursive;
   font-size: 3rem;
-  letter-spacing: -0.2rem;
+  letter-spacing: 0rem;
   line-height: 4rem;
   animation: bounced 1s ease;
 }
@@ -98,10 +99,11 @@ ul#navbar {
 ul#navbar li {
   display: inline-block;
   box-sizing: border-box;
-  padding: 2px;
-  padding-bottom: 1rem;
+  /*padding: 2px;
+  padding-bottom: 1rem;*/
   width: 135px;
-  border: 2px solid transparent;
+  height: 60px;
+  /*border: 2px solid transparent;*/
   text-align: center;
   transition: all 0.7s linear;
 }
@@ -111,8 +113,11 @@ ul#navbar li > a {
   color: rgb(0, 0, 110);
   text-decoration: none;
   transition: all 0.7s linear;
-  position: relative;
-  top: 7px;
+  /*position: relative;
+  top: 7px;*/
+  display: block;
+  height: 60px;
+  line-height: 60px;
 }
 
 ul#navbar li:hover {
@@ -379,6 +384,14 @@ body {
   border-right: 1px solid #ebebeb;
 }
 
+a {
+  cursor: pointer;
+}
+
+a.email {
+  color: #673AB7;
+}
+
 a, .page-link {
   color: #999;
   font-weight: bold;
@@ -492,6 +505,34 @@ h4 {
   font-size: 1rem;
   margin-top: 10px;
   margin-left: -25px;
+  position: relative;
+  animation-name: jump;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1);
+}
+
+
+@keyframes jump {
+  0%, 100% {
+    top: 10px;
+  }
+
+  15% {
+    top: 0px;
+  }
+
+  30% {
+    top: 10px;
+  }
+
+  45% {
+    top: 0px;
+  }
+
+  60% {
+    top: 10px;
+  }
 }
 
 .left .social-icons {
@@ -736,7 +777,7 @@ ul li::before {
   margin-left: -1em;
 }
 #navbar li::before {
-  content: "";
+  content: none;
 }
 .socialbtns li:before {
   display: none;
@@ -821,6 +862,10 @@ h1.no-spacer, h3 {
   color: #FF5722;
   font-size: 3rem;
   font-weight: 700;
+}
+
+#counter {
+  font-size: 48px;
 }
 
 .typed-cursor {
@@ -1133,7 +1178,6 @@ ul.skills > li:hover {
   }
 }
 
-
 @keyframes slidin {
   from {
     margin-left: 50%;
@@ -1151,4 +1195,8 @@ ul.skills > li:hover {
   animation-duration: 3s;
   width: 0px;
   height: auto;
+}
+
+.underline-txt:hover {
+  text-decoration: underline;
 }
