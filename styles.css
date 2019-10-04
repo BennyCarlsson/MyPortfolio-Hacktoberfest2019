@@ -25,9 +25,10 @@ h1 {
   line-height: 5rem;
 }
 #home{
-  position:relative;
+	position:relative; top:0px;
+  background-color: rgba(0,0,0,0.3);
+	position:absolute;
   top:0px;
-  min-width: 300px;
 }
 
 header {
@@ -377,6 +378,14 @@ body {
   margin-right: 30%;
   padding-right: 5%;
   border-right: 1px solid #ebebeb;
+}
+
+a {
+  cursor: pointer;
+}
+
+a.email {
+  color: #673AB7;
 }
 
 a, .page-link {
@@ -820,6 +829,10 @@ h1.no-spacer, h3 {
   color: #FF5722;
   font-size: 3rem;
   font-weight: 700;
+}
+
+#counter {
+  font-size: 48px;
 }
 
 .typed-cursor {
