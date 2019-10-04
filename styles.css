@@ -523,7 +523,8 @@ footer {
   height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: space-between;
+  background: linear-gradient(76.04deg, #FFC337 -0.33%, #FF00AA 100.08%);
 }
 footer .numbers {
   display: flex;
@@ -1141,13 +1142,13 @@ ul.skills > li:hover {
 
   to {
     margin-left: 0%;
-    width: 4%;
+    width: 1%;
   }
 }
 
 #rc {
   animation-name: slidin;
   animation-duration: 3s;
-  width: 42px;
+  width: 0px;
   height: auto;
 }
