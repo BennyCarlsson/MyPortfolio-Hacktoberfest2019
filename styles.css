@@ -3,7 +3,7 @@
 body {
   /*background-color: #ffe6cc;*/
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   /* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  */
   animation: bg-animate 8s linear infinite alternate both;
 }
@@ -585,14 +585,16 @@ h4 {
 }
 
 footer {
-  color: #4d4d4d;
+  color: #000;
   margin: auto;
   max-width: 500px;
-  height: 200px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(76.04deg, #ffc337 -0.33%, #ff00aa 100.08%);
+  /*background: linear-gradient(76.04deg, #ffc337 -0.33%, #ff00aa 100.08%);*/
+  background: #dedede;
+  padding: 10px 20px 10px 20px;
 }
 footer .numbers {
   padding: 20px;
@@ -1250,7 +1252,7 @@ ul.skills > li:hover {
 
 
 .form-input {
-  width: 100%;
+  width: 80%;
   padding: 8px;
   border: 1px solid #344055;
   -webkit-border-radius: 4px;
