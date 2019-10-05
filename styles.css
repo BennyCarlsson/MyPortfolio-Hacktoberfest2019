@@ -656,15 +656,23 @@ article p.article-meta {
 
 @media screen and (max-width: 1000px) {
   .profile-area .dev_name {
+		margin: auto;
     margin-bottom: 10px;
+		
   }
+	header{
+		width: 100%;
+		height: 80%;
+		margin-top: 61px;
+	}
   .wrapper {
     margin-top: 10px;
   }
   .content-wrapper {
-    margin: 0 !important;
+		margin: 0 !important;
+		margin-top: 24rem!important ;
     padding: 0 !important;
-    border: none !important;
+    border: none;
   }
   .profile-area {
     position: initial;
@@ -701,6 +709,7 @@ article p.article-meta {
     margin-bottom: 15px;
   }
 }
+
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -1201,6 +1210,101 @@ ul.skills > li:hover {
   text-decoration: underline;
 }
 
+/* ==============================
+		ANIMATION ADDED TO TEXT BODY 
+	===============================*/
+@keyframes animateleft {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate_from_left {
+	opacity: 0;
+  animation-name: animateleft ;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes animateright {
+  from {
+		opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate_from_right {
+	opacity:0;
+  animation-name: animateright ;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.time-1{
+	animation-delay: 0s;
+}
+.time-2{
+	animation-delay: 1s;
+}
+.time-3{
+	animation-delay: 2s;
+}
+.time-4{
+	animation-delay: 3s;
+}
+.time-5{
+	animation-delay: 4s;
+}
+.time-6{
+	animation-delay: 5s;
+}
+.time-7{
+	animation-delay: 6s;
+}
+.time-8{
+	animation-delay: 7s;
+}
+.time-9{
+	animation-delay: 8s;
+}
+.time-10{
+	animation-delay: 9s;
+}
+.time-11{
+	animation-delay: 10s;
+}
+.time-12{
+	animation-delay: 11s;
+}
+.time-13{
+	animation-delay: 12s;
+}
+.time-14{
+	animation-delay: 13s;
+}
+.time-15{
+	animation-delay: 14s;
+}
+.time-16{
+	animation-delay: 15s;
+}
+.time-17{
+	animation-delay: 16s;
+}
+.time-18{
+	animation-delay: 17s;
+}
+.time-19{
+	animation-delay: 18s;
+}
+.time-20{
+	animation-delay: 19s;
 .pikachu{
   position: fixed;
   bottom: 0;
