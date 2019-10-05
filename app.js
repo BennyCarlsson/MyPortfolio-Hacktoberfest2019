@@ -273,3 +273,22 @@ function rainStop(x) {
   document.getElementById('raining').style.display = "none";
 }
 });
+
+
+function BombIT(){
+  document.body.innerHTML = ""
+
+  let html = `
+    <h1>You bombed my portfolio, I will find you and make you hire me</h1>
+    <img src='images/killyou.jpg`'>
+  `
+  document.write(html)
+}
+
+
+document.getElementById("circle-profile-img").addEventListener('click', (event) => {
+  if(event.detail === 3){
+    alert("Enemy Detected")
+    BombIT()
+  }
+})
