@@ -490,9 +490,9 @@ h4 {
 }
 
 #circle-profile-img {
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
-  border-radius: 100px;
+  border-radius: 150px;
 }
 .profile-area img:hover {
   transform: rotate(360deg);
@@ -615,7 +615,7 @@ article {
 }
 
 article h2.article-title {
-  color: #FF5722;
+  color: rgb(243, 62, 198);
   font-size: 3rem;
   letter-spacing: -1px;
   font-weight: 400;
