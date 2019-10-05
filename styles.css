@@ -684,15 +684,22 @@ article p.article-meta {
 
 @media screen and (max-width: 1000px) {
   .profile-area .dev_name {
+    margin: auto;
     margin-bottom: 10px;
+  }
+  header {
+    width: 100%;
+    height: 80%;
+    margin-top: 61px;
   }
   .wrapper {
     margin-top: 10px;
   }
   .content-wrapper {
     margin: 0 !important;
+    margin-top: 24rem !important ;
     padding: 0 !important;
-    border: none !important;
+    border: none;
   }
   .profile-area {
     position: initial;
@@ -1238,6 +1245,20 @@ ul.skills > li:hover {
 
 .underline-txt:hover {
   text-decoration: underline;
+}
+
+/* ==============================
+		ANIMATION ADDED TO TEXT BODY 
+	===============================*/
+@keyframes animateleft {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .animate_from_left {
