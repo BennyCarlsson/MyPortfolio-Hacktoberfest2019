@@ -595,6 +595,7 @@ footer {
   background: linear-gradient(76.04deg, #ffc337 -0.33%, #ff00aa 100.08%);
 }
 footer .numbers {
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   font-size: 4rem;
