@@ -564,7 +564,8 @@ footer {
   height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: space-between;
+  background: linear-gradient(76.04deg, #FFC337 -0.33%, #FF00AA 100.08%);
 }
 footer .numbers {
   display: flex;
@@ -1175,6 +1176,25 @@ ul.skills > li:hover {
       opacity: 1;
       color: #673ab7;
   }
+}
+
+@keyframes slidin {
+  from {
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 1%;
+  }
+}
+
+#rc {
+  animation-name: slidin;
+  animation-duration: 3s;
+  width: 0px;
+  height: auto;
 }
 
 .underline-txt:hover {
