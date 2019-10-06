@@ -1405,3 +1405,8 @@ ul.skills > li:hover {
   color: #673ab7;
   border: 1px solid #673ab7;
 }
+
+/* Adds highlight selection color to text. */
+::selection {
+  background-color: #ff0f9b;
+}
