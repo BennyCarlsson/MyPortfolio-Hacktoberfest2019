@@ -2,7 +2,8 @@
 
 body {
   /*background-color: #ffe6cc;*/
-
+margin : 0px;
+padding: 0px;
   font-family: "Roboto", sans-serif;
   /* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  */
   animation: bg-animate 8s linear infinite alternate both;
@@ -17,6 +18,17 @@ body {
   }
 }
 
+div .field{
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 30px; 
+}
+
+div{
+  padding: 0px;
+  margin: 0px;
+}
+
 h1 {
   /* color: navy; */
   text-align: center;
@@ -29,6 +41,9 @@ h1 {
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0px;
+  border-radius: 6.5px;
+  box-shadow: black;
+  padding: 30px;
 }
 
 header {
@@ -37,6 +52,7 @@ header {
   left: 30px;
   text-align: center;
   margin: 0 auto;
+  
 }
 
 header h2 {
@@ -79,15 +95,19 @@ header img {
   display: table;
   content: " ";
   width: 100%;
+  
+  position: absolute;
 }
 .navbar-header {
   display: block;
   float: left;
+
 }
 ul#navbar {
   background-color: transparent;
   font-size: 0.95rem;
   float: right;
+
 }
 ul#navbar li a:link {
   display: block;
@@ -493,6 +513,7 @@ h4 {
   float: left;
   text-align: right;
   position: fixed;
+  border-radius: 3.5px;
 }
 
 .profile-area .dev_name {
@@ -584,6 +605,11 @@ h4 {
   margin-right: 20px;
 }
 
+form{
+  background-color: #ffe6cc;
+  padding: 40px;
+}
+
 footer {
   color: #4d4d4d;
   margin: auto;
@@ -641,13 +667,21 @@ article {
   border-bottom: 1px solid transparent;
   padding-bottom: 1.25%;
   font-size: 1.4rem;
+  margin-top: -240px;
 }
 
 article h2.article-title {
-  color: rgb(243, 62, 198);
+  color: #673ab7;
   font-size: 3rem;
   letter-spacing: -1px;
   font-weight: 400;
+  font-family: unset;
+  background-color: beige;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0px 12px;
+  box-shadow: 5px 7px;
 }
 
 article p.article-meta {
@@ -832,7 +866,9 @@ ul li::before {
 
 h1.no-spacer,
 h3 {
-  color: #ff69b4;
+      color: rgb(0, 0, 110);
+    font-family: verdana;
+    font-size: larger;
 }
 
 .contact-btns {
@@ -1244,6 +1280,14 @@ ul.skills > li:hover {
   height: auto;
 }
 
+.underline-txt {
+  font-size: 50px;
+    font-family: cursive;
+    margin-bottom: 60px;
+    margin-top: 30px;
+    color: maroon;
+}
+
 .underline-txt:hover {
   text-decoration: underline;
 }
@@ -1251,11 +1295,12 @@ ul.skills > li:hover {
 
 .form-input {
   width: 100%;
-  padding: 8px;
-  border: 1px solid #344055;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  margin-bottom: 10px
+    padding: 8px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
 }
 
 .btn {
@@ -1288,9 +1333,11 @@ ul.skills > li:hover {
 
 .animate_from_left {
   opacity: 0;
-  animation-name: animateleft;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+    animation-name: animateleft;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    color: darkslategrey;
+    margin-top: 0px;
 }
 
 @keyframes animateright {
@@ -1304,6 +1351,10 @@ ul.skills > li:hover {
   }
 }
 
+.tag{
+  color: black;
+}
+
 .animate_from_right {
   opacity: 0;
   animation-name: animateright;
@@ -1311,64 +1362,64 @@ ul.skills > li:hover {
   animation-fill-mode: forwards;
 }
 .time-1 {
-  animation-delay: 0s;
-}
-.time-2 {
   animation-delay: 1s;
 }
+.time-2 {
+  animation-delay: 1.5s;
+}
 .time-3 {
-  animation-delay: 2s;
+  animation-delay: 1.5s;
 }
 .time-4 {
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 .time-5 {
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 .time-6 {
-  animation-delay: 5s;
+  animation-delay: 2.5s;
 }
 .time-7 {
-  animation-delay: 6s;
+  animation-delay: 3s;
 }
 .time-8 {
-  animation-delay: 7s;
+  animation-delay: 3.5s;
 }
 .time-9 {
-  animation-delay: 8s;
+  animation-delay: 4s;
 }
 .time-10 {
-  animation-delay: 9s;
+  animation-delay: 4.5s;
 }
 .time-11 {
-  animation-delay: 10s;
+  animation-delay: 5s;
 }
 .time-12 {
-  animation-delay: 11s;
+  animation-delay: 5.5s;
 }
 .time-13 {
-  animation-delay: 12s;
+  animation-delay: 6s;
 }
 .time-14 {
-  animation-delay: 13s;
+  animation-delay: 6.5s;
 }
 .time-15 {
-  animation-delay: 14s;
+  animation-delay: 7s;
 }
 .time-16 {
-  animation-delay: 15s;
+  animation-delay: 7.5s;
 }
 .time-17 {
-  animation-delay: 16s;
+  animation-delay: 8s;
 }
 .time-18 {
-  animation-delay: 17s;
+  animation-delay: 8.5s;
 }
 .time-19 {
-  animation-delay: 18s;
+  animation-delay: 9s;
 }
 .time-20 {
-  animation-delay: 19s;
+  animation-delay: 9.5s;
 }
 .pikachu {
   position: fixed;
