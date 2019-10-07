@@ -381,7 +381,6 @@ body {
   color: #673ab7;
   font-size: 2rem;
   line-height: 1.2em;
-  /* background-image: url("background.jpg"); */
   background-repeat: repeat-x;
   background-position: bottom left;
   background-attachment: fixed;
@@ -422,7 +421,7 @@ a:active,
 .page-link:hover,
 .page-link:focus,
 .page-link:active {
-  color: #999;
+  color: #f33ec6;
 }
 
 fieldset {
