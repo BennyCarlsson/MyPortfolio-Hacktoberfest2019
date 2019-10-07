@@ -1409,9 +1409,5 @@ ul.skills > li:hover {
 
 /* Adds highlight selection color to text. */
 ::selection {
-<<<<<<< HEAD
 	background-color: #ff0f9b;
-=======
-  background-color: #ff0f9b;
->>>>>>> master
 }
