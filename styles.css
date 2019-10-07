@@ -425,7 +425,35 @@ a:active,
 .page-link:active {
   color: #f33ec6;
 }
-
+#contact-title{
+	margin-bottom: 0;
+}
+.field{
+	display: grid;
+	margin: auto;
+}
+.field label{
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+.field input, .field textarea{
+	font-size: 12px;
+	min-height: 20px;
+	border: 1px solid #DEDEDE;
+	width: 366px;
+}
+.field .btn{
+	width: fit-content;
+	margin: auto;
+	cursor: pointer;
+	text-transform: capitalize;
+	background-color: #F33EC6;
+}
+.field .btn:hover{
+	background-color: #673ab7;
+	color: #ffffff;
+}
 fieldset {
 	margin-bottom: 30px;
 	display: block;
@@ -589,7 +617,7 @@ h4 {
 footer {
 	color: #000;
 	margin: auto;
-	max-width: 500px;
+	max-width: 382px;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -613,11 +641,10 @@ footer .contact {
 	align-items: center;
 	margin-bottom: 10px;
 }
-footer .contact p {
+footer #contact p {
 	margin: 0 0 5px 0;
-	font-size: 1rem;
+	font-size: 18px;
 }
-
 a.button {
 	color: #fff;
 	font-weight: bold;
