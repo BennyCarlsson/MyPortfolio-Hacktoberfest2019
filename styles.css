@@ -29,6 +29,7 @@ h1 {
   top: 0px;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
+  padding: 1em;
   top: 0px;
 }
 
@@ -189,11 +190,6 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
-}
-
-b,
-strong {
-  font-weight: inherit;
 }
 
 b,
@@ -381,7 +377,6 @@ body {
   color: #673ab7;
   font-size: 2rem;
   line-height: 1.2em;
-  /* background-image: url("background.jpg"); */
   background-repeat: repeat-x;
   background-position: bottom left;
   background-attachment: fixed;

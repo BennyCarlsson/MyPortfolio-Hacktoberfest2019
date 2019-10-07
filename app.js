@@ -17,6 +17,12 @@ console.log('%cHacktoberfest 2019! Hire Benny Carlsson Now!', style1);
 
 /* End Console Easter Egg message*/
 
+/**
+ * Console Easter Egg
+ */
+
+ console.log('Hope. — Leia Organa')
+
 /*
   (┛ಠ_ಠ)┛彡┻━┻
   Merge hitchhikers guide and konami code easter eggs so they both work together.
