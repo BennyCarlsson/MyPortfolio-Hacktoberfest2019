@@ -163,7 +163,7 @@ span:nth-child(14) {
 @keyframes slidein {
     from {
         opacity:0;
-        color:white;
+        color: 9900CC;
     }
 
     25%{
@@ -172,13 +172,13 @@ span:nth-child(14) {
 
     50% {
         opacity: 1;
-        color: black;
+        color: 9900CC;
     }
 
 
     to {
         opacity: 1;
-        color: black;
+        color: 9900CC;
     }
 }
 
