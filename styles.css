@@ -25,11 +25,12 @@ h1 {
 	line-height: 5rem;
 }
 #home {
-	position: relative;
-	top: 0px;
-	background-color: rgba(0, 0, 0, 0.3);
-	position: absolute;
-	top: 0px;
+  position: relative;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  padding: 1em;
+  top: 0px;
 }
 
 header {
@@ -199,12 +200,7 @@ abbr[title] {
 
 b,
 strong {
-	font-weight: inherit;
-}
-
-b,
-strong {
-	font-weight: bolder;
+  font-weight: bolder;
 }
 
 code,
@@ -382,15 +378,14 @@ template {
 }
 
 body {
-	background-color: #fdfdfd;
-	font-family: "Courier New", Courier, monospace;
-	color: #673ab7;
-	font-size: 2rem;
-	line-height: 1.2em;
-	/* background-image: url("background.jpg"); */
-	background-repeat: repeat-x;
-	background-position: bottom left;
-	background-attachment: fixed;
+  background-color: #fdfdfd;
+  font-family: "Courier New", Courier, monospace;
+  color: #673ab7;
+  font-size: 2rem;
+  line-height: 1.2em;
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  background-attachment: fixed;
 }
 
 .wrapper {
@@ -428,7 +423,7 @@ a:active,
 .page-link:hover,
 .page-link:focus,
 .page-link:active {
-	color: #999;
+  color: #f33ec6;
 }
 
 fieldset {
@@ -1414,5 +1409,9 @@ ul.skills > li:hover {
 
 /* Adds highlight selection color to text. */
 ::selection {
+<<<<<<< HEAD
 	background-color: #ff0f9b;
+=======
+  background-color: #ff0f9b;
+>>>>>>> master
 }
