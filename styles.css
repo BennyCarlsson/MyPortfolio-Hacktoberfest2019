@@ -25,12 +25,12 @@ h1 {
 	line-height: 5rem;
 }
 #home {
-  position: relative;
-  top: 0px;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  padding: 1em;
-  top: 0px;
+	position: relative;
+	top: 0px;
+	background-color: rgba(0, 0, 0, 0.3);
+	position: absolute;
+	padding: 1em;
+	top: 0px;
 }
 
 header {
@@ -70,36 +70,44 @@ header img {
 	background-color: #ffffff;
 	box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
 }
+
 .logo {
 	display: inline-block;
 	background-image: url(./apple-touch-icon.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+
 .container-fluid {
 	display: block;
 	padding: 0 15px;
 }
+
 .container-nav {
 	display: table;
 	content: " ";
 	width: 100%;
 }
+
 .navbar-header {
 	display: block;
 	float: left;
 }
+
 .navbar-collapse {
 	padding-top: 1%;
 }
+
 ul#navbar {
 	background-color: transparent;
 	font-size: 0.95rem;
 	float: right;
 }
+
 ul#navbar li a:link {
 	display: block;
 }
+
 ul#navbar li {
 	display: block;
 	box-sizing: border-box;
@@ -111,6 +119,7 @@ ul#navbar li {
 	position: relative;
 	height: 32px;
 }
+
 ul#navbar li > a {
 	color: rgb(0, 0, 110);
 	text-decoration: none;
@@ -120,12 +129,15 @@ ul#navbar li > a {
 	height: 32px;
 	line-height: 32px;
 }
+
 ul#navbar li:hover {
 	background-color: rgb(76, 76, 243);
 }
+
 ul#navbar li:hover > a {
 	color: white;
 }
+
 @keyframes bounced {
 	0% {
 		opacity: 0;
@@ -200,7 +212,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
+	font-weight: bolder;
 }
 
 code,
@@ -378,14 +390,14 @@ template {
 }
 
 body {
-  background-color: #fdfdfd;
-  font-family: "Courier New", Courier, monospace;
-  color: #673ab7;
-  font-size: 2rem;
-  line-height: 1.2em;
-  background-repeat: repeat-x;
-  background-position: bottom left;
-  background-attachment: fixed;
+	background-color: #fdfdfd;
+	font-family: "Courier New", Courier, monospace;
+	color: #673ab7;
+	font-size: 2rem;
+	line-height: 1.2em;
+	background-repeat: repeat-x;
+	background-position: bottom left;
+	background-attachment: fixed;
 }
 
 .wrapper {
@@ -423,7 +435,7 @@ a:active,
 .page-link:hover,
 .page-link:focus,
 .page-link:active {
-  color: #f33ec6;
+	color: #f33ec6;
 }
 #contact-title{
 	margin-bottom: 0;
