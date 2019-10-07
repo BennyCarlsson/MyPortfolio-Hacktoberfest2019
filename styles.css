@@ -468,6 +468,9 @@ h6 {
 	font-weight: bold;
 	margin: 0 0 30px;
 }
+h1{
+	margin-top:20px;
+}
 
 h3 {
 	color: #6e6e6e;
@@ -1273,6 +1276,7 @@ ul.skills > li:hover {
 	box-shadow: none;
 	border: none;
 	font-size: 16px;
+	cursor: pointer;
 }
 
 /* ==============================
