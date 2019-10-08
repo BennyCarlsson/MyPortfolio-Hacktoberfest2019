@@ -76,6 +76,11 @@ header img {
 	background-image: url(./apple-touch-icon.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	transition: all 3s;
+}
+
+.logo:hover {
+	background-image: url(./apple-touch-icon-hover.png);
 }
 
 .container-fluid {
@@ -1319,7 +1324,7 @@ ul.skills > li:hover {
 }
 
 /* ==============================
-		ANIMATION ADDED TO TEXT BODY 
+		ANIMATION ADDED TO TEXT BODY
 	===============================*/
 @keyframes animateleft {
 	from {
