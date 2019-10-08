@@ -26,12 +26,12 @@ h1 {
 	font-weight: 600
 }
 #home {
-	position: relative;
-	top: 0px;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
 	padding: 1em;
 	top: 0px;
+	margin-top:0px !important;
+	z-index: -1;
 }
 
 header {
@@ -65,7 +65,6 @@ header img {
 
 /* navigation bar */
 .navi_bar {
-	margin-top: -38px;
 	display: block;
 	background-color: #ffffff;
 	box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
@@ -113,7 +112,6 @@ header img {
 }
 
 .navbar-collapse {
-	padding: 1.5vh;
     display: flex;
 	justify-content: flex-end;
 	
@@ -392,7 +390,14 @@ summary {
 	display: list-item;
 }
 
+.proafile-imeg {
+	height: 40vh;
+	border: 5px solid mediumpurple;
+	box-shadow: #f33ec6 8px 8px;
+}
+
 canvas {
+	position: absolute;
 	display: inline-block;
 }
 
@@ -426,10 +431,16 @@ body {
 	margin: 5% auto;
 }
 
+h1 {
+	background-color: mediumpurple;
+    color: white !important;
+	padding: 0.3em;
+	box-shadow: #f33ec6 8px 8px;
+}
+
 .content-wrapper {
-	margin-left: 30%;
-	padding-left: 5%;
-	border-left: 1px solid #ebebeb;
+	width:70vw;
+	margin:0px auto;
 }
 
 .left .content-wrapper {
