@@ -113,7 +113,7 @@ header img {
 }
 
 .navbar-collapse {
-	padding-top: 1%;
+	padding: 1.5vh;
     display: flex;
 	justify-content: flex-end;
 	
@@ -133,13 +133,12 @@ ul#navbar li a:link {
 ul#navbar li {
 	display: block;
 	box-sizing: border-box;
-	border-radius: 10px;
-	width: 135px;
+	padding: 0.2vh 1vw;
+	margin: 0px 1vh;
 	border: 2px solid transparent;
 	text-align: center;
-	transition: all 0.7s linear;
+	transition: all 0.3s linear;
 	position: relative;
-	height: 32px;
 }
 
 ul#navbar li > a {
