@@ -286,7 +286,7 @@ function BombIT(){
 
   let html = `
     <h1>You bombed my portfolio, I will find you and make you hire me</h1>
-    <img src='images/killyou.jpg'>
+    <img src='static/img/killyou.jpg'>
   `
   document.write(html)
 }
