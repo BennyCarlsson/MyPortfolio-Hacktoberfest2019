@@ -318,3 +318,16 @@ function topFunction() {
 function change_css(){
   document.body.style.cssText = 'font-family: "Comic Sans MS", sans-serif !important; animation: bg-animate 8s linear infinite alternate both;';
 }
+
+function eraseH2(){
+  anime.timeline()
+  .add({
+    targets: '.article-title',
+    scale: [0.3,1],
+    opacity: [0],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: (el, i) => 70 * (i+1)
+  })
+}
