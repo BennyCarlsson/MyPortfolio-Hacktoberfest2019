@@ -101,12 +101,14 @@ header img {
 
 .navbar-collapse {
 	padding-top: 1%;
+    display: flex;
+    justify-content: center;
 }
 
 ul#navbar {
-	background-color: transparent;
-	font-size: 0.95rem;
-	float: right;
+    background-color: transparent;
+    font-size: 0.95rem;
+    display: flex;
 }
 
 ul#navbar li a:link {
