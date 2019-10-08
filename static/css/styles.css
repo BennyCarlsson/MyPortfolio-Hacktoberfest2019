@@ -67,21 +67,23 @@ header img {
 .navi_bar {
 	margin-top: -38px;
 	display: block;
-	min-height: 80px;
 	background-color: #ffffff;
 	box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
 }
 
 .logo {
+	margin:2vh;
+	height:6vh;
+}
+
+.wizard {
+	height: inherit;
 	display: inline-block;
-	background-image: url(./apple-touch-icon.png);
-	background-size: contain;
-	background-repeat: no-repeat;
 	transition: all 3s;
 }
 
-.logo:hover {
-	background-image: url(./apple-touch-icon-hover.png);
+.wizard:hover {
+	filter: invert(100%);
 }
 
 .container-fluid {
@@ -120,7 +122,8 @@ header img {
 ul#navbar {
     background-color: transparent;
     font-size: 0.95rem;
-    display: flex;
+	display: flex;
+	margin: 1vh;
 }
 
 ul#navbar li a:link {
