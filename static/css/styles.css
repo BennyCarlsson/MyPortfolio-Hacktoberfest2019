@@ -26,12 +26,12 @@ h1 {
 	font-weight: 600
 }
 #home {
-	position: relative;
-	top: 0px;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.5);
 	position: absolute;
 	padding: 1em;
 	top: 0px;
+	margin-top:0px !important;
+	z-index: -1;
 }
 
 header {
@@ -65,23 +65,24 @@ header img {
 
 /* navigation bar */
 .navi_bar {
-	margin-top: -38px;
 	display: block;
-	min-height: 80px;
 	background-color: #ffffff;
 	box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
 }
 
 .logo {
+	margin:2vh;
+	height:6vh;
+}
+
+.wizard {
+	height: inherit;
 	display: inline-block;
-	background-image: url(./apple-touch-icon.png);
-	background-size: contain;
-	background-repeat: no-repeat;
 	transition: all 3s;
 }
 
-.logo:hover {
-	background-image: url(./apple-touch-icon-hover.png);
+.wizard:hover {
+	filter: invert(100%);
 }
 
 .container-fluid {
@@ -111,7 +112,6 @@ header img {
 }
 
 .navbar-collapse {
-	padding-top: 1%;
     display: flex;
 	justify-content: flex-end;
 	
@@ -120,7 +120,8 @@ header img {
 ul#navbar {
     background-color: transparent;
     font-size: 0.95rem;
-    display: flex;
+	display: flex;
+	margin: 1vh;
 }
 
 ul#navbar li a:link {
@@ -130,13 +131,12 @@ ul#navbar li a:link {
 ul#navbar li {
 	display: block;
 	box-sizing: border-box;
-	border-radius: 10px;
-	width: 135px;
+	padding: 0.2vh 1vw;
+	margin: 0px 1vh;
 	border: 2px solid transparent;
 	text-align: center;
-	transition: all 0.7s linear;
+	transition: all 0.3s linear;
 	position: relative;
-	height: 32px;
 }
 
 ul#navbar li > a {
@@ -390,7 +390,14 @@ summary {
 	display: list-item;
 }
 
+.proafile-imeg {
+	height: 40vh;
+	border: 5px solid mediumpurple;
+	box-shadow: #f33ec6 8px 8px;
+}
+
 canvas {
+	position: absolute;
 	display: inline-block;
 }
 
@@ -424,10 +431,16 @@ body {
 	margin: 5% auto;
 }
 
+h1 {
+	background-color: mediumpurple;
+    color: white !important;
+	padding: 0.3em;
+	box-shadow: #f33ec6 8px 8px;
+}
+
 .content-wrapper {
-	margin-left: 30%;
-	padding-left: 5%;
-	border-left: 1px solid #ebebeb;
+	width:70vw;
+	margin:0px auto;
 }
 
 .left .content-wrapper {
