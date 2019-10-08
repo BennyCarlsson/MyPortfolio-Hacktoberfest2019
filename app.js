@@ -318,3 +318,19 @@ function topFunction() {
 function change_css(){
   document.body.style.cssText = 'font-family: "Comic Sans MS", sans-serif !important; animation: bg-animate 8s linear infinite alternate both;';
 }
+
+// A small animation for the wizard
+const wizard = document.getElementById("canvas");
+wizard.onclick = function(){
+  anime({
+    targets: 'div.logo',
+    translateX: 250,
+    rotate: '1turn',
+    direction: 'normal',
+    backgroundColor: '#FFF',
+    duration: 800,
+    completed: function(anim){
+      reverse = true;
+    }
+  });
+};
