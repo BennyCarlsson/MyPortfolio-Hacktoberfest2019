@@ -2,8 +2,8 @@
 
 body {
   /*background-color: #ffe6cc;*/
+ font-family: 'Quicksand', sans-serif;
 
-  font-family: "Raleway", sans-serif;
   /* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  */
   animation: bg-animate 8s linear infinite alternate both;
   cursor: url(https://i.ibb.co/h7cGf6X/benni-pointer.gif), auto;
@@ -17,13 +17,17 @@ body {
     background: #fdcbf1;
   }
 }
-
+.form-input{
+  background-color: lightpink;
+  box-shadow: 2px 2px 4px #555;
+}
 h1 {
   /* color: navy; */
   text-align: left;
-  font-size: 3em;
-  line-height: 5rem;
-  font-weight: 600;
+  font-size: 2em;
+  line-height: 4rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px #000000;
 }
 .overlay {
   margin-top: 182px;
@@ -52,7 +56,7 @@ header h2 {
   font-size: 3rem;
   line-height: 4rem;
   animation: bounced 1s ease;
-
+  text-shadow: 2px 2px 5px pink;
   letter-spacing: 0rem;
 }
 
@@ -113,6 +117,7 @@ header img {
   line-height: 4rem;
   font-weight: 600;
   justify-content: left;
+  text-shadow: 2px 2px 5px pink;
 }
 
 .navbar-collapse {
@@ -414,7 +419,8 @@ template {
 
 body {
   background-color: #fdfdfd;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Quicksand', sans-serif;
+
   color: #673ab7;
   font-size: 2rem;
   line-height: 1.2em;
@@ -819,7 +825,8 @@ article p.article-meta {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
 section.header {
@@ -1466,7 +1473,7 @@ ul.skills > li:hover {
   border: none;
   outline: none;
   background-color: #673ab7;
-  color: #ffffff;
+  color: ghostwhite;
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
@@ -1474,7 +1481,7 @@ ul.skills > li:hover {
 }
 
 #goTopBtn:hover {
-  background-color: #ffffff;
+  background-color: ghostwhite;
   color: #673ab7;
   border: 1px solid #673ab7;
 }
