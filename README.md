@@ -4,7 +4,7 @@ Help me make a horrible portfolio by letting people from all over the world cont
 
 If you have any questions or requests feel free to message me!
 
-_Disclaimer! This is a project for fun! I do not expect a profesional or high standard website for free. I expect the community will give me a horrendous portfolio and that we will have fun creating it together_
+_Disclaimer! This is a project for fun! I do not expect a professional or high standard website for free. I expect the community will give me a horrendous portfolio and that we will have fun creating it together_
 
 ## Contribution Rules (Will be updated)
 
@@ -29,7 +29,7 @@ _Disclaimer! This is a project for fun! I do not expect a profesional or high st
 - [Twitter](https://twitter.com/Benny_Carlsson)
 - [Current portfolio](https://bennycarlsson.com/)
 - [LinkedIn](https://www.linkedin.com/in/benny-carlsson-620226ba/)
-- [Youtube](https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg)
+- [YouTube](https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg)
 
 ## Videos
 
@@ -40,7 +40,7 @@ _Disclaimer! This is a project for fun! I do not expect a profesional or high st
 
 ## Information on syncing forks [link](https://help.github.com/articles/syncing-a-fork/).
 
-## Ideas for contributions/Idees de contributions
+## Ideas for contributions/Idées de contributions
 
 - Style the index.html
 - Update Readme.md
