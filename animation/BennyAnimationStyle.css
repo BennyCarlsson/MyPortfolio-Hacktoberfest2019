@@ -5,7 +5,6 @@ body {
 div {
     width: 100%;
     margin: 30vh auto;
-    vertical-align:central;
     text-align: center;
     animation-name:colorfade;
 }
@@ -13,25 +12,12 @@ div {
 span {
     display: inline-block;
     color: white;
-    vertical-align:middle;
     line-height: 68pt;
     border-bottom:solid, 2px, black;
 }
 
 .caps {
     font-size: 68pt !important;
-}
-
-.year {
-    width: 10%;
-    font-size: 20pt;
-    color: #808080;
-}
-
-.line {
-    width: 12%;
-    border-top: 2px solid rgb(0,0,0);
-    vertical-align: middle;
 }
 
 span:nth-child(1n) {
