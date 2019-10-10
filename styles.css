@@ -20,9 +20,10 @@ body {
 
 h1 {
 	/* color: navy; */
-	text-align: center;
+	text-align: left;
 	font-size: 3em;
 	line-height: 5rem;
+	font-weight: 600
 }
 #home {
 	position: relative;
@@ -76,6 +77,11 @@ header img {
 	background-image: url(./apple-touch-icon.png);
 	background-size: contain;
 	background-repeat: no-repeat;
+	transition: all 3s;
+}
+
+.logo:hover {
+	background-image: url(./apple-touch-icon-hover.png);
 }
 
 .container-fluid {
@@ -93,15 +99,28 @@ header img {
 	display: block;
 	float: left;
 }
+.my-name {
+	padding-right: 10%;
+	display: flex;
+	text-align: left;
+	font-size: 2em;
+	line-height: 4rem;
+	font-weight: 600;
+	justify-content: left;
+	
+}
 
 .navbar-collapse {
 	padding-top: 1%;
+    display: flex;
+	justify-content: flex-end;
+	
 }
 
 ul#navbar {
-	background-color: transparent;
-	font-size: 0.95rem;
-	float: right;
+    background-color: transparent;
+    font-size: 0.95rem;
+    display: flex;
 }
 
 ul#navbar li a:link {
@@ -1319,7 +1338,7 @@ ul.skills > li:hover {
 }
 
 /* ==============================
-		ANIMATION ADDED TO TEXT BODY 
+		ANIMATION ADDED TO TEXT BODY
 	===============================*/
 @keyframes animateleft {
 	from {

@@ -319,15 +319,27 @@ function change_css(){
   document.body.style.cssText = 'font-family: "Comic Sans MS", sans-serif !important; animation: bg-animate 8s linear infinite alternate both;';
 }
 
+var animationFinished=true;
+var opacity = true;
 function eraseH2(){
-  anime.timeline()
-  .add({
+  if (animationFinished){
+    animationFinished=false;
+  }
+  anime.timeline().add({
     targets: '.article-title',
-    scale: [0.3,1],
-    opacity: [0],
-    translateZ: 0,
+    opacity: function() {
+        if(opacity)  {
+          opacity = 0;
+        } else {
+          opacity = 1;
+        }
+        return [opacity];
+       },
+    loop: true,
     easing: "easeOutExpo",
-    duration: 600,
-    delay: (el, i) => 70 * (i+1)
-  })
-}
+    duration: 5000,
+    complete: function(anim) {
+      animationFinished=true
+        }
+      })
+    }
