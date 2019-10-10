@@ -80,6 +80,7 @@ header img {
   box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
   position: fixed;
   width: -webkit-fill-available;
+	width: 100%;
 }
 
 .logo {
