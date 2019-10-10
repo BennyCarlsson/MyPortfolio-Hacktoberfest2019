@@ -431,6 +431,7 @@ body {
 }
 
 .wrapper {
+	width: 100%;
   max-width: 1500px;
   margin: 5% auto;
   position: absolute;
@@ -1490,4 +1491,8 @@ ul.skills > li:hover {
 /* Adds highlight selection color to text. */
 ::selection {
   background-color: #ff0f9b;
+}
+
+p.indent { 
+	padding-left: 30px;
 }
