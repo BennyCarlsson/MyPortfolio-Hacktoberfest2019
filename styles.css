@@ -14,7 +14,7 @@ body {
     background: #19dcea;
   }
   100% {
-    background: #fdcbf1;
+    background: #000000;
   }
 }
 .form-input{
@@ -23,7 +23,7 @@ body {
 }
 h1 {
   /* color: navy; */
-  text-align: left;
+  text-align: right;
   font-size: 2em;
   line-height: 4rem;
   font-weight: 500;
@@ -76,7 +76,7 @@ header img {
   margin-top: -38px;
   display: block;
   min-height: 80px;
-  background-color: #ffffff;
+  background-color: #E5C601;
   box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
   position: fixed;
   width: -webkit-fill-available;
@@ -1483,7 +1483,7 @@ ul.skills > li:hover {
 
 #goTopBtn:hover {
   background-color: ghostwhite;
-  color: #673ab7;
+  color: #E5C601;
   border: 1px solid #673ab7;
 }
 

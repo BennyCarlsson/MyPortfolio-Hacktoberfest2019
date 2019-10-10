@@ -318,7 +318,31 @@ function topFunction() {
 function change_css(){
   document.body.style.cssText = 'font-family: "Comic Sans MS", sans-serif !important; animation: bg-animate 8s linear infinite alternate both;';
 }
-
+// Makes the about me section "Shy"
+var animationFinished=true;
+var opacity = true;
+function eraseH2(){
+  if (animationFinished){
+    animationFinished=false;
+  }
+  anime.timeline().add({
+    targets: '.article-title',
+    opacity: function() {
+        if(opacity)  {
+          opacity = 0;
+        } else {
+          opacity = 1;
+        }
+        return [opacity];
+       },
+    loop: true,
+    easing: "easeOutExpo",
+    duration: 5000,
+    complete: function(anim) {
+      animationFinished=true
+        }
+      })
+    }
 // A small animation for the wizard
 const wizard = document.getElementById("canvas");
 wizard.onclick = function(){
