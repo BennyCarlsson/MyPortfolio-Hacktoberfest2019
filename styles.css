@@ -33,6 +33,16 @@ body {
   background-color: lightpink;
   box-shadow: 2px 2px 4px #555;
 }
+
+h1 {
+  /* color: navy; */
+  text-align: left;
+  font-size: 1em;
+  line-height: 4rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px yellow;
+}
+
 .overlay {
   margin-top: 182px;
 }
@@ -138,11 +148,11 @@ header img {
   padding-right: 10%;
   display: flex;
   text-align: left;
-  font-size: 2em;
+  font-size: 1em;
   line-height: 4rem;
   font-weight: 600;
   justify-content: left;
-  text-shadow: 2px 2px 5px pink;
+  text-shadow: 2px 2px 5px black;
 }
 
 .navbar-collapse {
@@ -423,37 +433,44 @@ p {
 }
 
 .social-icons {
-  text-align: center;
   font-size: 1rem;
-  margin-top: 10px;
-  margin-left: -25px;
-  position: relative;
-  animation-name: jump;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(1);
+  margin: 0 auto;
+  display: flex;
+}
+
+.social-icon-1 {
+  animation-delay: 0s;
+} 
+.social-icon-2 {
+  animation-delay: .25s;
+} 
+.social-icon-3 {
+  animation-delay: .5s;
+} 
+.social-icon-4  {
+  animation-delay: .75s;
 }
 
 @keyframes jump {
   0%,
   100% {
-    top: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px
   }
 
-  15% {
-    top: 0px;
+  25% {
+    margin-top: 0px;
+    margin-bottom: 20px;
   }
 
-  30% {
-    top: 10px;
+  50% {
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
 
-  45% {
-    top: 0px;
-  }
-
-  60% {
-    top: 10px;
+  75% {
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
 }
 
@@ -467,6 +484,12 @@ p {
   font-weight: normal;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  display: block;
+  animation-name: jump;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(1);
 }
 
 .social-icons a:hover,
