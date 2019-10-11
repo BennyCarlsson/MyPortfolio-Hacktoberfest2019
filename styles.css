@@ -12,7 +12,7 @@ body {
       background-color: #fdfdfd;
   font-family: 'Quicksand', sans-serif;
 
-  color: #673ab7;
+  color: #b2fcff;
   font-size: 2rem;
   line-height: 1.2em;
   background-repeat: repeat-x;
@@ -22,10 +22,10 @@ body {
 
 @keyframes bg-animate {
   0% {
-    background: #19dcea;
+    background: #7ddafd;
   }
   100% {
-    background: #000000;
+    background: #ffc0cb;
   }
 }
 
@@ -73,7 +73,7 @@ h1 {
   line-height: 4rem;
   text-shadow: 2px 2px 4px #000000;
     margin-top: 20px;
-    
+
 }
 
 h3 {
@@ -440,13 +440,13 @@ p {
 
 .social-icon-1 {
   animation-delay: 0s;
-} 
+}
 .social-icon-2 {
   animation-delay: .25s;
-} 
+}
 .social-icon-3 {
   animation-delay: .5s;
-} 
+}
 .social-icon-4  {
   animation-delay: .75s;
 }
@@ -1189,6 +1189,6 @@ ul.skills > li:hover {
   background-color: #ff0f9b;
 }
 
-p.indent { 
+p.indent {
 	padding-left: 30px;
 }
