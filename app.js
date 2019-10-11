@@ -358,3 +358,11 @@ wizard.onclick = function(){
     }
   });
 };
+// A small 'Hello world' example
+function helloWorld(elm) {
+  console.log("you clicked on:", elm);
+  elm.innerText = "Hello world!";
+  setTimeout(function(){
+    elm.innerText = "JavaScript";
+  }, 5000);
+}
