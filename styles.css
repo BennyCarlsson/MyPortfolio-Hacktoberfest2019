@@ -111,6 +111,8 @@ header img {
   margin-top: -38px;
   display: block;
   min-height: 80px;
+  background-image: url(./images/fire.gif);
+  background-size: contain;
   background-color: #E5C601;
   box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
   position: fixed;
@@ -145,7 +147,6 @@ header img {
   float: left;
 }
 .my-name {
-  padding-right: 10%;
   display: flex;
   text-align: left;
   font-size: 1em;
@@ -153,6 +154,7 @@ header img {
   font-weight: 600;
   justify-content: left;
   text-shadow: 2px 2px 5px black;
+  background: fuchsia;
 }
 
 .navbar-collapse {
@@ -191,6 +193,7 @@ ul#navbar li > a {
   display: block;
   height: 32px;
   line-height: 32px;
+  background: fuchsia;
 }
 
 ul#navbar li:hover {
