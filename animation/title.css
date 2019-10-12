@@ -1,0 +1,180 @@
+h1 {
+    position: relative;
+    height: 70px;
+    margin-bottom: 50px!important;
+    z-index: 10;
+    left: -40px;
+}
+h1 .letter {
+    font-size: 50px;
+    position: absolute;
+    width: 40px;
+    text-align: center;
+    top: 0;
+    transition: top 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+h1 :nth-child(1n + 1) {
+    left: calc(40px * 1);
+}
+h1 :nth-child(1n + 2) {
+    left: calc(40px * 2);
+}
+h1 :nth-child(1n + 3) {
+    left: calc(40px * 3);
+}
+h1 :nth-child(1n + 4) {
+    left: calc(40px * 4);
+}
+h1 :nth-child(1n + 5) {
+    left: calc(40px * 5);
+}
+h1 :nth-child(1n + 6) {
+    left: calc(40px * 6);
+}
+h1 :nth-child(1n + 7) {
+    left: calc(40px * 7);
+}
+h1 :nth-child(1n + 8) {
+    left: calc(40px * 8);
+}
+h1 :nth-child(1n + 9) {
+    left: calc(40px * 9);
+}
+h1 :nth-child(1n + 10) {
+    left: calc(40px * 10);
+}
+h1 :nth-child(1n + 11) {
+    left: calc(40px * 11);
+}
+h1 :nth-child(1n + 12) {
+    left: calc(40px * 12);
+}
+h1:hover .letter {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+h1:hover :nth-child(1n + 1) {
+    animation-delay: 0.3s;
+}
+h1:hover :nth-child(1n + 2) {
+    animation-delay: 0.6s;
+}
+h1:hover :nth-child(1n + 3) {
+    animation-delay: 0.9s;
+}
+h1:hover :nth-child(1n + 4) {
+    animation-delay: 1.2s;
+}
+h1:hover :nth-child(1n + 5) {
+    animation-delay: 1.5s;
+}
+h1:hover :nth-child(1n + 6) {
+    animation-delay: 1.8s;
+}
+h1:hover :nth-child(1n + 7) {
+    animation-delay: 2.1s;
+}
+h1:hover :nth-child(1n + 8) {
+    animation-delay: 2.4s;
+}
+h1:hover :nth-child(1n + 9) {
+    animation-delay: 2.7s;
+}
+h1:hover :nth-child(1n + 10) {
+    animation-delay: 3s;
+}
+h1:hover :nth-child(1n + 11) {
+    animation-delay: 3.3s;
+}
+h1:hover :nth-child(1n + 12) {
+    animation-delay: 3.6s;
+}
+@keyframes move {
+    0% {
+        top: 0px;
+        transform: rotate(0deg);
+   }
+    5% {
+        top: 5px;
+        transform: rotate(1.5deg);
+   }
+    10% {
+        top: 10px;
+        transform: rotate(3deg);
+   }
+    15% {
+        top: 20px;
+        transform: rotate(-1deg);
+   }
+    20% {
+        top: 29px;
+        transform: rotate(-5deg);
+   }
+    25% {
+        top: 50px;
+        transform: rotate(12deg);
+   }
+    30% {
+        top: 87px;
+        transform: rotate(33deg);
+   }
+    35% {
+        top: 40px;
+        transform: rotate(66deg);
+   }
+    40% {
+        top: 16px;
+        transform: rotate(99deg);
+   }
+    45% {
+        top: -28px;
+        transform: rotate(45deg);
+   }
+    50% {
+        top: -50px;
+        transform: rotate(0deg);
+   }
+    55% {
+        top: -80px;
+        transform: rotate(-50deg);
+   }
+    60% {
+        top: -120px;
+        transform: rotate(-100deg);
+   }
+    65% {
+        top: -80px;
+        transform: rotate(-50deg);
+   }
+    70% {
+        top: -67px;
+        transform: rotate(-24deg);
+   }
+    75% {
+        top: -72px;
+        transform: rotate(-12deg);
+   }
+    80% {
+        top: -77px;
+        transform: rotate(0deg);
+   }
+    85% {
+        top: -50px;
+        transform: rotate(2.5deg);
+   }
+    90% {
+        top: -33px;
+        transform: rotate(5deg);
+   }
+    95% {
+        top: -15px;
+        transform: rotate(0deg);
+   }
+    100% {
+        top: 5px;
+        transform: rotate(-5deg);
+   }
+}
