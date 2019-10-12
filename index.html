@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 
 <head>
+  <link rel="stylesheet" href="slider.css">
   <link
     href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+
   <link
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     rel="stylesheet"
@@ -167,6 +172,9 @@
         <h1 class="no-spacer" style="text-align:left;">HERE I COME</h1>
       </div>
       <main>
+        
+        
+       
         <h1><center>My Portfolio</center></h1><br>
         <article>
           <div id="basic">
@@ -312,7 +320,26 @@
   <center><video width="720" height="402" controls autoplay loop muted >
 	<source src="video/website.mp4" type="video/mp4"/>
   </video></center>
+<br>
+
+
+        <section class="customer-logos slider">
+          <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+          <div class="slide"><img src="http://www.webcoderskull.com/img/logo.png"></div>
+          <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+          <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+          <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+          <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+          <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+          <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+          <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+       </section>
+
+     
+       
+ 
   </div>
+  
 
   <!-- easter_egg -->
   <div
@@ -370,10 +397,25 @@
   </audio>
 
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.your-class').slick({
+        setting-name: setting-value
+      });
+    });
+  </script>
   <script src="app.js"></script>
   <script type="text/javascript" src="vanilla-tilt.js"></script>
   <script type="text/javascript" src="scripts/sounds.js"></script>
- 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script src="./sweetalert.js"></script>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<script src="./slider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 </body>
 
 </html>
