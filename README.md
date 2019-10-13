@@ -12,7 +12,7 @@ _Disclaimer! This is a project for fun! I do not expect a professional or high s
 
 - No spam! Small contributions like minor styling or spell correction is accepted but obvious spam for the t-shirt will be labeled invalid.
 - Don't use prettier/auto indent/ auto format because it will create HUGE merge conflicts
-- Do NOT add any build steps e.g npm install (I want to keep this a simple static site).
+- Do NOT add any build steps e.g. npm install (I want to keep this a simple static site).
 
 ### Do
 
