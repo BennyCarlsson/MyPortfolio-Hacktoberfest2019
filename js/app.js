@@ -102,6 +102,10 @@ function checkKey(e) {
       alert('Respect paid');
       console.log('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF');
       }
+    if (e.keyCode == '82') {
+      alert('Open console to see the magic 🌈');
+      rainbow();
+    }
 
 }
 let string =
@@ -366,3 +370,21 @@ function helloWorld(elm) {
     elm.innerText = "JavaScript";
   }, 5000);
 }
+
+/*
+     _.-""""`-._ 
+   ,' _-""""`-_ `.
+  / ,'.-'"""`-.`. \
+ | / / ,'"""`. \ \ |
+| | | | ,'"`. | | | |
+| | | | |   | | | | |
+
+RAINBOW EASTER LOG 
+*/
+const rainbow = () => {
+  let x = 1;
+  let up = !1;
+  setInterval(() => {
+    (75 === x || 1 === x) && (up = !up), up ? x++ : x--, console.log(`%c${`■`.repeat(x)}`, `color: hsl(${2*x}, 100%, 50%)`)
+  }, 15);
+};
