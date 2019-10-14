@@ -176,6 +176,7 @@ body {
 	/* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  */
 	animation: bg-animate 8s linear infinite alternate both;
 	cursor: url("https://i.ibb.co/h7cGf6X/benni-pointer.gif"), auto;
+	overflow: hidden;
 }
 
 
@@ -428,185 +429,6 @@ canvas {
 
 
 
-/*** HEADER - LEFT ***/
-.profile-area {
-	width: 30%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-	left: 0;
-}
-
-header {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
-	padding: 120px 0.8em 3rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	left: 30px;
-	text-align: center;
-	background-color: rgba(0, 0, 0, 0.3);
-}
-
-header h3 {
-	color: #fff;
-	font-size: 1.5rem;
-	font-weight: 300;
-}
-
-
-.hover-zoom:hover {
-	transition: 0.5s;
-	transform: scale(1.3);
-}
-
-.hover-zoom {
-	transition: 0.5s;
-	transform: scale(1);
-}
-
-
-header img {
-	max-width: 120px;
-	border-radius: 50%;
-}
-header img:hover {
-	transform: rotate(360deg);
-	transition: 1s;
-}
-
-.image-trombon{
-	margin-bottom: 1rem;
-}
-.image-world{
-
-}
-
-.circle-profile-img {
-	max-width: 300px;
-	height: auto;
-	border-radius: 150px;
-}
-
-@media screen and (max-width: 1000px) {
-	header {
-		width: 100%;
-		margin-top: 0;
-		padding: 6rem 1em;
-		position: inherit;
-		left: 0;
-		text-align: center;
-	}
-
-	header h1 {
-		font-size: 4rem;
-	}
-
-	header h2 {
-		font-size: 2.5rem;
-		letter-spacing: 0.8px;
-	}
-
-	#circle-profile-img {
-		max-width: 100px;
-	}
-
-	.profile-area .dev_name {
-		margin: auto;
-		margin-bottom: 10px;
-	}
-
-	.profile-area {
-		position: initial;
-		float: none !important;
-		width: auto !important;
-	}
-}
-
-
-
-/********************************************************/
-
-
-
-/*** HEADER - NAME ANIMATION ***/
-.title-name-animation {
-	width: 100%;
-	margin: 1em auto;
-	font-family: "Satisfy", cursive;
-	text-align: center;
-	animation-name: colorfade;
-}
-
-.title-name-animation__word{
-	display: inline-block;
-}
-
-.title-name-animation span {
-	display: inline-block;
-	vertical-align: middle;
-	font-size: 2rem;
-	line-height: 5rem;
-	border-bottom: solid, 2px, black;
-	animation-name: slidein;
-	animation-fill-mode: forwards;
-}
-
-.title-name-animation .caps {
-	font-size: 5rem !important;
-}
-
-.title-name-animation span:nth-child(1) {
-	animation-name: slideCaps;
-	animation-duration: 2.2s;
-	animation-delay: 0;
-}
-
-.title-name-animation span:nth-child(2) {
-	animation-duration: 2.1s;
-	animation-delay: 3.1s;
-}
-
-.title-name-animation span:nth-child(3) {
-	animation-duration: 2s;
-	animation-delay: 3.2s;
-}
-
-.title-name-animation span:nth-child(4) {
-	animation-duration: 1.9s;
-	animation-delay: 3.3s;
-}
-
-.title-name-animation span:nth-child(5) {
-	animation-duration: 1.8s;
-	animation-delay: 3.4s;
-}
-
-.title-name-animation span:nth-child(6) {
-	animation-duration: 1.7s;
-	animation-delay: 3.5s;
-}
-
-.title-name-animation span:nth-child(7) {
-	animation-duration: 1.6s;
-	animation-delay: 3.6s;
-}
-
-.title-name-animation span:nth-child(8) {
-	animation-duration: 1.5s;
-	animation-delay: 3.7s;
-}
-
-
-
-/********************************************************/
-
-
-
 /*** NAV TOP ***/
 
 .nav {
@@ -740,9 +562,187 @@ header img:hover {
 
 
 
+/*** HEADER - LEFT ***/
+.profile-area {
+	width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+	left: 0;
+}
+
+.profile-area__inner{
+	padding: 120px 0.8em 4vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: absolute;
+	left: 30px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+header h3 {
+	color: #fff;
+	font-size: 3vh;
+	font-weight: 300;
+}
+
+
+.hover-zoom:hover {
+	transition: 0.5s;
+	transform: scale(1.3);
+}
+
+.hover-zoom {
+	transition: 0.5s;
+	transform: scale(1);
+}
+
+
+header img {
+	max-width: 120px;
+	border-radius: 50%;
+}
+header img:hover {
+	transform: rotate(360deg);
+	transition: 1s;
+}
+
+.image-trombon{
+	margin-bottom: 1rem;
+}
+.image-world{
+
+}
+
+.circle-profile-img {
+	max-height: 15vh;
+}
+
+@media screen and (max-width: 1000px) {
+	header {
+		width: 100%;
+		margin-top: 0;
+		padding: 6rem 1em;
+		position: inherit;
+		left: 0;
+		text-align: center;
+	}
+
+	header h1 {
+		font-size: 4rem;
+	}
+
+	header h2 {
+		font-size: 2.5rem;
+		letter-spacing: 0.8px;
+	}
+
+	.circle-profile-img {
+		max-width: 100px;
+	}
+
+	.profile-area .dev_name {
+		margin: auto;
+		margin-bottom: 10px;
+	}
+
+	.profile-area {
+		position: initial;
+	}
+}
+
+
+
+/********************************************************/
+
+
+
+/*** HEADER - NAME ANIMATION ***/
+.title-name-animation {
+	width: 100%;
+	margin: 1vh auto;
+	font-family: "Satisfy", cursive;
+	text-align: center;
+	animation-name: colorfade;
+}
+
+.title-name-animation__word{
+	display: inline-block;
+}
+
+.title-name-animation span {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 4vh;
+	line-height: 5rem;
+	border-bottom: solid, 2px, black;
+	animation-name: slidein;
+	animation-fill-mode: forwards;
+}
+
+.title-name-animation .caps {
+	font-size: 6vh !important;
+}
+
+.title-name-animation span:nth-child(1) {
+	animation-name: slideCaps;
+	animation-duration: 2.2s;
+	animation-delay: 0;
+}
+
+.title-name-animation span:nth-child(2) {
+	animation-duration: 2.1s;
+	animation-delay: 3.1s;
+}
+
+.title-name-animation span:nth-child(3) {
+	animation-duration: 2s;
+	animation-delay: 3.2s;
+}
+
+.title-name-animation span:nth-child(4) {
+	animation-duration: 1.9s;
+	animation-delay: 3.3s;
+}
+
+.title-name-animation span:nth-child(5) {
+	animation-duration: 1.8s;
+	animation-delay: 3.4s;
+}
+
+.title-name-animation span:nth-child(6) {
+	animation-duration: 1.7s;
+	animation-delay: 3.5s;
+}
+
+.title-name-animation span:nth-child(7) {
+	animation-duration: 1.6s;
+	animation-delay: 3.6s;
+}
+
+.title-name-animation span:nth-child(8) {
+	animation-duration: 1.5s;
+	animation-delay: 3.7s;
+}
+
+
+
+/********************************************************/
+
+
+
 /*** SOCIAL MEDIA ***/
 .social-icons {
-	font-size: 1rem;
+	font-size: 2vh;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -790,7 +790,6 @@ header img:hover {
 }
 
 .left .social-icons a {
-	margin-left: 0;
 	margin-right: 20px;
 }
 
@@ -815,8 +814,8 @@ header img:hover {
 /*** BUTTON - GITIHUB ***/
 /* github repo of this website */
 .repo-link {
-	margin: 1rem auto;
-	padding: 1rem 1.5rem;
+	margin: 1vh auto;
+	padding: 1vh 1.5rem;
 	font-size: 1rem;
 	line-height: 100%;
 	display: inline-block;
@@ -828,6 +827,7 @@ header img:hover {
 .repo-link:hover{
 	color: #673ab7;
 }
+
 
 
 
@@ -1178,112 +1178,6 @@ ul.skills>li:hover {
 	cursor: default;
 	transform: scale(1.1);
 	-webkit-transform: scale(1.1);
-}
-
-
-
-/********************************************************/
-
-
-/*
-===============================
-ANIMATION ADDED TO TEXT BODY
-===============================
-*/
-
-
-.animate_from_left {
-	opacity: 0;
-	animation-name: animateleft;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-}
-
-.animate_from_right {
-	opacity: 0;
-	animation-name: animateright;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-}
-
-.time-1 {
-	animation-delay: 0s;
-}
-
-.time-2 {
-	animation-delay: 1s;
-}
-
-.time-3 {
-	animation-delay: 2s;
-}
-
-.time-4 {
-	animation-delay: 3s;
-}
-
-.time-5 {
-	animation-delay: 4s;
-}
-
-.time-6 {
-	animation-delay: 5s;
-}
-
-.time-7 {
-	animation-delay: 6s;
-}
-
-.time-8 {
-	animation-delay: 7s;
-}
-
-.time-9 {
-	animation-delay: 8s;
-}
-
-.time-10 {
-	animation-delay: 9s;
-}
-
-.time-11 {
-	animation-delay: 10s;
-}
-
-.time-12 {
-	animation-delay: 11s;
-}
-
-.time-13 {
-	animation-delay: 12s;
-}
-
-.time-14 {
-	animation-delay: 13s;
-}
-
-.time-15 {
-	animation-delay: 14s;
-}
-
-.time-16 {
-	animation-delay: 15s;
-}
-
-.time-17 {
-	animation-delay: 16s;
-}
-
-.time-18 {
-	animation-delay: 17s;
-}
-
-.time-19 {
-	animation-delay: 18s;
-}
-
-.time-20 {
-	animation-delay: 19s;
 }
 
 
