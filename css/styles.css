@@ -49,12 +49,12 @@ h1 {
 }
 
 #home {
-  height: -webkit-fill-available;
-  position: relative;
-  top: 0px;
-  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
+  top: 0px;
+  position: relative;
   padding: 1em;
+  height: -webkit-fill-available;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 h1,
@@ -63,19 +63,18 @@ h3,
 h4,
 h5,
 h6 {
-  color: #666666;
-  font-weight: bold;
   margin: 0 0 30px;
   margin-bottom: 15px;
+  color: #666666;
+  font-weight: bold;
 }
 
 h1 {
+  margin-top: 20px;
   text-align: right;
   font-size: 2em;
-  line-height: 4rem;
   text-shadow: 2px 2px 4px #000000;
-  margin-top: 20px;
-
+  line-height: 4rem;
 }
 
 h3 {
@@ -92,9 +91,9 @@ h4 {
 header {
   display: inline-block;
   position: absolute;
+  margin: 0 auto;
   left: 30px;
   text-align: center;
-  margin: 0 auto;
 }
 
 header h3 {
@@ -110,16 +109,16 @@ header img {
 
 /* navigation bar */
 .navi_bar {
+  position: fixed;
   margin-top: -38px;
   display: block;
   min-height: 80px;
+  width: -webkit-fill-available;
+  width: 100%;
   background-image: url(./images/fire.gif);
   background-size: contain;
   background-color: #E5C601;
   box-shadow: 2px 4px rgba(0, 0, 0, 0.19);
-  position: fixed;
-  width: -webkit-fill-available;
-  width: 100%;
 }
 
 .logo {
@@ -178,24 +177,24 @@ ul#navbar li a:link {
 
 ul#navbar li {
   display: block;
+  position: relative;
   box-sizing: border-box;
   border-radius: 10px;
   width: 135px;
   border: 2px solid transparent;
   text-align: center;
   transition: all 0.7s linear;
-  position: relative;
   height: 32px;
 }
 
 ul#navbar li>a {
-  color: rgb(0, 0, 110);
-  text-decoration: none;
-  transition: all 0.7s linear;
   margin-right: 0;
   display: block;
   height: 32px;
   line-height: 32px;
+  color: rgb(0, 0, 110);
+  text-decoration: none;
+  transition: all 0.7s linear;
   background: fuchsia;
 }
 
@@ -255,10 +254,10 @@ button,
 input,
 select,
 textarea {
+  margin: 0;
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0;
 }
 
 button,
@@ -326,11 +325,11 @@ canvas {
 }
 
 .wrapper {
-  width: 100%;
-  max-width: 1500px;
-  margin: 5% auto;
   position: absolute;
   z-index: -1;
+  margin: 5% auto;
+  width: 100%;
+  max-width: 1500px;
 }
 
 .content-wrapper {
@@ -498,12 +497,12 @@ p {
 }
 
 .social-icons a {
+  display: block;
   margin-left: 20px;
   color: #673ab7;
   font-weight: normal;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  display: block;
   animation-name: jump;
   animation-duration: 2s;
   animation-timing-function: linear;
