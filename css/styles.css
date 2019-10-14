@@ -176,7 +176,7 @@ body {
 	/* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  */
 	animation: bg-animate 8s linear infinite alternate both;
 	cursor: url("https://i.ibb.co/h7cGf6X/benni-pointer.gif"), auto;
-	overflow-y: scroll;
+	overflow: hidden;
 }
 
 
