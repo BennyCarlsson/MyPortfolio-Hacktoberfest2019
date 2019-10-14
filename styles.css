@@ -1072,6 +1072,31 @@ article p.article-meta {
 /********************************************************/
 
 
+.waypoint-middle{
+	transition: all 0.5s;
+    transform: translateX(-20%);
+    opacity: 0;
+}
+.waypoint-middle.is-view{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.waypoint-bottom{
+	transition: all 0.5s;
+    transform: translateX(-20%);
+    opacity: 0;
+}
+.waypoint-bottom.is-view{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+
+/********************************************************/
+
+
 
 /*** EASTER EGG ***/
 .easter-pop-up__overlay {
