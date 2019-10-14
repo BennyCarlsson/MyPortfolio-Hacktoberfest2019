@@ -109,6 +109,7 @@ let string =
 let str = string.split("");
 let phraseElement = document.querySelector(".phrase");
 (function animate() {
+  if (!phraseElement) return;
   str.length > 0
     ? (phraseElement.innerHTML += str.shift())
     : clearTimeout(running);
