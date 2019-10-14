@@ -619,7 +619,7 @@ header img:hover {
 	align-items: center;
 	position: fixed;
 	z-index: 999;
-	background-image: url("./images/fire.gif");
+	background-image: url("../assets/images/fire.gif");
 	background-size: contain;
 	background-color: #E5C601;
 }
@@ -646,7 +646,7 @@ header img:hover {
 	width: 80px;
 	height: 80px;
 	display: inline-block;
-	background-image: url("./icons/apple-touch-icon.png");
+	background-image: url("../assets/icons/apple-touch-icon.png");
 	background-position: center;
 	background-size: 90%;
 	background-repeat: no-repeat;
@@ -654,7 +654,7 @@ header img:hover {
 }
 
 .logo:hover {
-	background-image: url("./icons/apple-touch-icon-hover.png");
+	background-image: url("../assets/icons/apple-touch-icon-hover.png");
 }
 
 /* name */
