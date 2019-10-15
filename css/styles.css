@@ -1,20 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
 
 
-
-/********************************************************/
-
-
-
-/*** KEYFRAMES ***/
-
 @keyframes bg-animate {
 	0% {
 		background-color: #ffb2d6;
 	}
 
 	100% {
-		background-color: #b5b2ff;
+		background-color: #ff3546;
 	}
 }
 
@@ -165,7 +158,7 @@ html {
 body {
 	margin: 0;
 	font-family: 'Quicksand', sans-serif;
-	color: #091010;
+	color: white;
 	font-size: 2rem;
 	line-height: 1.2em;
 	background-repeat: repeat-x;
