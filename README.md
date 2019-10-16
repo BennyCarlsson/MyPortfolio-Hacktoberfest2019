@@ -3,6 +3,7 @@
 Help me make a horrible portfolio by letting people from all over the world contribute with their own ideas and design!
 
 If you have any questions or requests feel free to message me!
+And also the following things guide you to create a compelete and correct pull request.
 
 _Disclaimer! This is a project for fun! I do not expect a professional or high standard website for free. I expect the community will give me a horrendous portfolio and that we will have fun creating it together_
 
