@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Two Players XO Game</title>
+    </head>
+    <body>
+<script>
+
+
+window.onload = play;
+
+//Initial Function
+function play() {
+    //Adding the app style in the head of document
+    let style = document.createElement("style");
+    style.innerHTML = "#tb-score{ \nbackground-color: rgba(0,0,0,0.20); \nmargin: 3vmin auto 0 auto; \nwidth: 90vmin; \nheight:20vmin; \nborder-style: none; \nborder-radius: 1vmin; \nfont-size: 2vmin; \n} \n\n.playerName, .score{ \nmargin: 0 1vmin; \nheight: 10vmin; \nfont-size: 5vmin; \nfont-weight: 600; \ndisplay: flex; \nalign-items: center; \nfont-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; \n} \n\n .playerName { \nfloat:left; \nwidth: 70vmin; \n} \n\n.score{ \nfloat:right; \nwidth: 10vmin; \njustify-content: center; \n} \n\n#app{\nmargin-top: 20px; \ndisplay: inline-block; \ntext-align: center; \nwidth: 100%; \nheight: 90vmin; \nbackground-image: url(https://drive.google.com/thumbnail?id=1-LDEhUFNInH-aUp7dOWUvRMiTNAHCMW0); \nbackground-repeat: no-repeat; \nbackground-size: 90vmin 80vmin; \nbackground-position: top center;\n} \n\n.row { \nwidth: 100%; \noverflow: hidden; \nmargin: 1vmin 0;\n} \n\n.cell { \nwidth: 25vmin; \nheight: 25vmin; \ndisplay: inline-block; \noverflow: hidden; \nfont-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; \nfont-size: 18vmin; \nmargin: 0px 2vmin; \n}";
+    document.getElementsByTagName("head")[0].appendChild(style);
+
+    //Welcome message and players names
+    
+    players = { "X": prompt("Introduce the first Player name, who'll be \"X\" symbol"), "O": prompt("Introduce the second Player name, who'll be \"O\" symbol") };
+
+    //Creating the table score
+    let newTableScore = document.createElement("div");
+    newTableScore.id = "tb-score";
+
+    //Creating each element of the table score
+    let name1 = document.createElement("div");
+    let name2 = document.createElement("div");
+    let sc1 = document.createElement("div");
+    let sc2 = document.createElement("div");
+
+    //Names id and class
+    name1.id = "playerNameX";
+    name2.id = "playerNameO";
+    name1.className = name2.className = "playerName";
+
+    //Player's scores id and class
+    sc1.id = "playerXScore";
+    sc2.id = "playerOScore";
+    sc1.className = sc2.className = "score";
+
+    //Setting up initial values of players' names and scores
+    name1.innerHTML = players["X"] + " (X)";
+    name2.innerHTML = players["O"] + " (O)";
+    sc1.innerHTML = sc2.innerHTML = "0";
+
+    //Adding all to the DOM
+    let body = document.getElementsByTagName("body")[0];
+    let tbscElements = [name1, sc1, name2, sc2];
+    for (let i = 0; i < 4; i++)
+        newTableScore.appendChild(tbscElements[i]);
+    body.appendChild(newTableScore);
+
+    //Creating the div element for the app
+    let newApp = document.createElement("div");
+    newApp.id = "app";
+    body.appendChild(newApp);
+
+    //Starting a new game
+    newGame();
+}
+
+function newGame() {
+    document.getElementById("app").innerHTML = ""; //Cleaning previous game content
+    document.getElementById("playerNameX").innerHTML += " ◄"; //Assigning the turn indicator
+
+    //Creating the game structure in the document
+    var app = document.getElementById("app");
+    for (let i = 0; i < 3; i++) { //Creating 3 rows
+        let row = document.createElement("div");
+        row.id = "row-" + i;
+        row.className = "row";
+        for (let j = 0; j < 3; j++) { //Creating 3 cells in each row
+            let cell = document.createElement("div");
+            cell.id = "col-" + i + j;
+            cell.className = "cell";
+            cell.addEventListener("click", check, false); //Adding check event, thanks to the @Gordon and @Vedang references and @Morpheus code ;)
+            row.append(cell);
+
+        }
+        app.appendChild(row);
+    }
+
+    //Creating the game variables    
+    plays = 9; //Max plays permitted
+    sw = ["X", "O", 0]; //Switcher of 'X' and 'O' values
+    cellChecked = { //to store cells which has been checked
+        "X": [],
+        "O": []
+    };
+};
+
+//To check if there are a winner or plays is over
+var check = (e) => {
+    let cellId = e.currentTarget.id;
+    if (cellChecked["X"].indexOf(cellId) == -1 && cellChecked["O"].indexOf(cellId) == -1 && plays) { //to verify that current cell is not checked and if there are available plays yet
+        let currentVal = sw[sw[2]];
+        document.getElementById(cellId).innerHTML = currentVal; //drawing current value into the checked cell
+        cellChecked[currentVal].push(cellId); //adding current cell to its corespondent "X" or "O" value storage
+
+        let previousPlayerTurn = document.getElementById("playerName" + sw[Number(sw[2])]).innerHTML;
+        document.getElementById("playerName" + sw[Number(sw[2])]).innerHTML = previousPlayerTurn.slice(0, previousPlayerTurn.length - 1); //Deleting the turn indicator from previous player
+
+        let currentPlayerTurn = document.getElementById("playerName" + sw[Number(!sw[2])]).innerHTML;
+        document.getElementById("playerName" + sw[Number(!sw[2])]).innerHTML += " ◄"; //Assigning the turn indicator to the next player
+
+        sw[2] = Number(!sw[2]); // switching between X and O value for the next check        
+        plays--;
+
+        //to verify if the current checked cell make a winner
+        let winner = isWinner(currentVal, cellId);
+        if (winner) {
+            //To show winners cells
+            for (let wcell of winner) {
+                document.getElementById(wcell).style.color = "green";
+            }
+
+            //To clean the turn indicator
+            document.getElementById("playerName" + sw[Number(sw[2])]).innerHTML = currentPlayerTurn.slice(0, currentPlayerTurn.length - 1);
+
+            setTimeout(() => alert("Congratulation!!\nPlayer " + this.players[currentVal] + " wins!"), 100);
+            let score = Number(document.getElementById("player" + currentVal + "Score").innerHTML);
+            document.getElementById("player" + currentVal + "Score").innerHTML = ++score;
+            endOfGame();
+
+        } else if (plays == 0) {
+            setTimeout(() => alert("Ohh! Both are very good at this, the game is a draw.\nLet's try once more!"), 100);
+            endOfGame();
+        }
+    }
+
+};
+
+//Function to check if there are a winner
+var isWinner = (val, cellid) => {
+    let checked = cellChecked[val];
+    //check if ancestors and successors of the cell in its column are there
+    let cellColId = Number(cellid.slice(-1));
+    let strt = cellid.slice(0, 5);
+    let aux = checked.filter(element => element == strt + (cellColId + 1) || element == strt + (cellColId + 2) || element == strt + (cellColId - 1) || element == strt + (cellColId - 2));
+    if (aux.length == 2) {
+        aux[2] = cellid;
+        return aux;
+    }
+    //check if ancestors and successors of the cell in its row are there
+    let cellRowId = Number(cellid.slice(-2, -1));
+    strt = (cId) => cellid.slice(0, 4) + cId + cellid.slice(-1);
+    aux = checked.filter(element => element == strt(cellRowId + 1) || element == strt(cellRowId + 2) || element == strt(cellRowId - 1) || element == strt(cellRowId - 2));
+
+    if (aux.length == 2) {
+        aux[2] = cellid;
+        return aux;
+    }
+    //check if ancestors and successors in the left diagonal are there
+    strt = cellid.slice(0, 4);
+    if (cellRowId == cellColId) {
+        aux = checked.filter(element => element.slice(-1) == element.slice(-2, -1));
+        if (aux.length == 3) {
+            return aux;
+        }
+    }
+
+    //check if ancestors and successors in the right diagonal are there
+    if (cellid == "col-11" || cellid == "col-20" || cellid == "col-02") {
+        if (checked.indexOf("col-11") != -1 && checked.indexOf("col-20") != -1 && checked.indexOf("col-02") != -1) {
+            return ["col-11", "col-20", "col-02"];
+        }
+    }
+}
+
+//Function to the end of the game
+var endOfGame = () => {
+    plays = 0;
+    let btn = document.createElement("button");
+    btn.innerHTML = "New game!!";
+    btn.style = "color: white; background-color: green; margin: 5vmin 0; width: 90vmin; height:10vmin; border-style: none; border-radius: 1vmin; font-size: 6vmin;"
+    btn.addEventListener("click", newGame, false);
+    document.getElementById("app").appendChild(btn);
+}
+
+
+
+</script>
+        
+    </body>
+</html>
