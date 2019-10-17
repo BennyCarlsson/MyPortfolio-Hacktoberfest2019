@@ -143,6 +143,17 @@
 
 /********************************************************/
 
+	.this-div{
+		max-width: 900px;
+		background: green;
+		height: 40px;
+	}
+
+
+	.the-my-story-heading-class{
+		background: purple;
+	}
+
 
 *{
 	box-sizing: border-box;
@@ -176,7 +187,6 @@ body {
 	/* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  */
 	animation: bg-animate 8s linear infinite alternate both;
 	cursor: url("https://i.ibb.co/h7cGf6X/benni-pointer.gif"), auto;
-	overflow: hidden;
 }
 
 
@@ -241,11 +251,13 @@ h4 {
 	font-weight: bolder;
 }
 
-
+h5 {
+	text-align: left;
+	color: #00ff00;
+	text-shadow: 4px 4px 4px #112233;
+}
 
 /********************************************************/
-
-
 
 /*** DEFAULT STYLES TAGS ***/
 ul {
@@ -551,9 +563,6 @@ canvas {
 		flex:1;
 	}
 
-	.nav-list li span {
-		display: none;
-	}
 }
 
 
@@ -569,6 +578,8 @@ canvas {
     position: fixed;
     top: 0;
 	left: 0;
+	background-image: url('../assets/images/niccage.jpg');
+	background-size: cover;
 }
 
 .profile-area__inner{
@@ -833,22 +844,6 @@ header img:hover {
 
 /********************************************************/
 
-
-
-/*** MARQUEE ANIMATION ***/
-marquee{
-	height: 200px;
-	margin-bottom:3rem;
-	position: relative;
-	background-color: white;
-}
-marquee img{
-	width: auto;
-	height: 200px;
-	position: absolute;
-	top: calc(50% -100px);
-	font-size: 0;
-}
 
 
 
@@ -1274,3 +1269,4 @@ video{
 	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 	}
   }
+

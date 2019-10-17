@@ -30,6 +30,11 @@
 	<link rel="stylesheet" href="animation/title.css" />
 
 	<link rel="manifest" href="site.webmanifest" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -113,31 +118,44 @@
 		</div>
 
 		<div class="navbar-collapse">
+				
 			<div class="my-name">
-				BENNY "The King" CARLSON
+				<strong>BENNY "The King" CARLSON</strong>
 			</div>
 			<ul class="nav-list">
+				
 				<li>
 					<a href="#home" onclick="topFunction()" title="Home">
-						🏠 <span>Home</span>
+						<span>Home</span>
 					</a>
 				</li>
 				<li>
 					<a href="#basic" title="About">
-						👦 <span>Info</span>
+						<span>Info</span>
 					</a>
 				</li>
 				<li>
 					<a href="#contact" title="Contact">
-						📝 <span>Reach us</span>
+						<span>Reach us</span>
 					</a>
 				</li>
+				<li>
+					<a href="#" onClick="alert('Has this portfolio has given you a headache?  Hire Benny Carlsson then go for a nice lie down!!')" title="headache">
+					👀 <span>My eyes!</span>
+					</a>
+				</li>
+				
 			</ul>
+			
 		</div>
+		
 	</nav>
+
 	<div class="overlay">
+
 		<header id="home" class="profile-area">
 			<div class="profile-area__inner">
+				
 				<img class="circle-profile-img" src="assets/images/profilepic.jpg" alt="Profile image" />
 				<div class="your-element tilt" data-tilt data-tilt-max="50" data-tilt-speed="400"
 					data-tilt-perspective="500">
@@ -162,8 +180,9 @@
 						</div>
 					</div>
 				</div>
-
-				<h3 class="hover-zoom">Software Developer</h3>
+				
+				
+				<h3 class="hover-zoom">Software Developer</h3> <img src="https://media.giphy.com/media/zkMri4yiJ3Mdy/giphy.gif">
 				<div class="social-icons">
 					<a href="https://github.com/BennyCarlsson" class="social-icon-1" target="_blank">
 						<i class="fa fa-github-square fa-3x hover-zoom"></i>
@@ -186,7 +205,9 @@
 
 				<img class="image-trombon" src="assets/images/trombon.gif" />
 				<img class="image-world" src="assets/images/jorden.gif" />
+			
 			</div>
+			
 		</header>
 
 		<div class="wrapper" style="margin-top: -4em">
@@ -200,7 +221,9 @@
 					<h1 style="text-align:left;">HERE I COME</h1>
 				</div>
 				<main>
+				
 					<section>
+						<div class=""
 						<h1>
 							<span class="letter l-1">M</span>
 							<span class="letter l-2">y</span>
@@ -215,35 +238,38 @@
 							<span class="letter l-10">i</span>
 							<span class="letter l-11">o</span>
 						</h1>
+						
+							
 						<article>
 							<div id="basic">
 								<h2 onmouseover="eraseH2()" class="article-title underline-txt">
 									<strong>Ab<span onClick="onClickO(10);">o</span>ut Myself</strong>
 								</h2>
-								<marquee>
 									<img src="assets/images/BennyCarlssonGIF.gif" alt="Benny Carlsson" />
-								</marquee>
 							</div>
 						</article>
+							<div class="this-div">
+								<marquee><span class="the-my-story-heading-class">MY STORY</span></marquee>
+							</div>
 						<article class="waypoint-middle">
-							<h2 class="underline-txt">
-								My story:
-							</h2>
 							<p>
+								A software developer with three years experience, looking for new employment opportunities in Gothenberg, Sweden.
 								I'm an <strong>unemployed</strong> software developer with three years experience
 								and a degree in Computer Science from Kalamr's <a href="https://lnu.se/en/">Linnaeus University</a>.
 							</p>
 
 							<p>
-								I am looking for a job in Gothenberg, Sweden using my
-								object oriented skills with Java and C#.
+								I am looking for a job in <strong>Gothenberg, Sweden</strong> using my
+								<em>object oriented skills</em> with Java and C#.
+								I graduated with a degree in Computer Science from <a href="https://lnu.se/en/">Linnaeus University</a>, Kalmar and my skills includes
+								object oriented programming with Java and C#.
 							</p>
 
 
 							<p>
-								I also have advanced knowledge of these web
+								<h5>I also have advanced knowledge of these web
 								technologies and project
-								management approaches:
+									management approaches:</h5>
 							</p>
 
 							<ul>
@@ -295,8 +321,13 @@
 								</li>
 							</ul>
 
+<<<<<<< HEAD
 							<p class="waypoint-middle is-view">
 								I've had four years of experience with source control by working on over 50 projects
+=======
+							<p class="waypoint-middle">
+								I've had four years of experience with <em>source control</em> by working on <del>over 50 projects</del>
+>>>>>>> 870090d26bb1e1092da3c014f90677a4c18d690f
 								on <a href="https://github.com/BennyCarlsson">GitHub</a>
 							</p>
 
@@ -314,7 +345,7 @@
 							<p class="waypoint-middle is-view">
 								Please contact me <a
 									href="mailto:Carlsson.Benny93@gmail.com?subject=Meeting arrangement&body=Hi Benny!%0D%0AMy name is [ your name ] , and I would like to get in contact for [ fill in your job opertunity or a date proposal ].%0D%0A%0D%0ABest regards"
-									class="email">here</a> to arrange a meeting. I look forward to hearing from you.
+										     class="email"><strong>VIA THE ELECTRONIC MAILS</strong></a> to arrange a meeting. I look forward to hearing from you.
 							</p>
 						</article>
 						<article>
@@ -436,6 +467,7 @@
 
 				<img id="untitled-goose-game" class="waypoint-bottom is-view" src="assets/images/untitled-goose-game-logo.png"
 					alt="I love this game so much" />
+						<a href="Html/xox1.html"><img id="XOX" src="assets/images/xox.png" alt"2 player Xox game"></a>
 
 				<video class="waypoint-bottom" controls autoplay loop muted>
 					<source src="assets/video/website.mp4" type="video/mp4" />
