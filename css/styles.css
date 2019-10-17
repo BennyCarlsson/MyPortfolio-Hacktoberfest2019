@@ -143,6 +143,17 @@
 
 /********************************************************/
 
+	.this-div{
+		max-width: 900px;
+		background: green;
+		height: 40px;
+	}
+
+
+	.the-my-story-heading-class{
+		background: purple;
+	}
+
 
 *{
 	box-sizing: border-box;
@@ -241,11 +252,13 @@ h4 {
 	font-weight: bolder;
 }
 
-
+h5 {
+	text-align: left;
+	color: #00ff00;
+	text-shadow: 4px 4px 4px #112233;
+}
 
 /********************************************************/
-
-
 
 /*** DEFAULT STYLES TAGS ***/
 ul {
@@ -551,9 +564,6 @@ canvas {
 		flex:1;
 	}
 
-	.nav-list li span {
-		display: none;
-	}
 }
 
 
@@ -833,22 +843,6 @@ header img:hover {
 
 /********************************************************/
 
-
-
-/*** MARQUEE ANIMATION ***/
-marquee{
-	height: 200px;
-	margin-bottom:3rem;
-	position: relative;
-	background-color: white;
-}
-marquee img{
-	width: auto;
-	height: 200px;
-	position: absolute;
-	top: calc(50% -100px);
-	font-size: 0;
-}
 
 
 
