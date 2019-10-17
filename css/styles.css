@@ -143,6 +143,17 @@
 
 /********************************************************/
 
+	.this-div{
+		max-width: 900px;
+		background: green;
+		height: 40px;
+	}
+
+
+	.the-my-story-heading-class{
+		background: purple;
+	}
+
 
 *{
 	box-sizing: border-box;
@@ -244,8 +255,6 @@ h4 {
 
 
 /********************************************************/
-
-
 
 /*** DEFAULT STYLES TAGS ***/
 ul {
@@ -830,22 +839,6 @@ header img:hover {
 
 /********************************************************/
 
-
-
-/*** MARQUEE ANIMATION ***/
-marquee{
-	height: 200px;
-	margin-bottom:3rem;
-	position: relative;
-	background-color: white;
-}
-marquee img{
-	width: auto;
-	height: 200px;
-	position: absolute;
-	top: calc(50% -100px);
-	font-size: 0;
-}
 
 
 
