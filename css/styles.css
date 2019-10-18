@@ -505,6 +505,28 @@ canvas {
 	background-color: #ff69b4;
 }
 
+.my-name:hover{
+ 	animation: shake 0.5s;
+  	animation-iteration-count: infinite;
+ 	background-color: #fff;
+ 	color: #ff69b4;
+}
+
+/* Shake effect */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 /* menu */
 .nav-list {
 	padding: 0  1rem !important;
@@ -528,6 +550,12 @@ canvas {
 
 .nav-list li::before {
 	content: none;
+}
+
+.nav-list li:hover{
+	-ms-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
 }
 
 .nav-list li>a {
