@@ -145,13 +145,14 @@
 
 	.this-div{
 		max-width: 900px;
-		background: green;
+		background: white;
 		height: 40px;
 	}
 
 
 	.the-my-story-heading-class{
-		background: purple;
+		color: purple;
+		font-weight: bold;
 	}
 
 
@@ -503,13 +504,14 @@ canvas {
 	font-weight: 600;
 	text-shadow: 2px 2px 5px black;
 	background-color: #ff69b4;
+	color:white;
 }
 
 .my-name:hover{
  	animation: shake 0.5s;
   	animation-iteration-count: infinite;
- 	background-color: #fff;
- 	color: #ff69b4;
+ 	background-color: #ff69b4;
+ 	color: #fdfdfd;
 }
 
 /* Shake effect */
