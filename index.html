@@ -106,6 +106,9 @@
 				animation: octocat-wave 560ms ease-in-out
 			}
 		}
+        h4, h3, h5{
+            padding-bottom:15px;
+        }
 	</style>
 
 	<a href="http://www.resilientcoders.org/">
@@ -122,30 +125,35 @@
 			<div class="my-name">
 				<strong>BENNY "The King" CARLSON</strong>
 			</div>
-			<ul class="nav-list">
-				
-				<li>
-					<a href="#home" onclick="topFunction()" title="Home">
-						<span>Home</span>
-					</a>
-				</li>
-				<li>
-					<a href="#basic" title="About">
-						<span>Info</span>
-					</a>
-				</li>
-				<li>
-					<a href="#contact" title="Contact">
-						<span>Reach us</span>
-					</a>
-				</li>
-				<li>
-					<a href="#" onClick="alert('Has this portfolio has given you a headache?  Hire Benny Carlsson then go for a nice lie down!!')" title="headache">
-					👀 <span>My eyes!</span>
-					</a>
-				</li>
-				
-			</ul>
+            <ul class="nav-list">
+
+                <li>
+                    <a href="#home" onclick="topFunction()" title="Home">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#basic" title="About">
+                        <span>Info</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" title="Contact">
+                        <span>Reach us</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onClick="alert('Has this portfolio has given you a headache?  Hire Benny Carlsson then go for a nice lie down!!')" title="headache">
+                        👀 <span>My eyes!</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#testimonals" title="Testimonals">
+                        <span>Testimonals</span>
+                    </a>
+                </li>
+
+            </ul>
 			
 		</div>
 		
@@ -211,7 +219,7 @@
 		</header>
 
 		<div class="wrapper" style="margin-top: -4em">
-			<canvas id="canvas"></canvas>
+			<canvas id="canvas" height="50px"></canvas>
 
 			<div class="content-wrapper">
 				<div id="raining" style="display: none; position: absolute; top:0;">
@@ -414,59 +422,81 @@
 						</article>
 					</section>
 				</main>
+                <table width="100%">
+                    <tr>
+                        <td width="50%">
+                            <footer class="waypoint-middle is-view">
+                                <form id="contact">
+                                    <h6 class="contact-title">Send Message</h6>
+                                    <div class="field">
+                                        <label>Name </label>
+                                        <input type="text" class="form-input" name="name" placeholder="Enter your name">
+                                    </div>
+                                    <div class="field">
+                                        <label>Your Email Address </label>
+                                        <input type="email" class="form-input" name="email" placeholder="Enter your email address">
+                                    </div>
+                                    <div class="field">
+                                        <label>Subject </label>
+                                        <input type="text" class="form-input" name="subject"
+                                               placeholder="What is the subject of your message?">
+                                    </div>
+                                    <div class="field">
+                                        <label>Favourite Colour </label>
+                                        <input type="text" class="form-input" name="colour" placeholder="What is your favourite colour?">
+                                    </div>
+                                    <div class="field">
+                                        <label>Message </label>
+                                        <textarea rows="5" class="form-input" name="message"
+                                                  placeholder="Write your message here."></textarea>
+                                    </div>
+                                    <div class="field">
+                                        <button class="btn" type="submit">Submit</button>
+                                    </div>
+                                </form>
 
-				<footer class="waypoint-middle is-view">
-					<form id="contact">
-						<h6 class="contact-title">Send Message</h6>
-						<div class="field">
-							<label>Name </label>
-							<input type="text" class="form-input" name="name" placeholder="Enter your name">
-						</div>
-						<div class="field">
-							<label>Your Email Address </label>
-							<input type="email" class="form-input" name="email" placeholder="Enter your email address">
-						</div>
-						<div class="field">
-							<label>Subject </label>
-							<input type="text" class="form-input" name="subject"
-								placeholder="What is the subject of your message?">
-						</div>
-						<div class="field">
-								<label>Favourite Colour </label>
-								<input type="text" class="form-input" name="colour" placeholder="What is your favourite colour?">
-							</div>
-						<div class="field">
-							<label>Message </label>
-							<textarea rows="5" class="form-input" name="message"
-								placeholder="Write your message here."></textarea>
-						</div>
-						<div class="field">
-							<button class="btn" type="submit">Submit</button>
-						</div>
-					</form>
-
-					<div class="contact">
-						<h6>Contact:</h6>
-						<p class="contact-paragraph">
-							<span class="contact-icon">&#9742;</span>
-							<a href="tel:12345">12345</a>
-						</p>
-						<p class="contact-paragraph">
-							<span class="contact-icon">&#9993;</span>
-							<a href="mailto:Carlsson.Benny93@gmail.com">
-								Carlsson.Benny93@gmail.com
-							</a>
-						</p>
-					</div>
-				</footer>
+                                <div class="contact">
+                                    <h6>Contact:</h6>
+                                    <p class="contact-paragraph">
+                                        <span class="contact-icon">&#9742;</span>
+                                        <a href="tel:12345">12345</a>
+                                    </p>
+                                    <p class="contact-paragraph">
+                                        <span class="contact-icon">&#9993;</span>
+                                        <a href="mailto:Carlsson.Benny93@gmail.com">
+                                            Carlsson.Benny93@gmail.com
+                                        </a>
+                                    </p>
+                                </div>
+                            </footer>
+                        </td>
+                        <td width="50%">
+                            <a class="twitter-timeline" data-height="910" href="https://twitter.com/Benny_Carlsson?ref_src=twsrc%5Etfw">Tweets by Benny_Carlsson</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </td>
+                    </tr>
+                </table>
+				
 
 				<img id="untitled-goose-game" class="waypoint-bottom is-view" src="assets/images/untitled-goose-game-logo.png"
 					alt="I love this game so much" />
 						<a href="Html/xox1.html"><img id="XOX" src="assets/images/xox.png" alt"2 player Xox game"></a>
-
+                <br /><br />
 				<video class="waypoint-bottom" controls autoplay loop muted>
 					<source src="assets/video/website.mp4" type="video/mp4" />
-				</video>
+				</video><br /><br />
+                <h2 id="testimonals">
+                    Testimonial
+                </h2>
+                <p>
+                    Benny is a hack of a guy.  He was recommended to me by a mutual friend as a web developer. We discussed my requirements fully before going ahead with anything and he put together a 
+                    package for me that met all my needs. I never felt pushed or pressured and the whole thing from start to finish was stress free and supportive.
+                    The website when completed completely surpassed all my expectations and I am totally thrilled. Any tweeks and edits that were needed were minimal and done quickly.
+                    Mr Carlsson continues to support me when I need things updated and changed and there is no waiting around for days to get things sorted.<br />
+                    A completely brilliant and professional service that I am so happy I went with. There is so much choice in this field and it's confusing about who the 'right' person to go with is. 
+                    I am glad I found Benny so early on in my search and would never use anyone else! Very skilled and clever guy who I can't recommend enough!
+                    <br />- Mike Strider (IT @ LevelUp Development)
+                </p>
 			</div>
 
 			<!-- easter_egg -->
