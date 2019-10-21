@@ -155,7 +155,6 @@
 		font-weight: bold;
 	}
 
-
 *{
 	box-sizing: border-box;
 }
@@ -184,8 +183,6 @@ body {
 	background-position: bottom left;
 	background-attachment: fixed;
 	background-color: #fdfdfd;
-	/*background-color: #ffe6cc;*/
-	/* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  */
 	animation: bg-animate 8s linear infinite alternate both;
 	cursor: url("https://i.ibb.co/h7cGf6X/benni-pointer.gif"), auto;
 }
@@ -1161,7 +1158,6 @@ article p.article-meta {
 }
 
 #dont-panic {
-	/*display: none;*/
 	opacity: 0;
 	visibility: hidden;
 	position: fixed;
