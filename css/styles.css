@@ -658,9 +658,6 @@ header img:hover {
 .image-trombon{
 	margin-bottom: 1rem;
 }
-.image-world{
-
-}
 
 .circle-profile-img {
 	max-height: 15vh;
@@ -1203,6 +1200,10 @@ ul.skills>li:hover {
 	-webkit-transform: scale(1.1);
 }
 
+#standout-text {
+	font-family: 'Fascinate Inline', cursive;
+	color: rgb(57, 255, 20);
+}
 
 
 /********************************************************/
