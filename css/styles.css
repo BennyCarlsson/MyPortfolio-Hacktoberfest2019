@@ -187,7 +187,9 @@ body {
 	cursor: url("https://i.ibb.co/h7cGf6X/benni-pointer.gif"), auto;
 }
 
-
+h {
+	padding-bottom:1rem;
+}
 
 /********************************************************/
 
