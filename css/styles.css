@@ -187,9 +187,7 @@ body {
 	cursor: url("https://i.ibb.co/h7cGf6X/benni-pointer.gif"), auto;
 }
 
-h {
-	padding-bottom:1rem;
-}
+
 
 /********************************************************/
 
@@ -230,6 +228,14 @@ h6 {
 	margin: 0 0 30px;
 	margin-bottom: 15px;
 }
+.drop-item{
+	display: none;
+}
+.dropdown:hover .drop-item{
+	display: inline;
+}
+
+
 
 h1 {
 	text-align: right;
