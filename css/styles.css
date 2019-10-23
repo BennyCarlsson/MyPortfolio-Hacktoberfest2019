@@ -1331,3 +1331,17 @@ video{
 	text-align: right;
 }
 /*** End of Align right ***/
+
+/********************************************************/
+
+@media (prefers-color-scheme: dark) {
+	.dark-elitist {
+		display: none;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	.light-elitist {
+		display: none;
+	}
+}
