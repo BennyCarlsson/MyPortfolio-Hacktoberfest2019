@@ -1318,3 +1318,30 @@ video{
 		font-weight: bold;
 	}
 }
+
+/*** Comic-Sans on hover ***/
+.comic-sansHover:hover {
+	font-family: "Comic Sans MS", cursive, sans-serif !important;
+	background-color: mediumvioletred;
+}
+/*** End of Comic-Sans on hover ***/
+
+/*** Align right ***/
+.align-right {
+	text-align: right;
+}
+/*** End of Align right ***/
+
+/********************************************************/
+
+@media (prefers-color-scheme: dark) {
+	.dark-elitist {
+		display: none;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	.light-elitist {
+		display: none;
+	}
+}
