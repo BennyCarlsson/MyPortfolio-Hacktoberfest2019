@@ -423,6 +423,7 @@ canvas {
 
 /*** WRAPPER ***/
 .wrapper {
+	position: fixed;
 	width: 100%;
 	padding: 0 5% 3rem 35%;
 }
