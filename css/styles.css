@@ -407,6 +407,8 @@ canvas {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -423,7 +425,6 @@ canvas {
 
 /*** WRAPPER ***/
 .wrapper {
-	position: fixed;
 	width: 100%;
 	padding: 0 5% 3rem 35%;
 }
