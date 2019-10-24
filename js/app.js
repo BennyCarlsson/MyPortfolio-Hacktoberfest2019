@@ -87,7 +87,6 @@ function imgClicked() {
 }
 imgClicked.count = 0;
 
-
 document.onkeydown = checkKey;
 
 function checkKey(e) {
@@ -108,6 +107,16 @@ function checkKey(e) {
     }
 
 }
+
+var elements = document.getElementsByClassName("form-input");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].onkeydown = inputKeyDown;
+}
+function inputKeyDown(e) {
+  var pinks = ["#FFC0CB","#FFB6C1","#FF69B4","#FF1493","#DB7093","#C71585","#DA70D6","#FF00FF","#9400D3"];
+    (e.target || e.srcElement).style.backgroundColor = pinks[Math.floor(Math.random()*pinks.length)]
+}
+
 let string =
   "I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.";
 let str = string.split("");
