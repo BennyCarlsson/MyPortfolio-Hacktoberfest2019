@@ -1,0 +1,195 @@
+body {
+    font-family: 'Satisfy', cursive;
+}
+
+div {
+    width: 100%;
+    margin: 30vh auto;
+    text-align: center;
+    animation-name:colorfade;
+}
+
+span {
+    display: inline-block;
+    color: white;
+    line-height: 68pt;
+    border-bottom:solid, 2px, black;
+}
+
+.caps {
+    font-size: 68pt !important;
+}
+
+span:nth-child(1n) {
+    font-size: 16pt;
+}
+
+span:nth-child(1) {
+    font-size: 16pt;
+    animation-name: slideCaps;
+    animation-duration: 5s;
+    animation-delay: 0;
+    animation-fill-mode:forwards;
+    width: 45px;
+}
+
+span:nth-child(2) {
+    font-size: 25pt;
+    animation-name: slidein;
+    animation-duration: 10s;
+    animation-delay: 3.1s;
+    animation-fill-mode: forwards;
+    width: 50px;
+}
+
+span:nth-child(3) {
+    font-size: 16pt;
+    animation-name: slidein;
+    animation-duration: 1.8s;
+    animation-delay: 3.2s;
+    animation-fill-mode: forwards;
+    width: 5px;
+}
+
+span:nth-child(4) {
+    font-size: 16pt;
+    animation-name: slidein;
+    animation-duration: 1.7s;
+    animation-delay: 3.3s;
+    animation-fill-mode: forwards;
+    width: 5px;
+}
+
+span:nth-child(5) {
+    font-size: 16pt;
+    animation-name: slidein;
+    animation-duration: 1.6s;
+    animation-delay: 3.4s;
+    animation-fill-mode: forwards;
+    width: 5px;
+}
+
+span:nth-child(6) {
+    font-size: 16pt;
+    width: 10px;
+}
+
+span:nth-child(7) {
+    font-size: 16pt;
+    animation-name: slideCaps;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    width: 40px;
+}
+
+span:nth-child(8) {
+    font-size: 25pt;
+    animation-name: slidein;
+    animation-duration: 10s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    width: 50px;
+}
+
+span:nth-child(9) {
+    font-size: 16pt;
+    animation-name: slidein;
+    animation-duration: 1.4s;
+    animation-delay: 3.6s;
+    animation-fill-mode: forwards;
+    width: 5px;
+}
+
+span:nth-child(10) {
+    font-size: 16pt;
+    animation-name: slidein;
+    animation-duration: 1.3s;
+    animation-delay: 3.7s;
+    animation-fill-mode: forwards;
+    width: 1px;
+}
+
+span:nth-child(11) {
+    font-size: 16pt;
+    animation-name: slidein;
+    animation-duration: 1.2s;
+    animation-delay: 3.8s;
+    animation-fill-mode: forwards;
+    width: 3px;
+}
+
+span:nth-child(12) {
+    font-size: 16pt;
+    animation-name: slidein;
+    animation-duration: 1.1s;
+    animation-delay: 3.9s;
+    animation-fill-mode: forwards;
+    width: 3px;
+}
+
+span:nth-child(13) {
+    font-size: 16pt;
+    animation-name: slidein;
+    animation-duration: 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    width: 5px;
+}
+
+span:nth-child(14) {
+    font-size: 16pt;
+    animation-name: slidein;
+    animation-duration: 0.9s;
+    animation-delay: 4.1s;
+    animation-fill-mode: forwards;
+    width: 5px;
+}
+
+@keyframes slidein {
+    from {
+        opacity:0;
+        color: 9900CC;
+    }
+
+    25%{
+        opacity:0.25;
+    }
+
+    50% {
+        opacity: 1;
+        color: 9900CC;
+    }
+
+
+    to {
+        opacity: 1;
+        color: 9900CC;
+    }
+}
+
+
+@keyframes slideCaps {
+    from {
+        opacity: 0;
+        color: white;
+    }
+
+    25% {
+        opacity: 0.25;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    75% {
+        opacity: 0.75;
+    }
+
+    to {
+        opacity: 1;
+        color: black;
+    }
+}
+

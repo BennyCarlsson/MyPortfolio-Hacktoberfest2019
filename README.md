@@ -1,10 +1,11 @@
 # MyPortfolio-Hacktoberfest2019 [Live Website](https://bennycarlsson.github.io/MyPortfolio-Hacktoberfest2019/)
 
-Help me make a horrible portfolio by letting people from all over the world contribute with their own ideas and design!
+Help me for make a horrible portfolio by letting people from all over the world contribute with their own ideas and design!
 
-If you have any questions or requests feel free to message me!
+If you have any questions or any requests, feel free to message me!
+And also the following things guide you to create a compelete and correct pull request.
 
-_Disclaimer! This is a project for fun! I do not expect a profesional or high standard website for free. I expect the community will give me a horrendous portfolio and that we will have fun creating it together_
+_Disclaimer! This is a project for fun! I do not expect a professional or high standard website for free. I expect the community will give me a horrendous portfolio and that we will have fun creating it together_
 
 ## Contribution Rules (Will be updated)
 
@@ -12,13 +13,13 @@ _Disclaimer! This is a project for fun! I do not expect a profesional or high st
 
 - No spam! Small contributions like minor styling or spell correction is accepted but obvious spam for the t-shirt will be labeled invalid.
 - Don't use prettier/auto indent/ auto format because it will create HUGE merge conflicts
-- Do NOT add any build steps e.g npm install (I want to keep this a simple static site).
+- Do NOT add any build steps e.g. npm install (I want to keep this a simple static site).
 
 ### Do
 
 - Keep pull requests small to minimize merge conflicts.
 - Make sure there is no merge conflict
-- Fun things! This is not suppose to be serious or pretty. Be creative add easter eggs and pink stuff! 🐷
+- Fun things! This is not supposed to be serious or pretty. Be creative add easter eggs and pink stuff! 🐷
 
 ## About me
 
@@ -29,7 +30,7 @@ _Disclaimer! This is a project for fun! I do not expect a profesional or high st
 - [Twitter](https://twitter.com/Benny_Carlsson)
 - [Current portfolio](https://bennycarlsson.com/)
 - [LinkedIn](https://www.linkedin.com/in/benny-carlsson-620226ba/)
-- [Youtube](https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg)
+- [YouTube](https://www.youtube.com/channel/UCpPEhf3aRau_Tgzbk91YZLg)
 
 ## Videos
 
@@ -40,7 +41,7 @@ _Disclaimer! This is a project for fun! I do not expect a profesional or high st
 
 ## Information on syncing forks [link](https://help.github.com/articles/syncing-a-fork/).
 
-## Ideas for contributions/Idees de contributions
+## Ideas for contributions/Idées de contributions
 
 - Style the index.html
 - Update Readme.md
@@ -56,18 +57,18 @@ _Disclaimer! This is a project for fun! I do not expect a profesional or high st
 
 - Who are you and why are you doing this?
   - I'm an unemployed software developer from Sweden [My Github](https://github.com/BennyCarlsson). Hacktoberfest is like Christmas for me. This year I thought it would be fun to crowdsource a portfolio.
-- Did you not do someting like this last year?
+- Did you not do something like this last year?
   - [Yes I did](https://github.com/lingonsaft/hacktoberfest) but it got too big and too time consuming this year I'm going smaller :)
-- Are you not the one of the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
+- Are you not one of the guys from that failed [CodeCardCodingCards](https://www.kickstarter.com/projects/lingonsaft/codecardcodingcards) kickstarter?
   - Yes...
-- How many pull request (PR) must be made, if I can get an awesome shirt from Hacktoberfest 2019?
+- How many pull requests (PRs) must be made to get an awesome shirt from Hacktoberfest 2019?
   - 4
 - How do I track my progress to get an awesome shirt from Hacktoberfest 2019?
   - go to : [https://hacktoberfest.digitalocean.com/profile](https://hacktoberfest.digitalocean.com/profile)
 - What is the duration of Hacktoberfest 2019?
-  - It is from October 1st till October 31st, 2019.
+  - It is from October 1st, 2019 to October 31st, 2019.
 - What is the event for?
-  - For the open source community engagement.
+  - For open source community engagement.
 
 ### Don't forget to Star! :star:
 ### _I will do my best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible ❤️_
