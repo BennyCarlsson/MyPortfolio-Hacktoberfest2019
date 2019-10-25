@@ -577,6 +577,38 @@ canvas {
 	background-color: #fff;
 }
 
+.nav-list li.eye-symbol {
+	width: 4px;
+	position: relative;
+}
+
+.nav-list li.eye-symbol:hover {
+	width: 135px;
+}
+
+.nav-list li.eye-symbol img {
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	transition: all 0.7s linear;
+}
+
+.nav-list li.eye-symbol:hover img{
+	height: 150px;
+	width: 150px;
+}
+
+.nav-list li.eye-symbol>a {
+	background-color: transparent;
+	height: auto;
+}
+
+.nav-list li.eye-symbol:hover>a {
+	background-color: transparent;
+}
+
 @media screen and (max-width: 1000px) {
 	.nav-list {
 		width: 100%;
