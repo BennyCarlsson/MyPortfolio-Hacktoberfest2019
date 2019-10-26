@@ -35,6 +35,13 @@ _Disclaimer! This is a project for fun! I do not expect a professional or high s
 ## Videos
 
 - [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
+    - fork repository
+    - clone repository
+    - create new branch
+    - let's contribute project
+    - commit code
+    - make a pull request
+
 - [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
 ## How to make a pull request [link](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
