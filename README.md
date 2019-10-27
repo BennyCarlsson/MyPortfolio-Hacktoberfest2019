@@ -1,17 +1,17 @@
 # MyPortfolio-Hacktoberfest2019 [Live Website](https://bennycarlsson.github.io/MyPortfolio-Hacktoberfest2019/)
 
-Help me for make a horrible portfolio by letting people from all over the world contribute with their own ideas and design!
+Help me make a horrible portfolio by letting people from all over the world contribute with their own ideas and design!
 
 If you have any questions or any requests, feel free to message me!
-And also the following things guide you to create a compelete and correct pull request.
+By the way, following articles and tutorials will guide you to create complete and correct pull requests.
 
-_Disclaimer! This is a project for fun! I do not expect a professional or high standard website for free. I expect the community will give me a horrendous portfolio and that we will have fun creating it together_
+_Disclaimer! This is a project for fun! I do not expect a professional or high standard website for free. I expect the community to give me a horrendous portfolio and that we will have fun creating it together_
 
 ## Contribution Rules (Will be updated)
 
 ### Don't
 
-- No spam! Small contributions like minor styling or spell correction is accepted but obvious spam for the t-shirt will be labeled invalid.
+- No spam! Small contributions like minor styling or spell correction are accepted but obvious spam for the t-shirt will be labeled invalid.
 - Don't use prettier/auto indent/ auto format because it will create HUGE merge conflicts
 - Do NOT add any build steps e.g. npm install (I want to keep this a simple static site).
 
