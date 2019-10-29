@@ -726,6 +726,7 @@ header img:hover {
 	max-height: 15vh;
 }
 
+
 @media screen and (max-width: 1000px) {
 	header {
 		width: 100%;
@@ -1317,6 +1318,31 @@ video{
 /********************************************************/
 
 
+
+
+/*** WEDDING PHOTOGRAPHY ***/
+.underline--emoji {
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/heart.png");
+	background-position: 0 1.06em;
+	background-size: 15px 9px;
+	color: #e8665f;
+}
+
+#wedding-photos{
+	color: #e22cd3;
+}
+#wedding-photos:hover{
+	background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/heart.png");
+	background-position: 0 1.06em;
+	background-size: 15px 9px;
+	color: #00ff00;
+}
+#weddingPhotos{
+	text-align: left;
+}
+
+
+/********************************************************/
 
 /*** BUTTON GO UP ***/
 #goTopBtn {
