@@ -2,15 +2,16 @@
 
 Help me make a horrible portfolio by letting people from all over the world contribute with their own ideas and design!
 
-If you have any questions or requests feel free to message me!
+If you have any questions or any requests, feel free to message me!
+By the way, following articles and tutorials will guide you to create complete and correct pull requests.
 
-_Disclaimer! This is a project for fun! I do not expect a professional or high standard website for free. I expect the community will give me a horrendous portfolio and that we will have fun creating it together_
+_Disclaimer! This is a project for fun! I do not expect a professional or high standard website for free. I expect the community to give me a horrendous portfolio and that we will have fun creating it together_
 
 ## Contribution Rules (Will be updated)
 
 ### Don't
 
-- No spam! Small contributions like minor styling or spell correction is accepted but obvious spam for the t-shirt will be labeled invalid.
+- No spam! Small contributions like minor styling or spell correction are accepted but obvious spam for the t-shirt will be labeled invalid.
 - Don't use prettier/auto indent/ auto format because it will create HUGE merge conflicts
 - Do NOT add any build steps e.g. npm install (I want to keep this a simple static site).
 
@@ -34,6 +35,13 @@ _Disclaimer! This is a project for fun! I do not expect a professional or high s
 ## Videos
 
 - [How to pull request [Overview]](https://youtu.be/DIj2q02gvKs)
+    - fork repository
+    - clone repository
+    - create new branch
+    - let's contribute project
+    - commit code
+    - make a pull request
+
 - [Merge Conflict / comment](https://youtu.be/zOx5PJTY8CI)
 
 ## How to make a pull request [link](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)

@@ -87,7 +87,6 @@ function imgClicked() {
 }
 imgClicked.count = 0;
 
-
 document.onkeydown = checkKey;
 
 function checkKey(e) {
@@ -102,8 +101,22 @@ function checkKey(e) {
       alert('Respect paid');
       console.log('FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF');
       }
+    if (e.keyCode == '82') {
+      alert('Open console to see the magic 🌈');
+      rainbow();
+    }
 
 }
+
+var elements = document.getElementsByClassName("form-input");
+for (var i = 0; i < elements.length; i++) {
+    elements[i].onkeydown = inputKeyDown;
+}
+function inputKeyDown(e) {
+  var pinks = ["#FFC0CB","#FFB6C1","#FF69B4","#FF1493","#DB7093","#C71585","#DA70D6","#FF00FF","#9400D3"];
+    (e.target || e.srcElement).style.backgroundColor = pinks[Math.floor(Math.random()*pinks.length)]
+}
+
 let string =
   "I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.";
 let str = string.split("");
@@ -278,6 +291,8 @@ function rainStop(x) {
   // x.style.fontSize = "30px";
   document.getElementById('raining').style.display = "none";
 }
+
+
 });
 
 
@@ -367,6 +382,7 @@ function helloWorld(elm) {
   }, 5000);
 }
 
+
 let spans = document.querySelectorAll('.word span');
 spans.forEach((span, idx) => {
 	span.addEventListener('click', (e) => {
@@ -381,3 +397,43 @@ spans.forEach((span, idx) => {
 		span.classList.add('active');
 	}, 750 * (idx+1))
 });
+/*
+     _.-""""`-._ 
+   ,' _-""""`-_ `.
+  / ,'.-'"""`-.`. \
+ | / / ,'"""`. \ \ |
+| | | | ,'"`. | | | |
+| | | | |   | | | | |
+
+RAINBOW EASTER LOG 
+*/
+const rainbow = () => {
+  let x = 1;
+  let up = !1;
+  setInterval(() => {
+    (75 === x || 1 === x) && (up = !up), up ? x++ : x--, console.log(`%c${`■`.repeat(x)}`, `color: hsl(${2*x}, 100%, 50%)`)
+  }, 15);
+};
+
+
+// load a set of random pictures onto the page 
+let pfrex_url = "https://picsum.photos/200/300?random=1";
+let pfrex_url1 = "https://picsum.photos/200/300?random=2";
+let pfrex_url2 = "https://picsum.photos/200/300?random=3";
+let img30 = document.querySelector(".pfrex");
+let newImg = document.createElement("img");
+let newImg1 = document.createElement("img");
+let newImg2 = document.createElement("img");
+newImg.setAttribute("alt",pfrex_url);
+newImg.setAttribute("src",pfrex_url);
+newImg.setAttribute("style", "padding: 64px;");
+newImg1.setAttribute("alt",pfrex_url1);
+newImg1.setAttribute("src",pfrex_url1);
+newImg1.setAttribute("style", "padding: 64px;");
+newImg2.setAttribute("alt",pfrex_url2);
+newImg2.setAttribute("src",pfrex_url2);
+newImg2.setAttribute("style", "padding: 64px;");
+img30.appendChild(newImg);
+img30.appendChild(newImg1);
+img30.appendChild(newImg2);
+

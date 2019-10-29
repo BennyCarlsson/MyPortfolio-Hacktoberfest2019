@@ -143,6 +143,17 @@
 
 /********************************************************/
 
+	.this-div{
+		max-width: 900px;
+		background: white;
+		height: 40px;
+	}
+
+
+	.the-my-story-heading-class{
+		color: purple;
+		font-weight: bold;
+	}
 
 *{
 	box-sizing: border-box;
@@ -172,14 +183,13 @@ body {
 	background-position: bottom left;
 	background-attachment: fixed;
 	background-color: #fdfdfd;
-	/*background-color: #ffe6cc;*/
-	/* background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);  */
 	animation: bg-animate 8s linear infinite alternate both;
 	cursor: url("https://i.ibb.co/h7cGf6X/benni-pointer.gif"), auto;
-	overflow-y: scroll;
 }
 
-
+h {
+	padding-bottom:1rem;
+}
 
 /********************************************************/
 
@@ -241,11 +251,13 @@ h4 {
 	font-weight: bolder;
 }
 
-
+h5 {
+	text-align: left;
+	color: #00ff00;
+	text-shadow: 4px 4px 4px #112233;
+}
 
 /********************************************************/
-
-
 
 /*** DEFAULT STYLES TAGS ***/
 ul {
@@ -395,6 +407,8 @@ canvas {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -433,7 +447,7 @@ canvas {
 
 .nav {
 	width: 100%;
-	height: 80px;
+	height: 100px;
 	margin-top: -38px;
 	padding: 0 1rem;
 	display: flex;
@@ -491,6 +505,57 @@ canvas {
 	font-weight: 600;
 	text-shadow: 2px 2px 5px black;
 	background-color: #ff69b4;
+	color:white;
+}
+
+.my-name:hover{
+ 	animation: shake 0.5s;
+  	animation-iteration-count: infinite;
+ 	background-color: #ff69b4;
+ 	color: #fdfdfd;
+}
+
+.play2048 {
+	height: 50px;
+	padding: 0 1rem;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 1em;
+	font-weight: 600;
+	text-shadow: 2px 2px 5px black;
+	background-color: #1900f7;
+	color:white;
+}
+.play2048:hover{
+ 	animation: shake 0.5s;
+  	animation-iteration-count: infinite;
+ 	background-color: #69e1ff;
+ 	color: #fdfdfd;
+}
+
+#games {
+	margin-top: 20px;
+	color: #047009;
+}
+
+/* Shake effect */
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 /* menu */
@@ -518,6 +583,12 @@ canvas {
 	content: none;
 }
 
+.nav-list li:hover{
+	-ms-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+}
+
 .nav-list li>a {
 	height: 35px;
 	margin-right: 0;
@@ -532,6 +603,38 @@ canvas {
 .nav-list li:hover>a {
 	color:#ff69b4;
 	background-color: #fff;
+}
+
+.nav-list li.eye-symbol {
+	width: 4px;
+	position: relative;
+}
+
+.nav-list li.eye-symbol:hover {
+	width: 135px;
+}
+
+.nav-list li.eye-symbol img {
+	height: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	transition: all 0.7s linear;
+}
+
+.nav-list li.eye-symbol:hover img{
+	height: 150px;
+	width: 150px;
+}
+
+.nav-list li.eye-symbol>a {
+	background-color: transparent;
+	height: auto;
+}
+
+.nav-list li.eye-symbol:hover>a {
+	background-color: transparent;
 }
 
 @media screen and (max-width: 1000px) {
@@ -551,9 +654,6 @@ canvas {
 		flex:1;
 	}
 
-	.nav-list li span {
-		display: none;
-	}
 }
 
 
@@ -569,6 +669,8 @@ canvas {
     position: fixed;
     top: 0;
 	left: 0;
+	background-image: url('../assets/images/niccage.jpg');
+	background-size: cover;
 }
 
 .profile-area__inner{
@@ -618,9 +720,6 @@ header img:hover {
 
 .image-trombon{
 	margin-bottom: 1rem;
-}
-.image-world{
-
 }
 
 .circle-profile-img {
@@ -833,22 +932,6 @@ header img:hover {
 
 /********************************************************/
 
-
-
-/*** MARQUEE ANIMATION ***/
-marquee{
-	height: 200px;
-	margin-bottom:3rem;
-	position: relative;
-	background-color: white;
-}
-marquee img{
-	width: auto;
-	height: 200px;
-	position: absolute;
-	top: calc(50% -100px);
-	font-size: 0;
-}
 
 
 
@@ -1139,7 +1222,6 @@ article p.article-meta {
 }
 
 #dont-panic {
-	/*display: none;*/
 	opacity: 0;
 	visibility: hidden;
 	position: fixed;
@@ -1180,6 +1262,10 @@ ul.skills>li:hover {
 	-webkit-transform: scale(1.1);
 }
 
+#standout-text {
+	font-family: 'Fascinate Inline', cursive;
+	color: rgb(57, 255, 20);
+}
 
 
 /********************************************************/
@@ -1273,6 +1359,7 @@ video{
 	to {
 	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
 	}
+
   }
 
   @import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
@@ -1389,4 +1476,52 @@ video{
 	top: 40px;
 	left: 50%;
 	transform: translateX(-50%);
+=======
+ }
+
+.blinkBold {
+	-webkit-animation: blinkBold 1s infinite;
+	-moz-animation: blinkBold 1s infinite ;
+	animation: blinkBold 1s infinite;
+  }
+
+  @-webkit-keyframes blinkBold {
+	0% {
+		font-weight: normal;
+	}
+
+	50% {
+		font-weight: bold;
+	}
+
+	100% {
+		font-weight: bold;
+	}
+}
+
+/*** Comic-Sans on hover ***/
+.comic-sansHover:hover {
+	font-family: "Comic Sans MS", cursive, sans-serif !important;
+	background-color: mediumvioletred;
+}
+/*** End of Comic-Sans on hover ***/
+
+/*** Align right ***/
+.align-right {
+	text-align: right;
+}
+/*** End of Align right ***/
+
+/********************************************************/
+
+@media (prefers-color-scheme: dark) {
+	.dark-elitist {
+		display: none;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	.light-elitist {
+		display: none;
+	}
 }
