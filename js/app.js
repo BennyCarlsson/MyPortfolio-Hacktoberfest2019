@@ -382,6 +382,21 @@ function helloWorld(elm) {
   }, 5000);
 }
 
+
+let spans = document.querySelectorAll('.word span');
+spans.forEach((span, idx) => {
+	span.addEventListener('click', (e) => {
+		e.target.classList.add('active');
+	});
+	span.addEventListener('animationend', (e) => {
+		e.target.classList.remove('active');
+	});
+	
+	// Initial animation
+	setTimeout(() => {
+		span.classList.add('active');
+	}, 750 * (idx+1))
+});
 /*
      _.-""""`-._ 
    ,' _-""""`-_ `.
@@ -421,5 +436,4 @@ newImg2.setAttribute("style", "padding: 64px;");
 img30.appendChild(newImg);
 img30.appendChild(newImg1);
 img30.appendChild(newImg2);
-
 
