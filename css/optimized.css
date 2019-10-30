@@ -1,0 +1,731 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
+
+/********************************************************/
+
+/*** KEYFRAMES ***/
+
+@keyframes bg-animate {
+  0% {
+    background-color: #ffb2d6;
+  }
+
+  100% {
+    background-color: #b5b2ff;
+  }
+}
+
+@keyframes jump {
+  0%, 100% {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  25% {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  50% {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  75% {
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes animateright {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  20%, 80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    color: transparent;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 1;
+    color: #673ab7;
+  }
+
+  to {
+    opacity: 1;
+    color: #673ab7;
+  }
+}
+
+@keyframes slideCaps {
+  from {
+    opacity: 0;
+    color: transparent;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  to {
+    opacity: 1;
+    color: #673ab7;
+  }
+}
+
+@keyframes slidin {
+  from {
+    margin-left: 50%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 1%;
+  }
+}
+
+@keyframes animateleft {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/********************************************************/
+
+.this-div {
+  max-width: 900px;
+  background: white;
+  height: 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Adds highlight selection color to text. */
+
+::selection {
+  color: #fff;
+  background-color: #ff0f9b;
+}
+
+html {
+  line-height: 1.15;
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #091010;
+  font-size: 2rem;
+  line-height: 1.2em;
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  background-attachment: fixed;
+  background-color: #fdfdfd;
+  animation: bg-animate 8s linear infinite alternate both;
+  cursor: url("https://i.ibb.co/h7cGf6X/benni-pointer.gif"), auto;
+}
+
+h {
+  padding-bottom: 1rem;
+}
+
+/********************************************************/
+
+/*** RC ***/
+
+/********************************************************/
+
+/*** HEADING ***/
+
+h1 {
+  text-align: left;
+  font-size: 1em;
+  line-height: 4rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px yellow;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #666666;
+  font-weight: bold;
+  margin: 0 0 30px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  text-align: right;
+  font-size: 2em;
+  line-height: 4rem;
+  text-shadow: 2px 2px 4px #000000;
+  margin-top: 20px;
+}
+
+h3 {
+  color: #ff69b4;
+  font-family: "Raleway", Arial, "sans-serif";
+}
+
+h4 {
+  color: #973434;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+h5 {
+  text-align: left;
+  color: #00ff00;
+  text-shadow: 4px 4px 4px #112233;
+}
+
+/********************************************************/
+
+/*** DEFAULT STYLES TAGS ***/
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0 0 30px;
+}
+
+article ul {
+  transform: translateY(72px);
+  opacity: 0;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+b {
+  font-weight: bolder;
+}
+
+audio {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+button,input {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,input {
+  overflow: visible;
+}
+
+button {
+  text-transform: none;
+}
+
+button,html [type="button"],[type="reset"],[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+canvas {
+  display: inline-block;
+}
+
+[hidden] {
+  display: none;
+}
+
+/********************************************************/
+
+/*** OVERLAY ***/
+
+.overlay {
+  margin-top: 170px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .overlay {
+    margin-top: 80px;
+  }
+}
+
+/********************************************************/
+
+/*** WRAPPER ***/
+
+.wrapper {
+  width: 100%;
+  padding: 0 5% 3rem 35%;
+}
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    margin-top: 10px;
+    padding: 0 5% 5rem;
+  }
+}
+
+/********************************************************/
+
+/*** NAV TOP ***/
+
+/* wizard */
+
+.logo {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  background-image: url("../assets/icons/apple-touch-icon.png");
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  transition: all 3s;
+}
+
+.logo:hover {
+  background-image: url("../assets/icons/apple-touch-icon-hover.png");
+}
+
+/* name */
+
+.my-name {
+  height: 50px;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px black;
+  background-color: #ff69b4;
+  color: white;
+}
+
+.my-name:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  background-color: #ff69b4;
+  color: #fdfdfd;
+}
+
+.play2048 {
+  height: 50px;
+  padding: 0 1rem;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px black;
+  background-color: #1900f7;
+  color: white;
+}
+
+.play2048:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  background-color: #69e1ff;
+  color: #fdfdfd;
+}
+
+#games {
+  margin-top: 20px;
+  color: #047009;
+}
+
+/* Shake effect */
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+/* menu */
+
+/********************************************************/
+
+/*** HEADER - LEFT ***/
+
+.circle-profile-img {
+  max-height: 15vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .circle-profile-img {
+    max-width: 100px;
+  }
+}
+
+/********************************************************/
+
+/*** HEADER - NAME ANIMATION ***/
+
+.title-name-animation {
+  width: 100%;
+  margin: 1vh auto;
+  font-family: "Satisfy", cursive;
+  text-align: center;
+  animation-name: colorfade;
+}
+
+/********************************************************/
+
+/*** SOCIAL MEDIA ***/
+
+/********************************************************/
+
+/*** BUTTON - GITIHUB ***/
+
+/* github repo of this website */
+
+/********************************************************/
+
+/********************************************************/
+
+/*** FOOTER ***/
+
+.form-title {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 10px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #344055;
+  background-color: lightpink;
+  box-shadow: 2px 2px 4px #555;
+}
+
+.btn {
+  padding: 8px 16px;
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  background-color: #266dd3;
+  cursor: pointer;
+}
+
+/* contact - phone, email */
+
+/********************************************************/
+
+/*** BUTTON, LINKS ***/
+
+a,a:hover {
+  text-decoration: none;
+}
+
+a.button {
+  color: #fff;
+  font-weight: bold;
+  background-color: #ff5722;
+  padding: 5px 15px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a.button:hover,a.button:focus,a.button:active {
+  background-color: #ff5722;
+}
+
+a,.page-link {
+  color: #999;
+  font-weight: bold;
+}
+
+a:hover,a:focus,a:active,.page-link:hover,.page-link:focus,.page-link:active {
+  color: #f33ec6;
+}
+
+/********************************************************/
+
+/*** MAIN - Content page ***/
+
+article {
+  font-size: 1.4rem;
+}
+
+article h2.article-title {
+  color: rgb(243, 62, 198);
+  font-size: 3rem;
+  letter-spacing: -1px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 1000px) {
+  article {
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+  }
+
+  article h2.article-title {
+    font-size: 1.5em;
+  }
+}
+
+/********************************************************/
+
+.waypoint-middle {
+  transition: all 0.5s;
+  transform: translateX(-20%);
+  opacity: 0;
+}
+
+.waypoint-middle.is-view {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.waypoint-bottom {
+  transition: all 0.5s;
+  transform: translateX(-20%);
+  opacity: 0;
+}
+
+.waypoint-bottom.is-view {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+/********************************************************/
+
+/*** EASTER EGG ***/
+
+#dont-panic {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  height: 50vh;
+  z-index: 2;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  animation: fade-in 4s;
+}
+
+/********************************************************/
+
+/*** SKILLS ***/
+
+/********************************************************/
+
+/*** UNTITLED GOOSE GAME ***/
+
+/********************************************************/
+
+/*** VIDEO ***/
+
+video {
+  width: 100%;
+}
+
+/********************************************************/
+
+/** PIKACHU **/
+
+/********************************************************/
+
+/*** WEDDING PHOTOGRAPHY ***/
+
+/********************************************************/
+
+/*** BUTTON GO UP ***/
+
+#goTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #673ab7;
+  color: ghostwhite;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#goTopBtn:hover {
+  background-color: ghostwhite;
+  color: #E5C601;
+  border: 1px solid #673ab7;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+@-webkit-keyframes blinkBold {
+  0% {
+    font-weight: normal;
+  }
+
+  50% {
+    font-weight: bold;
+  }
+
+  100% {
+    font-weight: bold;
+  }
+}
+
+/*** Comic-Sans on hover ***/
+
+/*** End of Comic-Sans on hover ***/
+
+/*** Align right ***/
+
+.align-right {
+  text-align: right;
+}
+
+/*** End of Align right ***/
+
+/********************************************************/
