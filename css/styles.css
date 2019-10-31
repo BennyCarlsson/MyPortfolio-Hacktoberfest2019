@@ -1268,6 +1268,9 @@ ul.skills>li:hover {
 	color: rgb(57, 255, 20);
 }
 
+ul.fun-list>li::after {
+	content: url('../assets/images/heart.png');
+}
 
 /********************************************************/
 
