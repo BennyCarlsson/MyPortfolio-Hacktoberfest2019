@@ -724,6 +724,8 @@ header img:hover {
 
 .circle-profile-img {
 	max-height: 15vh;
+	width: 100px;
+	height: 70px;
 }
 
 
