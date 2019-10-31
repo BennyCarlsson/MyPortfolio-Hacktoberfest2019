@@ -1,4 +1,4 @@
-# MyPortfolio-Hacktoberfest2019 [Live Website](https://bennycarlsson.github.io/MyPortfolio-Hacktoberfest2019/)
+﻿# MyPortfolio-Hacktoberfest2019 [Live Website](https://bennycarlsson.github.io/MyPortfolio-Hacktoberfest2019/)
 
 Help me make a horrible portfolio by letting people from all over the world contribute with their own ideas and design!
 
@@ -81,5 +81,5 @@ _Disclaimer! This is a project for fun! I do not expect a professional or high s
 ### _I will do my best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible ❤️_
 
 
-
+###Please merge my request also
 ### _Don't break my💔 by not giving a⭐️!!_
