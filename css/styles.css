@@ -14,7 +14,7 @@
 	}
 
 	100% {
-		background-color: #b5b2ff;
+		background-color: #b5b233;
 	}
 }
 
@@ -87,7 +87,7 @@
 
 	to {
 		opacity: 1;
-		color: #673ab7;
+		color: #673aff;
 	}
 }
 
@@ -151,7 +151,7 @@
 
 
 	.the-my-story-heading-class{
-		color: purple;
+		color: blue;
 		font-weight: bold;
 	}
 
@@ -198,7 +198,7 @@ h {
 
 #rc {
 	animation-name: slidin;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	width: 0px;
 	height: auto;
 }
