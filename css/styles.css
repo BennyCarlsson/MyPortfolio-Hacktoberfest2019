@@ -1141,6 +1141,10 @@ article p.article-meta {
 	font-size: 1rem;
 }
 
+#portfolio-gif,
+#games-gif {
+	margin-bottom: 25px;
+}
 
 @media screen and (max-width: 1000px) {
 	article {
