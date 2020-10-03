@@ -784,15 +784,15 @@ header img:hover {
 .title-name-animation span {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 4vh;
-	line-height: 5rem;
+	font-size: 6vh;
+	line-height: 4rem;
 	border-bottom: solid, 2px, black;
 	animation-name: slidein;
 	animation-fill-mode: forwards;
 }
 
 .title-name-animation .caps {
-	font-size: 6vh !important;
+	font-size: 7vh !important;
 }
 
 .title-name-animation span:nth-child(1) {
@@ -871,7 +871,7 @@ header img:hover {
 }
 
 .social-icons a {
-	color: #673ab7;
+	color: #000000;
 	font-weight: normal;
 	display: block;
 	transition: all 0.3s;
