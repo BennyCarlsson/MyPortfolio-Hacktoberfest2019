@@ -139,7 +139,9 @@
 	}
 }
 
-
+*::-webkit-scrollbar{
+	display: none;
+}
 
 /********************************************************/
 
@@ -182,7 +184,7 @@ body {
 	background-repeat: repeat-x;
 	background-position: bottom left;
 	background-attachment: fixed;
-	background-color: #fdfdfd;
+	background:linear-gradient(to right,#fa29ab 0%,transparent 60%);
 	animation: bg-animate 8s linear infinite alternate both;
 	cursor: url("https://i.ibb.co/h7cGf6X/benni-pointer.gif"), auto;
 }
@@ -506,13 +508,18 @@ canvas {
 	text-shadow: 2px 2px 5px black;
 	background-color: #ff69b4;
 	color:white;
+	box-shadow:  3px 3px 0px #fdfdfd, 
+	-3px -3px 0px #f7f5f7;
+	border-radius: 41px;
 }
 
 .my-name:hover{
  	animation: shake 0.5s;
   	animation-iteration-count: infinite;
  	background-color: #ff69b4;
- 	color: #fdfdfd;
+	 color: #fdfdfd;
+	 box-shadow:  0px 0px 0px #fdfdfd, 
+	 -0px -0px 0px #f7f5f7;
 }
 
 .play2048 {
@@ -571,12 +578,14 @@ canvas {
 }
 
 .nav-list li {
-	width: 135px;
+	width: 145px;
 	position: relative;
+	top: 5px;
 	text-align: center;
 	border-radius: 10px;
 	border: 2px solid transparent;
 	transition: all 0.7s linear;
+	
 }
 
 .nav-list li::before {
@@ -590,7 +599,7 @@ canvas {
 }
 
 .nav-list li>a {
-	height: 35px;
+	height: 50px;
 	margin-right: 0;
 	line-height: 35px;
 	text-decoration: none;
@@ -598,11 +607,17 @@ canvas {
 	color: #fff;
 	background-color: #ff69b4;
 	transition: all 0.7s linear;
+	border-radius: 41px;
+	padding-top: 7px;
+	box-shadow:  2px 2px 2px #ce6ccb, 
+             -2px -2px 2px #ff98ff;
 }
 
 .nav-list li:hover>a {
 	color:#ff69b4;
 	background-color: #fff;
+	box-shadow:  0px 0px 2px #fff, 
+             -0px -0px 2px #fff;
 }
 
 .nav-list li.eye-symbol {
@@ -953,7 +968,10 @@ footer {
 	flex-direction: column;
 	justify-content: space-between;
 	/*background: linear-gradient(76.04deg, #ffc337 -0.33%, #ff00aa 100.08%);*/
-	background-color: #f2f2f2;
+	background:linear-gradient(to bottom right,white 0%, grey 100%);
+	border-radius: 10px;
+	box-shadow:  2px 2px 1px #f7f3f6, 
+             -2px -2px 1px #f7f4f7;
 }
 
 footer .numbers {
@@ -1017,11 +1035,15 @@ footer .numbers {
 	text-transform: capitalize;
 	background-color: #f33ec6;
 	cursor: pointer;
+	transition: 1s;
 }
 
+
 .field .btn:hover {
-	background-color: #673ab7;
+	background:transparent;
 	color: #ffffff;
+	font-size: 36px;
+	letter-spacing: 2;
 }
 
 fieldset legend {
@@ -1280,6 +1302,10 @@ ul.skills>li:hover {
 	width: 100%;
 	max-width: 500px;
 	margin: 0 auto 2rem;
+    transition: 2s;
+}
+#untitled-goose-game:hover{
+	transform: rotateY(90deg) rotateX(10deg);
 }
 
 
@@ -1318,7 +1344,10 @@ video{
 
 
 /********************************************************/
-
+/**favourite movies**/
+ img:hover{
+ transform: rotateY('360 deg');
+}
 
 
 
