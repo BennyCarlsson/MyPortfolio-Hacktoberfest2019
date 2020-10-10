@@ -19,13 +19,13 @@ _Disclaimer! This is a project for fun! I do not expect a professional or high s
 
 - Keep pull requests small to minimize merge conflicts.
 - Make sure there is no merge conflict
-- Fun things! This is not supposed to be serious or pretty. Be creative add easter eggs and pink stuff! 🐷
+- Do Fun things! This is not supposed to be serious or pretty. Be creative-add easter eggs and pink stuff! 🐷
 
 ## About me
 
-- Unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.
+- Unemployed Software Developer soon starting to look for jobs in Gothenburg, Sweden.
 - 26 years old
-- Studied computer science at Linnaeus University Kalmar Sweden
+- Studied computer science at Linnaeus University Kalmar, Sweden
 - Worked as a professional software developer for almost 3 years.
 - [Twitter](https://twitter.com/Benny_Carlsson)
 - [Current portfolio](https://bennycarlsson.com/)
