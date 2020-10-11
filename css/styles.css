@@ -165,12 +165,20 @@
 	background-color: #ff0f9b;
 }
 
+*{
+	/* font-family: 'Kalam', cursive; */
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 24px;
+	line-height: 50px;
+	word-spacing: 10px;
+}
 
 html {
 	line-height: 1.15;
 	scroll-behavior: smooth;
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+	font-family: 'Kalam', cursive;
 }
 
 body {
@@ -185,6 +193,7 @@ body {
 	background-color: #fdfdfd;
 	animation: bg-animate 8s linear infinite alternate both;
 	cursor: url("https://i.ibb.co/h7cGf6X/benni-pointer.gif"), auto;
+	font-family: 'Kalam', cursive;
 }
 
 h {
@@ -974,8 +983,9 @@ footer .numbers {
 	padding: 1rem;
 	margin-bottom: 10px;
 	outline: none;
-	border-radius: 4px;
+	border-radius: 40px;
 	border: 1px solid #344055;
+	/* border: 10px solid red; */
 	background-color: lightpink;
 	box-shadow: 2px 2px 4px #555;
 }
