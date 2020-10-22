@@ -69,7 +69,22 @@
 		display: none;
 	}
 }
+@keyframes fade-out {
+	0% {
+		opacity: 0;
+	}
 
+	20%,
+	80% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+		visibility: hidden;
+		display: none;
+	}
+}
 @keyframes slidein {
 	from {
 		opacity: 0;
