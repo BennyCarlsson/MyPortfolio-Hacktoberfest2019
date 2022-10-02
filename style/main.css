@@ -59,7 +59,7 @@ h1.title {
   height: 25px;
   line-height: 47px;
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: 4px;
   color: white;
   margin-top: 8px;
   text-align: center; }
@@ -312,6 +312,11 @@ hr {
   -moz-transform: translate(363px, 363px);
   -ms-transform: translate(363px, 363px);
   transform: translate(363px, 363px); }
+.tile.tile-position-4-5 {
+  -webkit-transform: translate(353px, 363px);
+  -moz-transform: translate(343px, 353px);
+  -ms-transform: translate(364px, 333px);
+  transform: translate(323px, 364px); }
 
 .tile {
   position: absolute;
