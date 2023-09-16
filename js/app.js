@@ -118,7 +118,7 @@ function inputKeyDown(e) {
 }
 
 let string =
-  "I'm an unemployed Software Developer soon starting to look for jobs in Gothenburg Sweden.";
+  "I'm an unemployed Software Developer soon starting to look for jobs in  Gothenburg Sweden.";
 let str = string.split("");
 let phraseElement = document.querySelector(".phrase");
 (function animate() {
